@@ -9,22 +9,26 @@ export const BurgerContainer = styled.div`
   justify-content: space-around;
   cursor: pointer;
 
-  /* 768px would be for iPad air */
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 768px) {
     display: flex;
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
     color: #fff;
   }
 
   div {
-    width: 1.5rem;
+    width: 2rem;
     height: 3px;
-    background-color: ${({ open }) => (open ? "white" : "black")};
-    border-radius: 20px;
+    background-color: black;
     transform-origin: 1px;
     transition: all 0.4s linear;
+    &:nth-child(1) {
+      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+    }
+    &:nth-child(2) {
+      opacity: ${({ open }) => (open ? 0 : 1)};
+      transition: ease-in-out 0.1s;
+    }
+    &:nth-child(3) {
+      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+    }
   }
 `;

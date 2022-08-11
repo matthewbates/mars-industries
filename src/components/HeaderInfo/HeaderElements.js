@@ -2,23 +2,31 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const HeaderContainer = styled.div`
-  display: flex;
+  text-align: center;
   background-color: ${CONSTANTS.colors.offWhite};
   height: 80px;
   border-bottom: 1px solid black;
+
+  @media screen and (max-width: 768px) {
+    text-align: left;
+  }
 `;
 
 export const HeaderLogo = styled.img`
-  display: flex;
   margin-top: 1rem;
-  margin-left: 1rem;
   width: 50px;
   height: 50px;
 `;
 
 export const HeaderContact = styled.div`
-  margin-top: 1rem;
-  margin-left: 6rem;
+  text-align: right;
+  margin-right: 2rem;
+  margin-top: -3rem;
+
+  @media screen and (max-width: 768px) {
+    margin-right: 2rem;
+    text-align: right;
+  }
 `;
 
 export const HeaderLi = styled.li`
