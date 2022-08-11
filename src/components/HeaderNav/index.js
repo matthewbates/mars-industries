@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HeaderLinksContainer } from "./HeaderLinksElements";
 import Burger from "../Burger";
+import HeaderNavLinks from "../NavLinks";
 import HeaderDropdown from "../HeaderDropdown";
 
 export default function HeaderLinks() {

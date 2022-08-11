@@ -13,19 +13,26 @@ export const HeaderContainer = styled.div`
 `;
 
 export const HeaderLogo = styled.img`
-  margin-top: 1rem;
-  width: 50px;
-  height: 50px;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+`;
+
+export const HeaderTitle = styled.h1`
+  text-align: left;
 `;
 
 export const HeaderContact = styled.div`
   text-align: right;
   margin-right: 2rem;
-  margin-top: -3rem;
+  margin-top: -3.5rem;
 
   @media screen and (max-width: 768px) {
-    margin-right: 2rem;
-    text-align: right;
+    font-size: 16px;
+    line-height: 24px;
+
   }
 `;
 

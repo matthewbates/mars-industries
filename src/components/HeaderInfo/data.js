@@ -8,7 +8,7 @@ export const headerInfoData = [
   },
   {
     href: "mailto:marsindustriesco@yahoo.com",
-    contact: "marsindustriesco@yahoo.com",
+    contact: "MarsIndustriesCO@yahoo.com",
     icon: faEnvelope,
   },
 ];
