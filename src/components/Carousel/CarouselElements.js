@@ -1,8 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const CarouselContainer = styled.section`
-  display: block;
-  height: 30vh;
+  position: relative;
+  z-index: 0;
+  height: 50vh;
   max-width: 100%;
   position: relative;
   overflow: hidden;
@@ -10,10 +11,8 @@ export const CarouselContainer = styled.section`
 
 export const CarouselImg = styled.img`
   box-sizing: border-box;
-  margin-top: 10rem;
-  height: 300px;
-  width: 100vw;
-  /* padding: 0px 2vw; */
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   justify-content: center;
   text-align: center;
