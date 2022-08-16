@@ -2,7 +2,9 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 
 export const NavLinksContainer = styled.li`
-  text-align: center;
+  padding: 3px;
+  margin-left: 1rem;
+  text-align: left;
   list-style: none;
   cursor: pointer;
   color: black;

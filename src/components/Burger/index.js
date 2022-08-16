@@ -6,7 +6,7 @@ export default function Burger({ open, handleOnClick }) {
     <BurgerContainer
       open={open}
       onClick={handleOnClick}
-      style={{ position: 'absolute', top: '6rem', right: '25px' }}
+      style={{ position: 'absolute', top: '5.6rem', right: '25px' }}
     >
       <div />
       <div />

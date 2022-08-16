@@ -6,3 +6,10 @@ export const HeaderLinksContainer = styled.div`
   height: 50px;
   background-color: ${CONSTANTS.colors.offWhite};
 `;
+
+export const HeaderNavMenu = styled.ul`
+  display: flex;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+`;

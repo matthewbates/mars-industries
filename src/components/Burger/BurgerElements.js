@@ -17,7 +17,7 @@ export const BurgerContainer = styled.div`
 
   div {
     width: 2rem;
-    height: 1.8px;
+    height: 2px;
     background-color: black;
     transform-origin: 1px;
     //  transition: all 0.4s linear;

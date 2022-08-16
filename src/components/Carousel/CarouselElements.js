@@ -3,10 +3,10 @@ import styled from 'styled-components';
 export const CarouselContainer = styled.section`
   position: relative;
   z-index: 0;
-  height: 50vh;
+  height: 30vh;
   max-width: 100%;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 `;
 
 export const CarouselImg = styled.img`

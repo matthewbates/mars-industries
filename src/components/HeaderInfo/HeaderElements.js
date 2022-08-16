@@ -13,7 +13,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const HeaderLogo = styled.img`
-  margin-left: 0.5rem;
+  margin-left: 1.5rem;
   margin-top: 0.5rem;
   width: 60px;
   height: 60px;
