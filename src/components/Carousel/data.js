@@ -6,14 +6,35 @@ export const slides = [
   {
     img: slide1,
     alt: "slide-1",
+    style: {
+      height: "100%",
+      width: "100%",
+      objectFit: "cover",
+      justifyContent: "center",
+      textAlign: "center",
+    },
   },
   {
     img: slide2,
     alt: "slide-2",
+    style: {
+      height: "100%",
+      width: "100%",
+      objectFit: "cover",
+      justifyContent: "center",
+      textAlign: "center",
+    },
   },
   {
     img: slide3,
     alt: "slide-3",
+    style: {
+      height: "100%",
+      width: "100%",
+      objectFit: "cover",
+      justifyContent: "center",
+      textAlign: "center",
+    },
   },
 ];
 

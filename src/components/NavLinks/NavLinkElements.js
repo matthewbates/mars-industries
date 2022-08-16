@@ -9,6 +9,10 @@ export const NavLinksContainer = styled.li`
   cursor: pointer;
   color: black;
   font-size: 24px;
+
+  &:hover {
+    color: gold;
+  }
 `;
 
 export const NavLinkScroll = styled(Link)`

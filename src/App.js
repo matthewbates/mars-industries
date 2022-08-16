@@ -1,4 +1,5 @@
 import React from "react";
+import About from "./components/About";
 import Carousel from "./components/Carousel";
 import Footer from "./components/Footer";
 import HeaderInfo from "./components/HeaderInfo";
@@ -9,7 +10,8 @@ export default function App() {
     <div>
       <HeaderInfo />
       <HeaderLinks />
-      {/* <Carousel /> */}
+      <Carousel />
+      <About />
       <Footer />
     </div>
   );
