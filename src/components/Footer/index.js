@@ -1,6 +1,13 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FooterContainer, FooterH2, FooterWrap, FooterLi, FooterA } from "./FooterElements";
+import { Link } from "react-router-dom";
+import {
+  FooterContainer,
+  FooterH2,
+  FooterWrap,
+  FooterLi,
+  FooterA,
+} from "./FooterElements";
 import { footerInfoData } from "./data";
 import NavLinks from "../NavLinks";
 
@@ -11,7 +18,8 @@ export default function Footer() {
         <FooterH2>MARS Industries</FooterH2>
         <NavLinks title={"Home"} />
         <NavLinks title={"Projects"} />
-        <NavLinks title={"Contact"} />
+        {/* <NavLinks title={"Contact"} /> */}
+        <Link to="/contact">Contact</Link>
         <div>
           {footerInfoData.map((item, index) => (
             <FooterLi key={index}>

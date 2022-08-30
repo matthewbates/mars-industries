@@ -1,5 +1,6 @@
 import React from "react";
 import { DropdownContainer } from "./HeaderDropdownElements";
+import { Link } from "react-router-dom";
 import NavLinks from "../NavLinks";
 
 export default function HeaderDropdown({ open, title }) {
@@ -7,7 +8,8 @@ export default function HeaderDropdown({ open, title }) {
     <DropdownContainer open={open}>
       <NavLinks title={"Home"} />
       <NavLinks title={"Projects"} />
-      <NavLinks title={"Contact"} />
+      {/* <NavLinks title={"Contact"} /> */}
+      <Link to="/contact">Contact</Link>
     </DropdownContainer>
   );
 }

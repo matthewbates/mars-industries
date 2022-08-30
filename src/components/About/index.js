@@ -1,17 +1,34 @@
+import { MDBCardSubTitle } from "mdb-react-ui-kit";
 import React from "react";
-import { AboutContainer, AboutContent, AboutP } from "./AboutElements";
-import { aboutData } from "./data";
+import {
+  AboutContainer,
+  AboutWrapper,
+  AboutContent,
+  AboutImg,
+  TextWrapper,
+} from "./AboutElements";
+import { aboutData, itemData } from "./data";
 
-export default function About() {
+export default function About({ imgStart }) {
   return (
-    <AboutContainer>
-      <AboutContent>
-        {/* import data with paragraphs and images here */}
-        {/* use two <divs> - one for the paragraph, one for the image */}
+    <AboutContainer id="Home">
+      <AboutWrapper>
         {aboutData.map((item, index) => (
-          <AboutP key={index}>{item.paragraph}</AboutP>
+          <AboutContent key={index}>
+            <p>{item.paragraph}</p>
+            <AboutImg src={item.img} />
+          </AboutContent>
         ))}
-      </AboutContent>
+      </AboutWrapper>
     </AboutContainer>
   );
+}
+
+{
+  /* {aboutData.map((item, index) => (
+          <span>
+            <AboutP key={index}>{item.paragraph}</AboutP>
+            <img style={{ height: "50%", width: "50%" }} src={item.img} />
+          </span>
+        ))} */
 }

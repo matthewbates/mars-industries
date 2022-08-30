@@ -8,6 +8,7 @@ import {
   HeaderA,
   HeaderLi,
 } from "./HeaderElements";
+import { Link } from "react-router-dom";
 import { headerInfoData } from "./data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -25,7 +26,10 @@ export default function HeaderInfo() {
     <div>
       <HeaderContainer>
         {/* {desktop ? ( */}
-        <HeaderLogo src={logo} alt="icon" />
+        <Link to="/">
+          <HeaderLogo src={logo} alt="icon" />
+        </Link>
+        {/* <HeaderLogo src={logo} alt="icon" /> */}
         {/* ) : ( */}
         {/* <HeaderTitle>MARS Industries</HeaderTitle> */}
         {/* )} */}

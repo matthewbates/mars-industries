@@ -1,11 +1,16 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.div`
-  position: fixed;
+  background-color: grey;
   width: 100%;
-  height: 30vh;
-  background: grey;
   bottom: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 `;
 
 export const FooterWrap = styled.div`

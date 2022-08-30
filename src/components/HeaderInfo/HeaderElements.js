@@ -3,9 +3,9 @@ import CONSTANTS from "../../utils/constants";
 
 export const HeaderContainer = styled.div`
   text-align: center;
-  background-color: ${CONSTANTS.colors.offWhite};
+  background: ${CONSTANTS.colors.offWhite};
   height: 80px;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 
   @media screen and (max-width: 768px) {
     text-align: left;
