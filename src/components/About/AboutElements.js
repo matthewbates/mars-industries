@@ -31,6 +31,9 @@ export const AboutContent = styled.div`
   }
 
   p {
+    vertical-align: middle;
+    justify-content: left;
+    text-align: left;
   }
 `;
 

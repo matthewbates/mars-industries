@@ -5,7 +5,7 @@ import { Link as LinkR } from "react-router-dom";
 export const NavLinksContainer = styled.li`
   padding: 3px;
   margin-left: 1rem;
-  text-align: left;
+  text-align: center;
   list-style: none;
   /* cursor: pointer; */
   color: black;
