@@ -23,7 +23,7 @@ export default function App() {
       {/* <Carousel /> */}
       <About />
       <Footer />
-      <Link to="/contact">Contact</Link>
+      {/* <Link to="/contact">Contact</Link> */}
     </div>
   );
 }

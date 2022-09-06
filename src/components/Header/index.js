@@ -32,7 +32,7 @@ export default function HeaderInfo() {
         {headerInfoData.map((item, index) => (
           <HeaderLi key={index}>
             <FontAwesomeIcon icon={item.icon} />
-            <HeaderA href={item.href}>{item.contact}</HeaderA>
+            <HeaderA href={item.href}> {item.contact}</HeaderA>
           </HeaderLi>
         ))}
       </HeaderContact>

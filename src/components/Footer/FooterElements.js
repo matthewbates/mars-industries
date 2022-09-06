@@ -1,42 +1,78 @@
 import styled from "styled-components";
+import { Link as LinkRoute } from "react-router-dom";
 
-export const FooterContainer = styled.div`
-  background-color: grey;
-  width: 100%;
-  bottom: 0;
+export const Box = styled.div`
+  padding: 80px;
+  background: black;
+
+  @media (max-width: 768px) {
+    padding: 60px 30px;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+    justify-content: center;
+  }
+`;
+
+export const Container = styled.div`
   display: flex;
-  text-align: center;
-  align-items: center;
   flex-direction: column;
-  justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
 `;
 
-export const FooterWrap = styled.div`
-  padding: 18px 24px;
+export const Column = styled.div`
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
+  margin-left: 60px;
+`;
+
+export const Row = styled.div`
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+  /* grid-template-columns: repeat(auto-fill, minmax(185px, 1fr)); */
 `;
 
-export const FooterH2 = styled.h2`
-  text-align: center;
-`;
+/* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  grid-gap: 20px;
+ */
 
-export const FooterLi = styled.li`
-  list-style: none;
-  margin-top: 1rem;
-  margin: 10px;
-  text-align: center;
-`;
-
-export const FooterA = styled.a`
-  flex-direction: column;
+export const NavLinks = styled(LinkRoute)`
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 18px;
   text-decoration: none;
-  color: black;
-  margin-left: 5px;
+
+  &:hover {
+    color: orange;
+    transition: 200ms ease-in;
+  }
+`;
+
+export const FooterContact = styled.a`
+  color: white;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-decoration: none;
+
+  a {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-decoration: none;
+  }
+`;
+
+export const Heading = styled.p`
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 40px;
+  font-weight: bold;
 `;
