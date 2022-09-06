@@ -8,7 +8,6 @@ export default function Contact() {
     <ContactContainer>
       <HeaderInfo />
       <Navbar />
-      <p>This is the contact route</p>
     </ContactContainer>
   );
 }
