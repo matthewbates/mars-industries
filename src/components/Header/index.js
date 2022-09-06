@@ -23,25 +23,19 @@ export default function HeaderInfo() {
   }, []);
 
   return (
-    <div>
-      <HeaderContainer>
-        {/* {desktop ? ( */}
-        <Link to="/">
-          <HeaderLogo src={logo} alt="icon" />
-        </Link>
-        {/* <HeaderLogo src={logo} alt="icon" /> */}
-        {/* ) : ( */}
-        {/* <HeaderTitle>MARS Industries</HeaderTitle> */}
-        {/* )} */}
-        <HeaderContact>
-          {headerInfoData.map((item, index) => (
-            <HeaderLi key={index}>
-              <FontAwesomeIcon icon={item.icon} />
-              <HeaderA href={item.href}>{item.contact}</HeaderA>
-            </HeaderLi>
-          ))}
-        </HeaderContact>
-      </HeaderContainer>
-    </div>
+    <HeaderContainer>
+      <Link to="/">
+        <HeaderLogo src={logo} alt="icon" />
+      </Link>
+
+      <HeaderContact>
+        {headerInfoData.map((item, index) => (
+          <HeaderLi key={index}>
+            <FontAwesomeIcon icon={item.icon} />
+            <HeaderA href={item.href}>{item.contact}</HeaderA>
+          </HeaderLi>
+        ))}
+      </HeaderContact>
+    </HeaderContainer>
   );
 }

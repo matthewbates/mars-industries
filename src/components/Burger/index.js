@@ -1,12 +1,12 @@
-import React from 'react';
-import { BurgerContainer } from './BurgerElements';
+import React from "react";
+import { BurgerContainer } from "./BurgerElements";
 
-export default function Burger({ open, handleOnClick }) {
+export default function Burger({ isOpen, toggleDropdown }) {
   return (
     <BurgerContainer
-      open={open}
-      onClick={handleOnClick}
-      style={{ position: 'absolute', top: '5.6rem', right: '25px' }}
+      isOpen={isOpen}
+      onClick={toggleDropdown}
+      style={{ position: "absolute", top: "6.6rem", right: "15px" }}
     >
       <div />
       <div />

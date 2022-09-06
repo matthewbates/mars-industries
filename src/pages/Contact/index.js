@@ -1,13 +1,14 @@
 import React from "react";
-import HeaderInfo from "../../components/HeaderInfo";
-import HeaderLinks from "../../components/HeaderNav";
+import { ContactContainer } from "./ContactElements";
+import HeaderInfo from "../../components/Header";
+import Navbar from "../../components/Navbar";
 
 export default function Contact() {
   return (
-    <div>
+    <ContactContainer>
       <HeaderInfo />
-      <HeaderLinks />
+      <Navbar />
       <p>This is the contact route</p>
-    </div>
+    </ContactContainer>
   );
 }
