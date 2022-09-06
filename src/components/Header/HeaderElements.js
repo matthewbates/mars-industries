@@ -6,8 +6,8 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  border-bottom: 2px solid black;
-  background: ${CONSTANTS.colors.offWhite};
+  border-bottom: 2px solid ${CONSTANTS.colors.sivler};
+  background: ${CONSTANTS.colors.softBlack};
 
   @media screen and (max-width: 768px) {
     display: flex;
@@ -33,8 +33,14 @@ export const HeaderLi = styled.li`
 `;
 
 export const HeaderA = styled.a`
+  font-family: "Poppins";
+  color: white;
+  font-size: 14px;
   flex-direction: column;
   text-decoration: none;
-  color: black;
-  /* margin-left: 5px; */
+
+  &:hover {
+    color: ${CONSTANTS.colors.safetyGreen};
+    transition: 200ms ease-in;
+  }
 `;

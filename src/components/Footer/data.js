@@ -1,5 +1,5 @@
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { SocialIcon } from "react-social-icons";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 export const footerInfoData = [
   {
@@ -16,9 +16,21 @@ export const footerInfoData = [
 
 export const socialIcons = [
   {
+    IconStyle: {
+      IconTitle: FaFacebook,
+    },
     url: "https://www.facebook.com",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    ariaLabel: "Facebook",
   },
   {
+    IconTitle: {
+      IconTitle: FaInstagram,
+    },
     url: "https://www.instagram.com",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    ariaLabel: "Instagram",
   },
 ];

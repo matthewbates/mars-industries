@@ -31,7 +31,7 @@ export default function HeaderInfo() {
       <HeaderContact>
         {headerInfoData.map((item, index) => (
           <HeaderLi key={index}>
-            <FontAwesomeIcon icon={item.icon} />
+            <FontAwesomeIcon icon={item.icon} style={{ color: "white" }} />
             <HeaderA href={item.href}> {item.contact}</HeaderA>
           </HeaderLi>
         ))}

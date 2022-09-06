@@ -1,6 +1,6 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { SocialIcon } from "react-social-icons";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import {
   Box,
   Container,
@@ -8,7 +8,10 @@ import {
   Column,
   Heading,
   NavLinks,
-  FooterContact,
+  Contact,
+  ContactSpan,
+  SocialIcons,
+  SocialIconLink,
 } from "./FooterElements";
 import { footerInfoData, socialIcons } from "./data";
 
@@ -27,48 +30,49 @@ export default function Footer() {
           <Column>
             <Heading>Contact</Heading>
             {footerInfoData.map((item, index) => (
-              <FooterContact key={index}>
-                <FontAwesomeIcon icon={item.icon} />
-                <a href={item.href}> {item.contact}</a>
-              </FooterContact>
+              <Fragment key={index}>
+                <ContactSpan>
+                  <FontAwesomeIcon
+                    icon={item.icon}
+                    style={{ color: "white" }}
+                  />
+                  <Contact href={item.href}> {item.contact}</Contact>
+                </ContactSpan>
+              </Fragment>
             ))}
           </Column>
           <Column>
             <Heading>Social Media</Heading>
-            {socialIcons.map((item, index) => (
-              <SocialIcon url={item.url} />
-            ))}
-            {/* <NavLinks to="/">
-              <i className="fab fa-facebook-f">
-                <span style={{ marginLeft: "10px" }}>Facebook</span>
-              </i>
-            </NavLinks>
-            <NavLinks to="/">
-              <i className="fab fa-instagram">
-                <span style={{ marginLeft: "10px" }}>Instagram</span>
-              </i>
-            </NavLinks> */}
+            {/* {socialIcons.map((item, index) => (
+              <SocialIcons key={index}>
+                <SocialIconLink
+                  style={item.IconTitle.IconStyle}
+                  href={item.url}
+                  target={item.target}
+                  rel={item.rel}
+                  aria-label={item.ariaLabel}
+                />
+              </SocialIcons>
+            ))} */}
+            <SocialIcons>
+              <SocialIconLink
+                href="https://www.facebook.com"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <FaFacebook />
+              </SocialIconLink>
+              <SocialIconLink
+                href="https://www.instagram.com"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <FaInstagram />
+              </SocialIconLink>
+            </SocialIcons>
           </Column>
         </Row>
       </Container>
     </Box>
   );
 }
-
-// <FooterContainer>
-//   <FooterWrap>
-//     <FooterH2>MARS Industries</FooterH2>
-//     <NavLinks title={"Home"} />
-//     <NavLinks title={"Projects"} />
-//     {/* <NavLinks title={"Contact"} /> */}
-//     <Link to="/contact">Contact</Link>
-//     <div>
-//       {footerInfoData.map((item, index) => (
-//         <FooterLi key={index}>
-//           <FontAwesomeIcon icon={item.icon} />
-//           <FooterA href={item.href}>{item.contact}</FooterA>
-//         </FooterLi>
-//       ))}
-//     </div>
-//   </FooterWrap>
-// </FooterContainer>

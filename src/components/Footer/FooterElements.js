@@ -1,16 +1,19 @@
 import styled from "styled-components";
+import CONSTANTS from "../../utils/constants";
 import { Link as LinkRoute } from "react-router-dom";
 
 export const Box = styled.div`
-  padding: 80px;
-  background: black;
+  padding: 20px;
+  background: ${CONSTANTS.colors.softBlack};
 
   @media (max-width: 768px) {
-    padding: 60px 30px;
+    /* padding: 30px 40px; */
+    padding: 40px;
   }
 
   h1 {
-    color: white;
+    font-family: "Poppins";
+    color: ${CONSTANTS.colors.offWhite};
     text-align: center;
     justify-content: center;
   }
@@ -39,35 +42,54 @@ export const Row = styled.div`
 `;
 
 export const NavLinks = styled(LinkRoute)`
-  color: #fff;
+  font-family: "Poppins";
+  color: ${CONSTANTS.colors.offWhite};
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
+  /* line-height: 35px; */
 
   &:hover {
-    color: orange;
+    color: ${CONSTANTS.colors.safetyGreen};
     transition: 200ms ease-in;
   }
 `;
 
-export const FooterContact = styled.a`
-  color: white;
+export const Contact = styled.a`
+  font-family: "Poppins";
+  color: ${CONSTANTS.colors.offWhite};
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
+  line-height: 35px;
 
-  a {
-    color: white;
-    margin-bottom: 20px;
-    font-size: 18px;
-    text-decoration: none;
+  &:hover {
+    color: ${CONSTANTS.colors.safetyGreen};
+    transition: 200ms ease-in;
   }
 `;
 
+export const ContactSpan = styled.span``;
+
 export const Heading = styled.p`
   font-size: 24px;
-  color: #fff;
+  color: ${CONSTANTS.colors.offWhite};
   margin-bottom: 40px;
   font-weight: bold;
-  /* text-align: left; */
+`;
+
+export const SocialIcons = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2rem;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+`;
+
+export const SocialIconLink = styled.a`
+  color: #fff;
 `;
