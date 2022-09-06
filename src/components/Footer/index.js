@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { SocialIcon } from "react-social-icons";
 import {
   Box,
   Container,
@@ -9,9 +10,7 @@ import {
   NavLinks,
   FooterContact,
 } from "./FooterElements";
-// import { FaFacebook, FaInstagram } from "react-icons/fa";
-import { footerInfoData } from "./data";
-// import NavLinks from "../NavLinks";
+import { footerInfoData, socialIcons } from "./data";
 
 export default function Footer() {
   return (
@@ -36,7 +35,10 @@ export default function Footer() {
           </Column>
           <Column>
             <Heading>Social Media</Heading>
-            <NavLinks to="/">
+            {socialIcons.map((item, index) => (
+              <SocialIcon url={item.url} />
+            ))}
+            {/* <NavLinks to="/">
               <i className="fab fa-facebook-f">
                 <span style={{ marginLeft: "10px" }}>Facebook</span>
               </i>
@@ -45,7 +47,7 @@ export default function Footer() {
               <i className="fab fa-instagram">
                 <span style={{ marginLeft: "10px" }}>Instagram</span>
               </i>
-            </NavLinks>
+            </NavLinks> */}
           </Column>
         </Row>
       </Container>

@@ -36,13 +36,7 @@ export const Row = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
-  /* grid-template-columns: repeat(auto-fill, minmax(185px, 1fr)); */
 `;
-
-/* display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
-  grid-gap: 20px;
- */
 
 export const NavLinks = styled(LinkRoute)`
   color: #fff;
@@ -75,4 +69,5 @@ export const Heading = styled.p`
   color: #fff;
   margin-bottom: 40px;
   font-weight: bold;
+  /* text-align: left; */
 `;

@@ -1,4 +1,5 @@
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { SocialIcon } from "react-social-icons";
 
 export const footerInfoData = [
   {
@@ -10,5 +11,14 @@ export const footerInfoData = [
     href: "mailto:marsindustriesco@yahoo.com",
     contact: "MarsIndustriesCO@yahoo.com",
     icon: faEnvelope,
+  },
+];
+
+export const socialIcons = [
+  {
+    url: "https://www.facebook.com",
+  },
+  {
+    url: "https://www.instagram.com",
   },
 ];
