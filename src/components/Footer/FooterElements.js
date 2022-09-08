@@ -12,7 +12,7 @@ export const Box = styled.div`
   }
 
   h1 {
-    font-family: "Poppins";
+    /* font-family: "Poppins"; */
     color: ${CONSTANTS.colors.offWhite};
     text-align: center;
     justify-content: center;
@@ -69,7 +69,9 @@ export const Contact = styled.a`
   }
 `;
 
-export const ContactSpan = styled.span``;
+export const ContactSpan = styled.span`
+  /* margin-top: 10px; */
+`;
 
 export const Heading = styled.p`
   font-size: 24px;
@@ -81,7 +83,7 @@ export const Heading = styled.p`
 export const SocialIcons = styled.div`
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
   font-size: 2rem;
   text-decoration: none;
   list-style: none;

@@ -9,17 +9,11 @@ import Footer from "./components/Footer";
 import Dropdown from "./components/Dropdown";
 
 export default function App() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <div>
       <Header />
-      <Navbar isOpen={isOpen} toggleDropdown={toggleDropdown} />
-      <Dropdown isOpen={isOpen} />
+      <Navbar />
+      <Dropdown />
       {/* <Carousel /> */}
       <About />
       <Footer />

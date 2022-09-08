@@ -1,8 +1,11 @@
 import React from "react";
-import { SidebarContainer } from "./DropdownElements";
+import { DropdownContainer } from "./DropdownElements";
 
 export default function Dropdown({ isOpen, toggleDropdown }) {
-  <SidebarContainer isOpen={isOpen} toggleDropdown={toggleDropdown}>
-    
-  </SidebarContainer>
+  return (
+    <DropdownContainer
+      isOpen={isOpen}
+      onClick={toggleDropdown}
+    ></DropdownContainer>
+  );
 }

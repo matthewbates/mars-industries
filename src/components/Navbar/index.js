@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Nav,
   NavbarContainer,
@@ -10,7 +10,13 @@ import { Link } from "react-router-dom";
 import Burger from "../Burger";
 import Dropdown from "../Dropdown";
 
-export default function Navbar({ isOpen, toggleDropdown }) {
+export default function Navbar({}) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <Nav>
       <NavbarContainer>
@@ -26,6 +32,7 @@ export default function Navbar({ isOpen, toggleDropdown }) {
           </NavItem>
         </NavMenu>
         <Burger isOpen={isOpen} toggleDropdown={toggleDropdown} />
+        <Dropdown isOpen={isOpen} toggleDropdown={toggleDropdown} />
       </NavbarContainer>
     </Nav>
   );
