@@ -5,7 +5,6 @@ export const FormContainer = styled.div`
   line-height: 50px;
   padding: 2rem;
   height: 80vh;
-  margin-top: 3rem;
 `;
 
 export const FormWrapper = styled.form`
