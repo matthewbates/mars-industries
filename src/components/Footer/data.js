@@ -16,18 +16,31 @@ export const footerInfoData = [
 
 export const socialIcons = [
   {
-    IconStyle: {
-      IconTitle: FaFacebook,
-    },
+    icon: FaFacebook,
     url: "https://www.facebook.com",
     target: "_blank",
     rel: "noopener noreferrer",
     ariaLabel: "Facebook",
   },
   {
-    IconTitle: {
-      IconTitle: FaInstagram,
-    },
+    icon: FaInstagram,
+    url: "https://www.instagram.com",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    ariaLabel: "Instagram",
+  },
+];
+
+export const mediaIcons = { FaFacebook, FaInstagram };
+
+export const information = [
+  {
+    url: "https://www.facebook.com",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    ariaLabel: "Facebook",
+  },
+  {
     url: "https://www.instagram.com",
     target: "_blank",
     rel: "noopener noreferrer",

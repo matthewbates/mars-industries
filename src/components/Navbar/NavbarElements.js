@@ -9,7 +9,10 @@ export const Nav = styled.nav`
   align-items: center;
   font-size: 1.5rem;
   z-index: 10;
-  background: ${CONSTANTS.colors.offWhite};
+  background: ${CONSTANTS.colors.silver};
+  top: 0;
+  position: sticky;
+  z-index: 10;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -42,6 +45,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkRoute)`
+  font-family: "Poppins";
   color: black;
   display: flex;
   align-items: center;
@@ -53,6 +57,6 @@ export const NavLinks = styled(LinkRoute)`
   &:hover {
     color: orange;
     transition: 200ms ease-in;
-    border-bottom: 4px solid orange;
+    /* border-bottom: 4px solid ${CONSTANTS.colors.safetyGreen}; */
   }
 `;

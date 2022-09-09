@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import About from "./components/About";
-import Contact from "./pages/Contact";
 import Carousel from "./components/Carousel";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -14,7 +12,7 @@ export default function App() {
       <Header />
       <Navbar />
       <Dropdown />
-      {/* <Carousel /> */}
+      <Carousel />
       <About />
       <Footer />
       {/* <Link to="/contact">Contact</Link> */}

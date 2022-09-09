@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import {
@@ -13,7 +13,7 @@ import {
   SocialIcons,
   SocialIconLink,
 } from "./FooterElements";
-import { footerInfoData, socialIcons } from "./data";
+import { footerInfoData } from "./data";
 
 export default function Footer() {
   return (
@@ -30,34 +30,19 @@ export default function Footer() {
           <Column>
             <Heading>Contact</Heading>
             {footerInfoData.map((item, index) => (
-              <Fragment key={index}>
-                <ContactSpan>
-                  <FontAwesomeIcon
-                    icon={item.icon}
-                    style={{ color: "white" }}
-                  />
-                  <Contact href={item.href}> {item.contact}</Contact>
-                </ContactSpan>
-              </Fragment>
+              <ContactSpan key={index}>
+                <FontAwesomeIcon icon={item.icon} style={{ color: "white" }} />
+                <Contact href={item.href}> {item.contact}</Contact>
+              </ContactSpan>
             ))}
           </Column>
           <Column>
             <Heading>Social Media</Heading>
-            {/* {socialIcons.map((item, index) => (
-              <SocialIcons key={index}>
-                <SocialIconLink
-                  style={item.IconTitle.IconStyle}
-                  href={item.url}
-                  target={item.target}
-                  rel={item.rel}
-                  aria-label={item.ariaLabel}
-                />
-              </SocialIcons>
-            ))} */}
             <SocialIcons>
               <SocialIconLink
                 href="https://www.facebook.com"
                 target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Facebook"
               >
                 <FaFacebook />
@@ -65,6 +50,7 @@ export default function Footer() {
               <SocialIconLink
                 href="https://www.instagram.com"
                 target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
               >
                 <FaInstagram />

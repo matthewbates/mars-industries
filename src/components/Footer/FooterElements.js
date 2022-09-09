@@ -14,6 +14,8 @@ export const Box = styled.div`
   h1 {
     /* font-family: "Poppins"; */
     color: ${CONSTANTS.colors.offWhite};
+    /* this was added to justify content center for contact route */
+    position: relative;
     text-align: center;
     justify-content: center;
   }
