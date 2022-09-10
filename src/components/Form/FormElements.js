@@ -7,7 +7,7 @@ export const FormContainer = styled.div`
   height: 80vh;
 `;
 
-export const FormWrapper = styled.form`
+export const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,8 +17,6 @@ export const FormWrapper = styled.form`
     color: red;
   }
 `;
-
-export const FormText = styled.div``;
 
 export const TextInput = styled.input`
   display: flex;
@@ -91,6 +89,6 @@ export const FormButton = styled.button`
 
   &:hover {
     box-shadow: none;
-    transform: scale(1.02);
+    transform: scale(1.1);
   }
 `;

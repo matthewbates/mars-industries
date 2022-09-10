@@ -1,20 +1,42 @@
 import React from "react";
+import emailjs from "emailjs-com";
+import swal from "sweetalert2";
 import {
   FormContainer,
-  FormWrapper,
-  UserMessage,
+  Form,
   FormLabel,
   TextInput,
   EmailInput,
   TextArea,
-  FormText,
   FormButton,
 } from "./FormElements";
 
-export default function Form() {
+const SERVICE_ID = "";
+const TEMPLATE_ID = "";
+const USER_ID = "";
+
+export default function ContactForm() {
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    email.js.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
+      (r) => {
+        console.log(r.text);
+        swal.fire(
+          "Message Sent",
+          "Nick will respond to your inquiry shortly!",
+          "success"
+        );
+      },
+      (error) => {
+        swal.fire("Ooops, something went wrong", error.text, "error");
+      }
+    );
+    e.target.reset();
+  };
+
   return (
     <FormContainer>
-      <FormWrapper id="myForm">
+      <Form onSubmit={handleOnSubmit}>
         <FormLabel className="required">First Name:</FormLabel>
         <TextInput type="text" name="user_first_name" required />
         <FormLabel className="required">Last Name:</FormLabel>
@@ -28,9 +50,9 @@ export default function Form() {
         <TextArea name="user_message" cols="50" rows="10" required></TextArea>
 
         <FormButton type="submit" className="submit-button" primary="true">
-          SEND
+          Submit
         </FormButton>
-      </FormWrapper>
+      </Form>
     </FormContainer>
   );
 }
