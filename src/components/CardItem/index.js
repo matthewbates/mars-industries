@@ -1,10 +1,13 @@
 import React from "react";
 import Card from "../Card";
+import { CardItemContainer } from "./CardItemElements";
 
-export default function CardItem({ item, description, icon }) {
+export default function CardItem({ title, description, icon }) {
   return (
-    <div>
-      <Card item={item} description={description} icon={icon} />
-    </div>
+    <CardItemContainer>
+      <div className="listItem animate">
+        <Card title={title} description={description} icon={icon} />
+      </div>
+    </CardItemContainer>
   );
 }

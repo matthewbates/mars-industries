@@ -16,7 +16,7 @@ export default function Services() {
       {services.map((item, index) => (
         <CardItem
           key={index}
-          item={item.title}
+          title={item.title}
           description={item.description}
           icon={item.icon}
         />

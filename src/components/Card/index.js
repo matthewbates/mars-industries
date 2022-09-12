@@ -1,16 +1,22 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { CardContainer } from "./CardElements";
 
-export default function Card({ item, description, icon }) {
+export default function Card({ title, description, icon }) {
   const [hover, setHover] = useState(false);
 
-  const handleToggle = () => {
-    setHover(!hover);
+  const handleMouseOver = () => {
+    setHover(true);
+  };
+  const handleMouseOut = () => {
+    setHover(false);
   };
 
   return (
     <CardContainer>
-      <div className="overlay"></div>
+      <FontAwesomeIcon icon={icon} />
+      {title}
+      <div className="overlay">{description}</div>
     </CardContainer>
   );
 }

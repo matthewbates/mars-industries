@@ -14,21 +14,29 @@ export const CardContainer = styled.div`
   padding: 30px 6px;
   width: 160px;
   height: 204px;
-  transition: all 0.5s ease-out;
   margin: 0 10px 20px;
 
   &:hover .overlay {
     height: 100%;
+    transition: 200ms ease-in;
   }
 
   .overlay {
     position: absolute;
-    width: 100%;
-    border-radius: 20px;
-    height: 0%;
+
     bottom: 0;
     left: 0;
     right: 0;
     background: blue;
+    overflow: hidden;
+    width: 100%;
+    height: 0%;
+    transition: 200ms ease-in;
+    color: white;
+    display: flex;
+  }
+
+  p {
+    color: black;
   }
 `;
