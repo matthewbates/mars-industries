@@ -2,6 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const ValuesCardContainer = styled.div`
+  /* width: 80vw; */
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -17,5 +18,4 @@ export const ValuesCardWrapper = styled.div`
   background: #fff;
   border-radius: 20px;
   box-shadow: 6px 6px 10px #00000010;
-  border: 1px solid black;
 `;
