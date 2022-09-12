@@ -18,7 +18,7 @@ const USER_ID = "";
 export default function ContactForm() {
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    email.js.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
       (r) => {
         console.log(r.text);
         swal.fire(
@@ -44,8 +44,8 @@ export default function ContactForm() {
         <FormLabel className="required"> Email Address:</FormLabel>
         <EmailInput type="email" name="user_email" required />
         <FormLabel> Phone Number:</FormLabel>
-        {/* consider adding a dropdown for problems XYZ the user is inquiring about */}
         <EmailInput type="email" name="user_email" required />
+        {/* consider adding a dropdown for problems XYZ the user is inquiring about ⬇️ */}
         <FormLabel> Comments or Questions:</FormLabel>
         <TextArea name="user_message" cols="50" rows="10" required></TextArea>
 

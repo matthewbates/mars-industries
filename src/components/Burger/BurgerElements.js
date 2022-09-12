@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import CONSTANTS from "../../utils/constants";
 
 export const BurgerContainer = styled.div`
   display: none;
@@ -19,7 +20,7 @@ export const BurgerContainer = styled.div`
   div {
     width: 2rem;
     height: 2px;
-    background-color: black;
+    background-color: white;
     transform-origin: 1px;
     transition: all 0.4s linear;
     &:nth-child(1) {

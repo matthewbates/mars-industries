@@ -95,5 +95,21 @@ export const SocialIcons = styled.div`
 `;
 
 export const SocialIconLink = styled.a`
-  color: #fff;
+  &:nth-child(1) {
+    color: ${CONSTANTS.colors.silver};
+
+    &:hover {
+      color: ${CONSTANTS.colors.safetyGreen};
+      transition: 200ms ease-in;
+    }
+  }
+
+  &:nth-child(2) {
+    color: ${CONSTANTS.colors.silver};
+
+    &:hover {
+      color: ${CONSTANTS.colors.safetyGreen};
+      transition: 200ms ease-in;
+    }
+  }
 `;

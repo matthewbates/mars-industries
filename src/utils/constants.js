@@ -7,6 +7,7 @@ const CONSTANTS = {
     softBlack: "#414A4C",
     facebookBlue: "#3B5998",
     facebookGrey: "#EEE",
+    royalBlue: "#21409A",
   },
 };
 

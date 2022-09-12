@@ -6,8 +6,8 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  border-bottom: 2px solid ${CONSTANTS.colors.sivler};
-  background: ${CONSTANTS.colors.softBlack};
+  border-bottom: 2px solid ${CONSTANTS.colors.silver};
+  background: ${CONSTANTS.colors.royalBlue};
 
   @media screen and (max-width: 768px) {
     display: flex;

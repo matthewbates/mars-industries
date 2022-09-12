@@ -6,8 +6,8 @@ export const DropdownContainer = styled.div`
   position: fixed;
   z-index: 999;
   width: 100%;
-  height: 25%;
-  background: ${CONSTANTS.colors.silver};
+  height: 30%;
+  background: black;
   display: grid;
   align-items: center;
   top: 0;
@@ -26,11 +26,12 @@ export const DropdownMenu = styled.div`
 `;
 
 export const NavLinks = styled(Link)`
-font-family: "Poppins";
+  font-family: "Poppins";
   text-decoration: none;
   color: white;
 
   &:hover {
     color: ${CONSTANTS.colors.safetyGreen};
+    transition: 200ms ease-in;
   }
 `;

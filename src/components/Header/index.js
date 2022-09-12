@@ -27,7 +27,6 @@ export default function HeaderInfo() {
       <Link to="/">
         <HeaderLogo src={logo} alt="icon" />
       </Link>
-
       <HeaderContact>
         {headerInfoData.map((item, index) => (
           <HeaderLi key={index}>

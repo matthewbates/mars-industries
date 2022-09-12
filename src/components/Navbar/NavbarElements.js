@@ -55,8 +55,8 @@ export const NavLinks = styled(LinkRoute)`
   cursor: pointer;
 
   &:hover {
-    color: orange;
+    color: ${CONSTANTS.colors.safetyGreen};
     transition: 200ms ease-in;
-    /* border-bottom: 4px solid ${CONSTANTS.colors.safetyGreen}; */
+    border-bottom: 3px solid ${CONSTANTS.colors.safetyGreen};
   }
 `;
