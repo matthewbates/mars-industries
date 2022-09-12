@@ -2,6 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 import { Link as LinkRoute } from "react-router-dom";
 
+
 export const Nav = styled.nav`
   height: 80px;
   display: flex;

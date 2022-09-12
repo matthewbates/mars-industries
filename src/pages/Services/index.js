@@ -2,7 +2,8 @@ import React from "react";
 import { ServicesContainer } from "./ServiceElements";
 import Header from "../../components/Header";
 import Navbar from "../../components/Navbar";
-import CardItem from "../../components/CardItem";
+import ServiceCardItem from "../../components/ServiceCardItem";
+import ValuesCardItem from "../../components/ValuesCardItem";
 import Footer from "../../components/Footer";
 
 export default function Services() {
@@ -23,7 +24,16 @@ export default function Services() {
       >
         Offering all construction services, from conception to completion!
       </h3>
-      <CardItem />
+      <ServiceCardItem />
+      <h1
+        style={{
+          textAlign: "center",
+          fontFamily: "Poppins",
+        }}
+      >
+        Our Values
+      </h1>
+      <ValuesCardItem />
       <Footer />
     </ServicesContainer>
   );

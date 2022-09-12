@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
-export const CardItemContainer = styled.div`
+export const ServiceCardItemContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   max-width: 720px;

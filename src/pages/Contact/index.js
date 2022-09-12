@@ -3,16 +3,13 @@ import {
   ContactContainer,
   ImgWrapper,
   ContactDiv,
-  ContactImg,
   ImgH3,
   ContactH2,
 } from "./ContactElements";
 import Header from "../../components/Header";
 import Navbar from "../../components/Navbar";
-import contact from "../../assets/contact_placeholder.jpg";
 import Form from "../../components/Form";
 import Footer from "../../components/Footer";
-import HeaderTitle from "../../components/HeaderTitle";
 
 export default function Contact() {
   return (
@@ -21,7 +18,7 @@ export default function Contact() {
         <Header />
         <Navbar />
         <ImgWrapper>
-          <ContactDiv></ContactDiv>
+          <ContactDiv />
           <ImgH3>
             Make your next project a success with expertise that partners with
             you every step of the process. Fill out the form below and I will

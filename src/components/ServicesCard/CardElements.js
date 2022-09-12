@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
-export const CardContainer = styled.div`
+export const ServiceCardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -49,6 +49,8 @@ export const CardWrapper = styled.div`
   }
 
   p {
-    color: black;
+    color: ${CONSTANTS.colors.royalBlue};
+    font-weight: bold;
+    font-family: "Poppins";
   }
 `;

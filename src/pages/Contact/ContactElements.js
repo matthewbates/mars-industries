@@ -2,13 +2,8 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const ContactContainer = styled.div`
-  h1 {
-    font-family: "Poppins";
-    color: white;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  /* alter this for smaller viewports */
+  height: 200vh;
 `;
 
 export const ImgWrapper = styled.div`

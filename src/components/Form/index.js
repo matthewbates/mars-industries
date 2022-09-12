@@ -11,6 +11,7 @@ import {
   FormButton,
 } from "./FormElements";
 
+// set up an email.js account contact for Nick
 const SERVICE_ID = "";
 const TEMPLATE_ID = "";
 const USER_ID = "";
@@ -34,11 +35,38 @@ export default function ContactForm() {
     e.target.reset();
   };
 
+  const firstName = (fName) => {
+    fName.includes(/["A-Za-z"]/gi);
+
+    if (firstName !== fName) {
+      return fName.error("Please include a valid first name");
+    } else {
+      return firstName;
+    }
+  };
+
+  const lastName = (lName) => {
+    lName.includes(/["A-Za-z"]/gi);
+
+    if (lastName !== lName) {
+      return lName.error("Please include a valid last name");
+    } else {
+      return lastName;
+    }
+  };
+
   return (
     <FormContainer>
       <Form onSubmit={handleOnSubmit}>
-        <FormLabel className="required">First Name:</FormLabel>
-        <TextInput type="text" name="user_first_name" required />
+        <FormLabel firstName={firstName} className="required">
+          First Name:
+        </FormLabel>
+        <TextInput
+          lastName={lastName}
+          type="text"
+          name="user_first_name"
+          required
+        />
         <FormLabel className="required">Last Name:</FormLabel>
         <TextInput type="text" name="user_last_name" required />
         <FormLabel className="required"> Email Address:</FormLabel>

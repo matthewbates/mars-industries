@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 import { Link } from "react-router-dom";
+import { FaTimesCircle } from "react-icons/fa";
 
 export const DropdownContainer = styled.div`
   position: fixed;
@@ -34,4 +35,15 @@ export const NavLinks = styled(Link)`
     color: ${CONSTANTS.colors.safetyGreen};
     transition: 200ms ease-in;
   }
+`;
+
+export const Icon = styled.div`
+  position: absolute;
+  top: 1rem;
+  right: 1.3rem;
+`
+
+export const CloseIcon = styled(FaTimesCircle)`
+  color: #fff;
+  cursor: pointer;
 `;
