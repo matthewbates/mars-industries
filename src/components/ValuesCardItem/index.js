@@ -7,7 +7,7 @@ export default function Values() {
   return (
     <ValuesCardItemContainer>
       {values.map((item, index) => (
-        <ValuesCard key={index} title={item.title} />
+        <ValuesCard key={index} title={item.title} img={item.img} />
       ))}
     </ValuesCardItemContainer>
   );
