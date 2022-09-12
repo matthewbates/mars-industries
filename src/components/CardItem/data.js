@@ -9,7 +9,7 @@ export const services = [
   {
     title: "Concrete",
     description: "asdfasdf",
-    icon: faPhone,
+    icon: faEnvelope,
   },
   {
     title: "Framing",
@@ -19,7 +19,7 @@ export const services = [
   {
     title: "Finish Carpentry",
     description: "asdfasdf",
-    icon: faPhone,
+    icon: faEnvelope,
   },
   {
     title: "Custom Stairs, Circular, & Hand Rails",
@@ -29,7 +29,7 @@ export const services = [
   {
     title: "Spas, Pools, & Water Features",
     description: "asdfasdf",
-    icon: faPhone,
+    icon: faEnvelope,
   },
   {
     title: "Logistics & Supply Chains",

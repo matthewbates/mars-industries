@@ -2,7 +2,6 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const FormContainer = styled.div`
-  line-height: 50px;
   padding: 2rem;
   height: 80vh;
 `;

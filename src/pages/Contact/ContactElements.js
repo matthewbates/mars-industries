@@ -2,8 +2,6 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const ContactContainer = styled.div`
-  /* overflow: scroll; */
-
   h1 {
     font-family: "Poppins";
     color: white;

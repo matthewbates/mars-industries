@@ -1,9 +1,7 @@
 import React from "react";
 import { ServicesContainer } from "./ServiceElements";
-import { services } from "./data";
 import Header from "../../components/Header";
 import Navbar from "../../components/Navbar";
-import Card from "../../components/Card";
 import CardItem from "../../components/CardItem";
 import Footer from "../../components/Footer";
 
@@ -12,15 +10,20 @@ export default function Services() {
     <ServicesContainer>
       <Header />
       <Navbar />
-      <h1>Services</h1>
-      {services.map((item, index) => (
-        <CardItem
-          key={index}
-          title={item.title}
-          description={item.description}
-          icon={item.icon}
-        />
-      ))}
+      <h1 style={{ textAlign: "center", fontFamily: "Poppins" }}>
+        Core Services
+      </h1>
+      <h3
+        style={{
+          textAlign: "center",
+          fontFamily: "Poppins",
+          marginLeft: "1rem",
+          marginRight: "1rem",
+        }}
+      >
+        Offering all construction services, from conception to completion!
+      </h3>
+      <CardItem />
       <Footer />
     </ServicesContainer>
   );

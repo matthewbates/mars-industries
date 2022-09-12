@@ -1,13 +1,19 @@
 import React from "react";
 import Card from "../Card";
 import { CardItemContainer } from "./CardItemElements";
+import { services } from "./data";
 
-export default function CardItem({ title, description, icon }) {
+export default function CardItem() {
   return (
     <CardItemContainer>
-      <div className="listItem animate">
-        <Card title={title} description={description} icon={icon} />
-      </div>
+      {services.map((item, index) => (
+        <Card
+          key={index}
+          title={item.title}
+          description={item.description}
+          icon={item.icon}
+        />
+      ))}
     </CardItemContainer>
   );
 }

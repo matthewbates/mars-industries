@@ -1,6 +1,6 @@
 const CONSTANTS = {
   colors: {
-    offWhite: "#F1F2F2",
+    offWhite: "#F7F7F7",
     lightGrey: "#F3F3F4",
     safetyGreen: "#F2FB3E",
     silver: "#C0C0C0",
