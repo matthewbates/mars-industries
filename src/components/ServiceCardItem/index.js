@@ -1,6 +1,6 @@
 import React from "react";
 import ServicesCard from "../ServicesCard";
-import { ServiceCardItemContainer } from "./CardItemElements";
+import { ServiceCardItemContainer } from "./ServiceCardItemElements.js";
 import { services } from "./data";
 
 export default function ServiceCardItem() {

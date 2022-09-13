@@ -27,7 +27,7 @@ export const DropdownMenu = styled.div`
 `;
 
 export const NavLinks = styled(Link)`
-  font-family: "Poppins";
+  font-family: "Lato";
   text-decoration: none;
   color: white;
 

@@ -113,3 +113,9 @@ export const SocialIconLink = styled.a`
     }
   }
 `;
+
+export const CopyrightText = styled.p`
+  font-size: 14px;
+  color: ${CONSTANTS.colors.offWhite};
+  text-align: center;
+`;

@@ -4,6 +4,7 @@ import {
   ValuesCardWrapper,
   ValuesCardImg,
   ValuesCardTextWrapper,
+  ValuesCardTextTitle,
   ValuesCardTextBody,
 } from "./ValuesCardElements";
 
@@ -12,12 +13,9 @@ export default function ValuesCard({ title, img, values, styles }) {
     <ValuesCardWrapper>
       <ValuesCardImg background={img} />
       <ValuesCardTextWrapper>
-        <ValuesCardTextBody>
-          Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae
-          temporibus omnis illum maxime quod deserunt eligendi dolor
-        </ValuesCardTextBody>
+        <ValuesCardTextTitle>{title}</ValuesCardTextTitle>
+        <ValuesCardTextBody style={styles}>{values}</ValuesCardTextBody>
       </ValuesCardTextWrapper>
     </ValuesCardWrapper>
   );
 }
-

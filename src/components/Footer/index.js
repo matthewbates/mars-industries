@@ -12,6 +12,7 @@ import {
   ContactSpan,
   SocialIcons,
   SocialIconLink,
+  CopyrightText,
 } from "./FooterElements";
 import { footerInfoData } from "./data";
 
@@ -59,6 +60,10 @@ export default function Footer() {
           </Column>
         </Row>
       </Container>
+      <CopyrightText>
+        Copyright © {new Date().getFullYear()} MARS Industries. All rights
+        reserved.
+      </CopyrightText>
     </Box>
   );
 }

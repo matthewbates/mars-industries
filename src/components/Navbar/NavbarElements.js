@@ -46,7 +46,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkRoute)`
-  font-family: "Poppins";
+  font-family: "Lato";
   color: black;
   display: flex;
   align-items: center;

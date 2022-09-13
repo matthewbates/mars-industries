@@ -1,5 +1,11 @@
 import React from "react";
-import { ServicesContainer } from "./ServiceElements";
+import {
+  ServicesContainer,
+  ServicesH1,
+  ServicesH3,
+  ValuesH1,
+} from "./ServiceElements";
+import CONSTANTS from "../../utils/constants";
 import Header from "../../components/Header";
 import Navbar from "../../components/Navbar";
 import ServiceCardItem from "../../components/ServiceCardItem";
@@ -11,28 +17,12 @@ export default function Services() {
     <ServicesContainer>
       <Header />
       <Navbar />
-      <h1 style={{ textAlign: "center", fontFamily: "Poppins" }}>
-        Core Services
-      </h1>
-      <h3
-        style={{
-          textAlign: "center",
-          fontFamily: "Poppins",
-          marginLeft: "1rem",
-          marginRight: "1rem",
-        }}
-      >
+      <ServicesH1>Core Services</ServicesH1>
+      <ServicesH3>
         Offering all construction services, from conception to completion!
-      </h3>
+      </ServicesH3>
       <ServiceCardItem />
-      <h1
-        style={{
-          textAlign: "center",
-          fontFamily: "Poppins",
-        }}
-      >
-        Our Values
-      </h1>
+      <ValuesH1>MARS Construction Values</ValuesH1>
       <ValuesCardItem />
       <Footer />
     </ServicesContainer>
