@@ -1,5 +1,5 @@
 import React from "react";
-import { ValuesCardItemContainer } from "./ValueElements";
+import { ValuesCardItemContainer } from "./ValuesCardElements";
 import { values } from "./data";
 import ValuesCard from "../ValuesCard";
 

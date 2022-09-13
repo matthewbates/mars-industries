@@ -34,7 +34,7 @@ export default function Services() {
         Our Values
       </h1>
       <ValuesCardItem />
-      {/* <Footer /> */}
+      <Footer />
     </ServicesContainer>
   );
 }

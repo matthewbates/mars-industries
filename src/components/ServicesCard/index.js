@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { ServiceCardContainer, CardWrapper } from "./CardElements";
+import { ServiceCardContainer, CardWrapper } from "./ServiceCardElements";
 
 export default function ServicesCard({ title, description, icon, style }) {
   return (
