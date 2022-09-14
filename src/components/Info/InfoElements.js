@@ -2,14 +2,14 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const PartnerContainer = styled.div`
-  background: ${CONSTANTS.colors.eggshellWhite};
+  background-color: ${({ top }) =>
+    top ? `${CONSTANTS.colors.batman}` : `${CONSTANTS.colors.eggshellWhite}`};
 `;
 
 export const PartnerWrapper = styled.div`
   display: grid;
   z-index: 1;
   height: 460px;
-  width: 100%;
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
@@ -49,13 +49,14 @@ export const PartnerTextWrapper = styled.div`
 `;
 
 export const PartnerTopLine = styled.p`
+  font-family: "Lato";
   color: #01bf71;
   font-size: 26px;
-  /* line-height: 16px; */
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
+  text-align: center;
 `;
 
 export const PartnerHeading = styled.h1`
@@ -80,7 +81,7 @@ export const PartnerSubtitle = styled.p`
 
 export const PartnerBtnWrap = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 `;
 
 export const PartnerImgWrap = styled.div`

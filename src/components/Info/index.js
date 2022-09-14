@@ -19,17 +19,14 @@ import { BoyRounded } from "@mui/icons-material";
 
 export default function Info({
   id,
-  lightBg,
+  top,
   imgStart,
   topLine,
-  lightText,
-  darkText,
   buttonLabel,
-  heading,
-  description,
   img,
   alt,
   primary,
+  displayButton,
 }) {
   let navigate = useNavigate();
   const routeChange = () => {
@@ -39,20 +36,18 @@ export default function Info({
 
   return (
     <>
-      <PartnerContainer lightBg={lightBg} id={id}>
+      <PartnerContainer top={top} id={id}>
         <PartnerWrapper>
           <PartnerRow imgStart={imgStart}>
             <Column1>
               <PartnerTextWrapper>
                 <PartnerTopLine>{topLine}</PartnerTopLine>
-                {/* <PartnerHeading lightText={lightText}>{heading}</PartnerHeading>
-                <PartnerSubtitle darkText={darkText}>
-                  {description}
-                </PartnerSubtitle> */}
                 <PartnerBtnWrap>
-                  <Button onClick={routeChange} primary={primary ? 1 : 0}>
-                    {buttonLabel}
-                  </Button>
+                  {displayButton && (
+                    <Button onClick={routeChange} primary={primary ? 1 : 0}>
+                      {buttonLabel}
+                    </Button>
+                  )}
                 </PartnerBtnWrap>
               </PartnerTextWrapper>
             </Column1>

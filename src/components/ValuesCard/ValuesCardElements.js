@@ -10,6 +10,7 @@ export const ValuesCardWrapper = styled.div`
   border-radius: 20px;
   background: ${CONSTANTS.colors.royalBlue};
   box-shadow: 6px 6px 10px #00000010;
+  
 `;
 
 export const ValuesCardImg = styled.div`

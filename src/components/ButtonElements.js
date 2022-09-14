@@ -2,11 +2,11 @@ import styled from "styled-components";
 import CONSTANTS from "../utils/constants";
 
 export const Button = styled.button`
-  border-radius: 10px;
-  background: ${({ primary }) => (primary ? "#01bf71" : "#010606")};
+  border-radius: 4px;
+  background: ${({ primary }) =>
+    primary ? `${CONSTANTS.colors.limeGreen}` : "#010606"};
   white-space: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-  color: ${({ dark }) => (dark ? "#010606" : "#fff")};
   font-size: ${({ fontBig }) => (fontBig ? "20px" : " 16px")};
   outline: none;
   border: none;
