@@ -1,11 +1,21 @@
-import { faPhone, faEnvelope, faUser, faWindowClose } from "@fortawesome/free-solid-svg-icons";
-import {FaUserCog} from "react-icons/fa";
+import {
+  faPhone,
+  faEnvelope,
+  faUser,
+  faWindowClose,
+} from "@fortawesome/free-solid-svg-icons";
+import excavations from "../../assets/images/excavations.svg";
+import framing from "../../assets/images/framing.svg";
+import stairs from "../../assets/images/stairs.svg";
+import pool from "../../assets/images/pool.svg";
+import logistics from "../../assets/images/logistics.svg";
 
 export const services = [
   {
     title: "Excavations/Dirt Work",
     description: "Safety-focused, commercial & residential construction",
-    icon: faUser,
+    img: excavations,
+    alt: "excavations",
     style: {
       fontFamily: "Poppins",
       fontWeight: "bold",
@@ -14,7 +24,7 @@ export const services = [
   {
     title: "Concrete",
     description: "Driveways, walkways, basements, & concrete repair",
-    icon: faEnvelope,
+    img: logistics,
     style: {
       fontFamily: "Poppins",
       fontWeight: "bold",
@@ -24,7 +34,8 @@ export const services = [
     title: "Framing",
     description:
       "New construction framing - walls, floors, roofs, doors, windows - for both large & small projects",
-    icon: faWindowClose,
+    img: framing,
+    alt: "framing",
     style: {
       fontFamily: "Poppins",
       fontWeight: "bold",
@@ -33,7 +44,7 @@ export const services = [
   {
     title: "Finish Carpentry",
     description: "Specializing in custom woodwork & renovations",
-    icon: faEnvelope,
+    img: excavations,
     style: {
       fontFamily: "Poppins",
       fontWeight: "bold",
@@ -42,7 +53,8 @@ export const services = [
   {
     title: "Custom Stairs, Circular, & Hand Rails",
     description: "Designed & custom-made to your specifications",
-    icon: faPhone,
+    img: stairs,
+    alt: "stairs",
     style: {
       fontFamily: "Poppins",
       fontWeight: "bold",
@@ -52,7 +64,8 @@ export const services = [
     title: "Spas, Pools, & Water Features",
     description:
       "Pools & outdoor living spaces, creating the outdoor ambiance you crave",
-    icon: faEnvelope,
+    img: pool,
+    alt: "pool",
     style: {
       fontFamily: "Poppins",
       fontWeight: "bold",
@@ -62,7 +75,8 @@ export const services = [
     title: "Logistics & Supply Chains",
     description:
       "Simplifying and connecting your supply chaing from end-to-end",
-    icon: faPhone,
+    img: logistics,
+    alt: "logistics",
     style: {
       fontFamily: "Poppins",
       fontWeight: "bold",

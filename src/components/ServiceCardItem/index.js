@@ -11,7 +11,8 @@ export default function ServiceCardItem() {
           key={index}
           title={item.title}
           description={item.description}
-          icon={item.icon}
+          image={item.img}
+          alt={item.alt}
           style={item.style}
         />
       ))}

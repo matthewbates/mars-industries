@@ -1,7 +1,6 @@
 import img1 from "../../assets/jobs/carousel_1.jpg";
 import img2 from "../../assets/jobs/carousel_2.jpg";
 import img3 from "../../assets/jobs/carousel_3.jpg";
-import CONSTANTS from "../../utils/constants";
 
 export const values = [
   {

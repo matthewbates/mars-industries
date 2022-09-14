@@ -1,4 +1,5 @@
 import React from "react";
+import CONSTANTS from "../../utils/constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import {
@@ -32,7 +33,10 @@ export default function Footer() {
             <Heading>Contact</Heading>
             {footerInfoData.map((item, index) => (
               <ContactSpan key={index}>
-                <FontAwesomeIcon icon={item.icon} style={{ color: "white" }} />
+                <FontAwesomeIcon
+                  icon={item.icon}
+                  style={{ color: `${CONSTANTS.colors.softBlack}` }}
+                />
                 <Contact href={item.href}> {item.contact}</Contact>
               </ContactSpan>
             ))}

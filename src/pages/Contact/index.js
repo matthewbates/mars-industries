@@ -21,7 +21,7 @@ export default function Contact() {
           <ContactDiv />
           <ImgH3>
             Make your next project a success with expertise that partners with
-            you every step of the process. Fill out the form below and I will
+            you every step of the process. Fill out the form below and we will
             reach out as soon as possible.
           </ImgH3>
         </ImgWrapper>

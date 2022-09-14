@@ -9,4 +9,9 @@ export const ServiceCardItemContainer = styled.div`
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (max-width: 768px) {
+    margin: 3rem;
+    /* padding: 40px; */
+  }
 `;

@@ -2,12 +2,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { ServiceCardContainer, CardWrapper } from "./ServiceCardElements";
 
-export default function ServicesCard({ title, description, icon, style }) {
+export default function ServicesCard({
+  title,
+  description,
+  image,
+  alt,
+  style,
+}) {
   return (
     <ServiceCardContainer>
       <CardWrapper>
         <span>
-          <FontAwesomeIcon icon={icon} />
+          <img
+            style={{ width: "80px", height: "80px" }}
+            src={image}
+            alt={alt}
+          />
+          {/* <FontAwesomeIcon icon={icon} /> */}
           <p>{title}</p>
         </span>
         <div className="overlay" style={style}>

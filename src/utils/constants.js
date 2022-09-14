@@ -8,6 +8,7 @@ const CONSTANTS = {
     facebookBlue: "#3B5998",
     facebookGrey: "#EEE",
     royalBlue: "#21409A",
+    eggshellWhite: "#F0F0F0",
   },
 };
 

@@ -3,6 +3,7 @@ import CONSTANTS from "../../utils/constants";
 
 export const ValuesCardWrapper = styled.div`
   display: grid;
+
   grid-template-columns: 340px;
   grid-template-rows: 250px 180px 100px;
   grid-template-areas: "image" "text" "stats";

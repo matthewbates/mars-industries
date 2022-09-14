@@ -4,7 +4,7 @@ import { Link as LinkRoute } from "react-router-dom";
 
 export const Box = styled.div`
   padding: 20px;
-  background: ${CONSTANTS.colors.softBlack};
+  background: ${CONSTANTS.colors.offWhite};
 
   @media (max-width: 768px) {
     /* padding: 30px 40px; */
@@ -13,7 +13,7 @@ export const Box = styled.div`
 
   h1 {
     /* font-family: "Poppins"; */
-    color: ${CONSTANTS.colors.offWhite};
+    color: ${CONSTANTS.colors.softBlack};
     /* this was added to justify content center for contact route */
     position: relative;
     text-align: center;
@@ -45,28 +45,28 @@ export const Row = styled.div`
 
 export const NavLinks = styled(LinkRoute)`
   font-family: "Poppins";
-  color: ${CONSTANTS.colors.offWhite};
+  color: ${CONSTANTS.colors.softBlack};
   margin-bottom: 20px;
   font-size: 16px;
   text-decoration: none;
   /* line-height: 35px; */
 
   &:hover {
-    color: ${CONSTANTS.colors.safetyGreen};
+    /* color: ${CONSTANTS.colors.safetyGreen}; */
     transition: 200ms ease-in;
   }
 `;
 
 export const Contact = styled.a`
   font-family: "Poppins";
-  color: ${CONSTANTS.colors.offWhite};
+  color: ${CONSTANTS.colors.softBlack};
   margin-bottom: 20px;
   font-size: 16px;
   text-decoration: none;
   line-height: 35px;
 
   &:hover {
-    color: ${CONSTANTS.colors.safetyGreen};
+    /* color: ${CONSTANTS.colors.safetyGreen}; */
     transition: 200ms ease-in;
   }
 `;
@@ -77,7 +77,7 @@ export const ContactSpan = styled.span`
 
 export const Heading = styled.p`
   font-size: 24px;
-  color: ${CONSTANTS.colors.offWhite};
+  color: ${CONSTANTS.colors.softBlack};
   margin-bottom: 40px;
   font-weight: bold;
 `;
@@ -96,16 +96,16 @@ export const SocialIcons = styled.div`
 
 export const SocialIconLink = styled.a`
   &:nth-child(1) {
-    color: ${CONSTANTS.colors.silver};
+    color: ${CONSTANTS.colors.softBlack};
 
     &:hover {
-      color: ${CONSTANTS.colors.safetyGreen};
+      color: ${CONSTANTS.colors.facebookBlue};
       transition: 200ms ease-in;
     }
   }
 
   &:nth-child(2) {
-    color: ${CONSTANTS.colors.silver};
+    color: ${CONSTANTS.colors.softBlack};
 
     &:hover {
       color: ${CONSTANTS.colors.safetyGreen};
@@ -116,6 +116,6 @@ export const SocialIconLink = styled.a`
 
 export const CopyrightText = styled.p`
   font-size: 14px;
-  color: ${CONSTANTS.colors.offWhite};
+  color: ${CONSTANTS.colors.softBlack};
   text-align: center;
 `;

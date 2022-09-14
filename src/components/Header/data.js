@@ -2,8 +2,8 @@ import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export const headerInfoData = [
   {
-    href: "tel:+7192430079",
-    contact: "(719) 243-0079",
+    href: "tel:+7193132700",
+    contact: "(719) 313-2700",
     icon: faPhone,
   },
   {

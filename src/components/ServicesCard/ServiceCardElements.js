@@ -9,6 +9,7 @@ export const ServiceCardContainer = styled.div`
   align-items: center;
   max-width: 768px;
   margin: 0 auto;
+  cursor: pointer;
 `;
 
 export const CardWrapper = styled.div`

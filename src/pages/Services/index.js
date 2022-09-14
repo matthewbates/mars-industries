@@ -5,12 +5,13 @@ import {
   ServicesH3,
   ValuesH1,
 } from "./ServiceElements";
-import CONSTANTS from "../../utils/constants";
 import Header from "../../components/Header";
 import Navbar from "../../components/Navbar";
 import ServiceCardItem from "../../components/ServiceCardItem";
 import ValuesCardItem from "../../components/ValuesCardItem";
 import Footer from "../../components/Footer";
+import Info from "../../components/Info";
+import { homeObjOne } from "../../components/Info/data";
 
 export default function Services() {
   return (
@@ -24,6 +25,7 @@ export default function Services() {
       <ServiceCardItem />
       <ValuesH1>MARS Construction Values</ValuesH1>
       <ValuesCardItem />
+      <Info {...homeObjOne} />
       <Footer />
     </ServicesContainer>
   );
