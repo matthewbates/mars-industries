@@ -7,10 +7,12 @@ import {
   HeaderContact,
   HeaderA,
   HeaderLi,
+  SocialsWrapper,
 } from "./HeaderElements";
 import { Link } from "react-router-dom";
 import { headerInfoData } from "./data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Socials from "../Socials";
 
 export default function HeaderInfo() {
   return (
@@ -18,12 +20,15 @@ export default function HeaderInfo() {
       {/* <Link to="/">
         <HeaderLogo src={logo} alt="icon" />
       </Link> */}
+      <SocialsWrapper>
+        <Socials />
+      </SocialsWrapper>
       <HeaderContact>
         {headerInfoData.map((item, index) => (
           <HeaderLi key={index}>
             <FontAwesomeIcon
               icon={item.icon}
-              style={{ color: "white", fontSize: "12px" }}
+              style={{ color: "black", fontSize: "12px" }}
             />
             <HeaderA href={item.href}> {item.contact}</HeaderA>
           </HeaderLi>

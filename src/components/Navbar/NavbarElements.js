@@ -9,7 +9,7 @@ export const Nav = styled.nav`
   align-items: center;
   font-size: 1.5rem;
   z-index: 10;
-  background: ${CONSTANTS.colors.silver};
+  background: ${CONSTANTS.colors.eggshellWhite};
   top: 0;
   position: sticky;
   z-index: 10;

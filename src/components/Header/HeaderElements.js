@@ -3,46 +3,30 @@ import CONSTANTS from "../../utils/constants";
 
 export const HeaderContainer = styled.div`
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
   height: 80px;
-  border-bottom: 2px solid ${CONSTANTS.colors.silver};
-  background: ${CONSTANTS.colors.royalBlue};
+  background: ${CONSTANTS.colors.eggshellWhite};
+  z-index: 999;
 
   @media screen and (max-width: 768px) {
     justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
 `;
 
-export const SocialIcons = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  font-size: 2rem;
-  text-decoration: none;
-  list-style: none;
-  transition: 0.2s ease-in-out;
-  text-decoration: none;
-  cursor: pointer;
-`;
+export const SocialsWrapper = styled.div`
+  margin-left: 20px;
 
-export const SocialIconLink = styled.a`
-  &:nth-child(1) {
-    color: ${CONSTANTS.colors.softBlack};
-
-    &:hover {
-      color: ${CONSTANTS.colors.facebookBlue};
-      transition: 200ms ease-in;
-    }
-  }
-
-  &:nth-child(2) {
-    color: ${CONSTANTS.colors.softBlack};
-
-    &:hover {
-      color: ${CONSTANTS.colors.safetyGreen};
-      transition: 200ms ease-in;
-    }
+  @media screen and (max-width: 768px) {
+    /* margin-top: 1rem; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -63,18 +47,22 @@ export const HeaderLi = styled.li`
   list-style: none;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const HeaderA = styled.a`
   font-family: "Poppins";
-  color: white;
-  font-size: 14px;
+  color: black;
+  font-size: 16px;
   flex-direction: column;
   text-decoration: none;
 
   @media screen and (max-width: 768px) {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   &:hover {

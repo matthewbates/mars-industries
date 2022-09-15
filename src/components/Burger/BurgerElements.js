@@ -14,13 +14,13 @@ export const BurgerContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     display: flex;
-    color: #fff;
+    color: black;
   }
 
   div {
     width: 2rem;
     height: 2px;
-    background-color: white;
+    background-color: black;
     transform-origin: 1px;
     transition: all 0.4s linear;
     &:nth-child(1) {
