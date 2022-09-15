@@ -15,6 +15,10 @@ export const PartnerWrapper = styled.div`
   margin-right: auto;
   padding: 0 24px;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    height: 580px;
+  }
 `;
 
 export const PartnerRow = styled.div`
@@ -27,8 +31,6 @@ export const PartnerRow = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `"col1" "col2"` : `"col1 col1" "col2 col2"`};
-    /* align-items: center;
-    justify-content: center; */
     text-align: center;
     line-height: 2rem;
   }
@@ -95,14 +97,12 @@ export const PartnerImgWrap = styled.div`
 `;
 
 export const PartnerImg = styled.img`
-  width: 100%;
+  width: 90%;
   align-items: center;
   justify-content: center;
-  padding-right: 0;
   object-fit: contain;
 
   @media screen and (max-width: 768px) {
-    width: 40%;
-    margin-bottom: 6rem;
+    width: 80%;
   }
 `;

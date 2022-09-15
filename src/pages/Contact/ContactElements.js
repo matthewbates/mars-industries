@@ -17,16 +17,9 @@ export const ContactDiv = styled.div`
   position: relative;
 `;
 
-export const ContactImg = styled.img`
-  background: blue;
-  height: 20vh;
-  width: 100%;
-  object-fit: cover;
-`;
-
-export const ImgH3 = styled.h3`
+export const ImgH2 = styled.h2`
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Lato";
   color: white;
   top: 40%;
   left: 50%;

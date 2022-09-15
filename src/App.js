@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import About from "./components/About";
-import Carousel from "./components/Carousel";
+import Home from "./pages/Home";
 import Header from "./components/Header";
 import HeaderTitle from "./components/HeaderTitle";
 import Navbar from "./components/Navbar";
@@ -11,11 +10,10 @@ export default function App() {
   return (
     <div>
       <Header />
-      <HeaderTitle />
+      {/* <HeaderTitle /> */}
       <Navbar />
       <Dropdown />
-      <Carousel />
-      <About />
+      <Home />
       <Footer />
       {/* <Link to="/contact">Contact</Link> */}
     </div>

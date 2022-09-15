@@ -10,7 +10,7 @@ export const servicesObjOne = {
     "Fully customized, turnkey, program management and contruction at scale.",
   imgStart: false,
   heading: "This is the heading for servicesObjOne",
-  img: one,
+  img: framing,
   dark: false,
   lightText: true,
   primary: false,

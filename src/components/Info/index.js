@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Column1,
   Column2,
@@ -36,15 +36,18 @@ export default function Info({
     navigate(path);
   };
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <>
-      <PartnerContainer top={top ? 0 : 1} id={id}>
+      <PartnerContainer top={top} id={id}>
         <PartnerWrapper>
           <PartnerRow imgStart={imgStart}>
             <Column1>
               <PartnerTextWrapper>
                 <PartnerTopLine lightText={lightText}>{topLine}</PartnerTopLine>
-                <PartnerHeading>{heading}</PartnerHeading>
                 <PartnerBtnWrap>
                   {displayButton && (
                     <Button onClick={routeChange} primary={primary ? 1 : 0}>

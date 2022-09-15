@@ -3,7 +3,7 @@ import {
   ContactContainer,
   ImgWrapper,
   ContactDiv,
-  ImgH3,
+  ImgH2,
   ContactH2,
 } from "./ContactElements";
 import Header from "../../components/Header";
@@ -19,11 +19,11 @@ export default function Contact() {
         <Navbar />
         <ImgWrapper>
           <ContactDiv />
-          <ImgH3>
+          <ImgH2>
             Make your next project a success with expertise that partners with
             you every step of the process. Fill out the form below and we will
             reach out as soon as possible.
-          </ImgH3>
+          </ImgH2>
         </ImgWrapper>
         <ContactH2>Get In Touch</ContactH2>
         <Form />

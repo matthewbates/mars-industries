@@ -1,7 +1,6 @@
 import React from "react";
 import CONSTANTS from "../../utils/constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
 import {
   Box,
   Container,
@@ -11,11 +10,10 @@ import {
   NavLinks,
   Contact,
   ContactSpan,
-  SocialIcons,
-  SocialIconLink,
   CopyrightText,
 } from "./FooterElements";
 import { footerInfoData } from "./data";
+import Socials from "../Socials";
 
 export default function Footer() {
   return (
@@ -43,24 +41,7 @@ export default function Footer() {
           </Column>
           <Column>
             <Heading>Social Media</Heading>
-            <SocialIcons>
-              <SocialIconLink
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-              >
-                <FaFacebook />
-              </SocialIconLink>
-              <SocialIconLink
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-              >
-                <FaInstagram />
-              </SocialIconLink>
-            </SocialIcons>
+            <Socials />
           </Column>
         </Row>
       </Container>

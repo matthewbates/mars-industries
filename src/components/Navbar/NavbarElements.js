@@ -2,7 +2,6 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 import { Link as LinkRoute } from "react-router-dom";
 
-
 export const Nav = styled.nav`
   height: 80px;
   display: flex;
@@ -57,7 +56,7 @@ export const NavLinks = styled(LinkRoute)`
 
   &:hover {
     color: ${CONSTANTS.colors.safetyGreen};
-    /* transition: 200ms ease-in; */
+    transition: 200ms ease-in;
     border-bottom: 3px solid ${CONSTANTS.colors.safetyGreen};
   }
 `;

@@ -13,24 +13,18 @@ import { headerInfoData } from "./data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function HeaderInfo() {
-  const [desktop, setDesktop] = useState(window.innerWidth < 768);
-
-  const updateMedia = () => setDesktop(window.innerWidth < 768);
-
-  useEffect(() => {
-    window.addEventListener("resize", updateMedia);
-    return () => window.removeEventListener("resize", updateMedia);
-  }, []);
-
   return (
     <HeaderContainer>
-      <Link to="/">
+      {/* <Link to="/">
         <HeaderLogo src={logo} alt="icon" />
-      </Link>
+      </Link> */}
       <HeaderContact>
         {headerInfoData.map((item, index) => (
           <HeaderLi key={index}>
-            <FontAwesomeIcon icon={item.icon} style={{ color: "white" }} />
+            <FontAwesomeIcon
+              icon={item.icon}
+              style={{ color: "white", fontSize: "12px" }}
+            />
             <HeaderA href={item.href}> {item.contact}</HeaderA>
           </HeaderLi>
         ))}
