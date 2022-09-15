@@ -2,14 +2,14 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const PartnerContainer = styled.div`
-  background-color: ${({ top }) =>
-    top ? `${CONSTANTS.colors.batman}` : `${CONSTANTS.colors.eggshellWhite}`};
+  background: ${({ top }) => (top ? "#3B5998" : "#3B5998")};
 `;
 
 export const PartnerWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 460px;
+  /* below was 460px before alteration */
+  height: 500px;
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
@@ -27,6 +27,10 @@ export const PartnerRow = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `"col1" "col2"` : `"col1 col1" "col2 col2"`};
+    /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    line-height: 2rem;
   }
 `;
 
@@ -50,25 +54,26 @@ export const PartnerTextWrapper = styled.div`
 
 export const PartnerTopLine = styled.p`
   font-family: "Lato";
-  color: #01bf71;
+  color: ${({ lightText }) =>
+    lightText ? `${CONSTANTS.colors.limeGreen}` : "blue"};
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 4rem;
+  }
 `;
 
-export const PartnerHeading = styled.h1`
+export const PartnerHeading = styled.h3`
+  text-align: center;
   margin-bottom: 24px;
-  font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
-
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
-  }
+  color: ${({ lightText }) => (lightText ? "blue" : "#010606")};
 `;
 
 export const PartnerSubtitle = styled.p`
@@ -90,15 +95,14 @@ export const PartnerImgWrap = styled.div`
 `;
 
 export const PartnerImg = styled.img`
-  width: 90%;
-  /* margin-left: auto; */
-  /* margin-right: auto; */
+  width: 100%;
   align-items: center;
   justify-content: center;
   padding-right: 0;
   object-fit: contain;
 
   @media screen and (max-width: 768px) {
-    width: 50%;
+    width: 40%;
+    margin-bottom: 6rem;
   }
 `;

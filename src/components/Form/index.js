@@ -72,7 +72,7 @@ export default function ContactForm() {
         <FormLabel className="required"> Email Address:</FormLabel>
         <EmailInput type="email" name="user_email" required />
         <FormLabel> Phone Number:</FormLabel>
-        <EmailInput type="email" name="user_email" required />
+        <TextInput type="text" name="user_phone_number" required />
         {/* consider adding a dropdown for problems XYZ the user is inquiring about ⬇️ */}
         <FormLabel> Comments or Questions:</FormLabel>
         <TextArea name="user_message" cols="50" rows="10" required></TextArea>

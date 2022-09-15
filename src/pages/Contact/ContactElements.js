@@ -3,7 +3,7 @@ import CONSTANTS from "../../utils/constants";
 
 export const ContactContainer = styled.div`
   /* alter this for smaller viewports */
-  /* height: 200vh; */
+  height: 80vh;
 `;
 
 export const ImgWrapper = styled.div`

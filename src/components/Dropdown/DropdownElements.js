@@ -27,6 +27,7 @@ export const DropdownMenu = styled.div`
 `;
 
 export const NavLinks = styled(Link)`
+  letter-spacing: 5px;
   font-family: "Lato";
   text-decoration: none;
   color: white;
@@ -41,7 +42,7 @@ export const Icon = styled.div`
   position: absolute;
   top: 1rem;
   right: 1.3rem;
-`
+`;
 
 export const CloseIcon = styled(FaTimesCircle)`
   color: #fff;

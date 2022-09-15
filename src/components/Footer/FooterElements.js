@@ -12,7 +12,7 @@ export const Box = styled.div`
   }
 
   h1 {
-    /* font-family: "Poppins"; */
+    font-family: "Lato";
     color: ${CONSTANTS.colors.softBlack};
     /* this was added to justify content center for contact route */
     position: relative;
@@ -76,6 +76,7 @@ export const ContactSpan = styled.span`
 `;
 
 export const Heading = styled.p`
+  font-family: "Lato";
   font-size: 24px;
   color: ${CONSTANTS.colors.softBlack};
   margin-bottom: 40px;

@@ -22,8 +22,10 @@ export default function Info({
   top,
   imgStart,
   topLine,
+  lightText,
   buttonLabel,
   img,
+  heading,
   alt,
   primary,
   displayButton,
@@ -36,12 +38,13 @@ export default function Info({
 
   return (
     <>
-      <PartnerContainer top={top} id={id}>
+      <PartnerContainer top={top ? 0 : 1} id={id}>
         <PartnerWrapper>
           <PartnerRow imgStart={imgStart}>
             <Column1>
               <PartnerTextWrapper>
-                <PartnerTopLine>{topLine}</PartnerTopLine>
+                <PartnerTopLine lightText={lightText}>{topLine}</PartnerTopLine>
+                <PartnerHeading>{heading}</PartnerHeading>
                 <PartnerBtnWrap>
                   {displayButton && (
                     <Button onClick={routeChange} primary={primary ? 1 : 0}>

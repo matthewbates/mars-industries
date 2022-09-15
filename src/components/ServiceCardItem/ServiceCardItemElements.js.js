@@ -11,7 +11,7 @@ export const ServiceCardItemContainer = styled.div`
   margin-right: auto;
 
   @media screen and (max-width: 768px) {
-    margin: 3rem;
+    /* margin: 3rem; */
     /* padding: 40px; */
   }
 `;

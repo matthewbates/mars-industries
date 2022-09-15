@@ -27,8 +27,8 @@ export default function Contact() {
         </ImgWrapper>
         <ContactH2>Get In Touch</ContactH2>
         <Form />
+        <Footer />
       </ContactContainer>
-      <Footer />
     </>
   );
 }

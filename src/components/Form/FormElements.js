@@ -3,7 +3,8 @@ import CONSTANTS from "../../utils/constants";
 
 export const FormContainer = styled.div`
   padding: 2rem;
-  height: 80vh;
+  /* negating the following fixed the footer issue on the Contact component */
+  /* height: 80vh; */
 `;
 
 export const Form = styled.form`

@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.section`
-  background: tan;
-  padding: 2rem;
-  /* border: 1px solid; */
+  @media screen and (max-width: 768px) {
+    padding: 50px 0;
+  }
 `;
 
 export const AboutWrapper = styled.div`
-  /* display: flex;
-  flex-direction: column; */
   text-align: center;
 `;
 
