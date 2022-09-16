@@ -1,19 +1,19 @@
 import React from "react";
-import { SliderContentContainer } from "./SliderContentElements";
+import { slides } from "./data";
 
-export default function SliderContent({ activeIndex, sliderImages }) {
+export default function SliderContent({ activeIndex, sliderImage }) {
   return (
-    <SliderContentContainer>
-      {sliderImages.map((item, index) => (
+    <section>
+      {slides.map((item, index) => (
         <div
           key={index}
           className={index === activeIndex ? "slides active" : "inactive"}
         >
-          <img className="slide-image" src={item.img} alt="" />
+          <img className="slide-image" src={item.img} />
           <h2 className="slide-title">{item.title}</h2>
           <h3 className="slide-text">{item.description}</h3>
         </div>
       ))}
-    </SliderContentContainer>
+    </section>
   );
 }

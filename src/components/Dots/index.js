@@ -1,16 +1,15 @@
 import React from "react";
-import { DotsContainer, DotsSpan } from "./DotElements";
 
-export default function Dots({ activeIndex, onClick, sliderImages }) {
+export default function Dots({ activeIndex, onClick, sliderImage }) {
   return (
-    <DotsContainer className="all-dots">
-      {sliderImages.map((item, index) => (
+    <div className="all-dots">
+      {sliderImage.map((item, index) => (
         <span
           key={index}
           className={`${activeIndex === index ? "dot active-dot" : "dot"}`}
           onClick={() => onClick(index)}
         ></span>
       ))}
-    </DotsContainer>
+    </div>
   );
 }

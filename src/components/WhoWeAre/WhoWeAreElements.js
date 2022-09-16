@@ -35,7 +35,8 @@ export const WhoWeAreImg = styled.img`
 export const WhoWeAreP = styled.p`
   columns: 2;
   line-height: 1.4rem;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  /* margin-bottom: 3rem; */
   text-align: justify;
   columns: 1;
   font-size: 16px;

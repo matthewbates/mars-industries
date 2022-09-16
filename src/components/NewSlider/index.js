@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import Arrows from "../Arrows";
 import Dots from "../Dots";
 import SliderContent from "../SliderContent";
-import { sliderImages } from "../sliderImages";
-import { NewSliderContainer } from "./NewSliderElements";
+import sliderImage from "../sliderImage";
+import "../slider.css";
 
-const len = sliderImages.length - 1;
+const len = sliderImage.length - 1;
 
-export default function NewSlider(props) {
+export default function NewSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -26,14 +26,14 @@ export default function NewSlider(props) {
   };
 
   return (
-    <NewSliderContainer>
-      <SliderContent activeIndex={activeIndex} sliderImages={sliderImages} />
+    <div className="slider-container">
+      <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
       <Arrows prevSlide={prevSlide} nextSlide={nextSlide} />
       <Dots
         activeIndex={activeIndex}
-        sliderImages={sliderImages}
+        sliderImage={sliderImage}
         onClick={(activeIndex) => setActiveIndex(activeIndex)}
       />
-    </NewSliderContainer>
+    </div>
   );
 }

@@ -35,6 +35,7 @@ export const AboutP = styled.p`
   font-size: 16px;
   font-family: "Lato";
   justify-content: center;
+  margin-top: 1rem;
 
   @media screen and (max-width: 768px) {
     display: flex;

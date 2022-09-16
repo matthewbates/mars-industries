@@ -20,7 +20,7 @@ export default function HeaderInfo() {
       <SocialsWrapper>
         <Socials />
       </SocialsWrapper>
-      <HeaderLogo src={logo} alt="icon" />
+      {/* <HeaderLogo src={logo} alt="icon" /> */}
       <HeaderContact>
         {headerInfoData.map((item, index) => (
           <HeaderLi key={index}>

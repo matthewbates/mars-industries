@@ -22,6 +22,8 @@ export const Box = styled.div`
 `;
 
 export const Container = styled.div`
+  /* this was added for laptop size */
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
 `;

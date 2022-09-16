@@ -1,21 +1,21 @@
-import img1 from "../assets/images/excavations.svg";
-import img2 from "../assets/jobs/carousel_2.jpg";
-import img3 from "../assets/jobs/carousel_3.jpg";
+import First from "../assets/jobs/carousel_1.jpg";
+import Second from "../assets/jobs/carousel_2.jpg";
+import Third from "../assets/jobs/carousel_3.jpg";
 
-export const sliderImages = [
+export default [
   {
     title: "First Slide",
     description: "This is the first slider image of our carousel",
-    urls: img1,
+    urls: First,
   },
   {
     title: "Second Slide",
     description: "This is the second slider image of our carousel",
-    urls: img2,
+    urls: Second,
   },
   {
     title: "Third Slide",
     description: "This is the third slider image of our carousel",
-    urls: img3,
+    urls: Third,
   },
 ];
