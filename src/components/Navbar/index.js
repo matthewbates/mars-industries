@@ -6,7 +6,6 @@ import {
   NavItem,
   NavLinks,
 } from "./NavbarElements";
-import { Link } from "react-router-dom";
 import Burger from "../Burger";
 import Dropdown from "../Dropdown";
 

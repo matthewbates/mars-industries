@@ -7,7 +7,6 @@ import {
 } from "./ServiceElements";
 import Header from "../../components/Header";
 import Navbar from "../../components/Navbar";
-import Carousel from "../../components/Carousel";
 import ServiceCardItem from "../../components/ServiceCardItem";
 import ValuesCardItem from "../../components/ValuesCardItem";
 import Footer from "../../components/Footer";
@@ -19,7 +18,6 @@ export default function Services() {
     <ServicesContainer>
       <Header />
       <Navbar />
-      {/* <Carousel /> */}
       <Info {...servicesObjOne} />
       <ServicesH1>Core Services</ServicesH1>
       <ServicesH3>

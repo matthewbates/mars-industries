@@ -4,7 +4,7 @@ import {
   WhoWeAreContainer,
   WhoWeAreWrapper,
   WhoWeAreImg,
-  WhoWeAreH2,
+  WhoWeAreH1,
   WhoWeAreP,
 } from "./WhoWeAreElements";
 
@@ -13,17 +13,17 @@ export default function WhoWeAre() {
   return (
     <WhoWeAreContainer>
       <WhoWeAreImg src={background} />
-      <WhoWeAreH2>Who We Are</WhoWeAreH2>
-      <WhoWeAreP>
-        Joel & Co. Construction is a premier general contracting company located
-        in Los Angeles, California serving the San Fernando Valley as well as
-        the greater Los Angeles region. Specializing in new construction, custom
-        home building, residential renovations, and commercial construction,
-        Joel & Co. always strives toward sustainable, eco-friendly construction,
-        and best practices. The company thrives on making the difficult,
-        delightful and is particularly passionate about kitchen and bathroom
-        remodeling and room additions.
-      </WhoWeAreP>
+      <WhoWeAreWrapper>
+        <h1 style={{ textAlign: "center", fontSize: "36px" }}>Who We Are</h1>
+        <WhoWeAreP>
+          With over 50 years of combined experience, Joel & Co. Construction has
+          steadily grown from a modest home remodeling contractor into a
+          large-scale commerical and residential construction business. Today,
+          the company continues to maintain their client-first approach, and
+          insist on bringing integrity, honesty, and transparency to every job,
+          every time.
+        </WhoWeAreP>
+      </WhoWeAreWrapper>
     </WhoWeAreContainer>
   );
 }

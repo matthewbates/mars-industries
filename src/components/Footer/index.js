@@ -41,7 +41,7 @@ export default function Footer() {
           </Column>
           <Column>
             <Heading>Social Media</Heading>
-            <Socials />
+            <Socials style={{ color: "white" }} />
           </Column>
         </Row>
       </Container>

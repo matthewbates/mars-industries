@@ -8,7 +8,6 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  z-index: 10;
   background: ${CONSTANTS.colors.eggshellWhite};
   top: 0;
   position: sticky;
@@ -55,8 +54,8 @@ export const NavLinks = styled(LinkRoute)`
   cursor: pointer;
 
   &:hover {
-    color: ${CONSTANTS.colors.safetyGreen};
+    color: grey;
     transition: 200ms ease-in;
-    border-bottom: 3px solid ${CONSTANTS.colors.safetyGreen};
+    border-bottom: 3px solid black;
   }
 `;

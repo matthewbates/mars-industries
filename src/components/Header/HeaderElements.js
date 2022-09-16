@@ -20,7 +20,7 @@ export const SocialsWrapper = styled.div`
   margin-left: 20px;
 
   @media screen and (max-width: 768px) {
-    /* margin-top: 1rem; */
+    margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -31,9 +31,15 @@ export const SocialsWrapper = styled.div`
 `;
 
 export const HeaderLogo = styled.img`
-  margin-left: 20px;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const HeaderTitle = styled.h1``;
@@ -56,7 +62,7 @@ export const HeaderLi = styled.li`
 
 export const HeaderA = styled.a`
   font-family: "Poppins";
-  color: black;
+  color: grey;
   font-size: 16px;
   flex-direction: column;
   text-decoration: none;
@@ -66,7 +72,8 @@ export const HeaderA = styled.a`
   }
 
   &:hover {
-    color: ${CONSTANTS.colors.safetyGreen};
+    text-decoration: underline;
+    color: black;
     transition: 200ms ease-in;
   }
 `;

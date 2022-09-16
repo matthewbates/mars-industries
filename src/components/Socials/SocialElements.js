@@ -4,8 +4,8 @@ import CONSTANTS from "../../utils/constants";
 export const SocialIcons = styled.div`
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  font-size: 2rem;
+  gap: 1rem;
+  font-size: 1.5rem;
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;
