@@ -18,7 +18,7 @@ export const ArrowsContainer = styled.div`
   .prev:hover,
   .next:hover {
     color: white;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 1.6);
     transition: all 0.5s ease-in;
   }
 

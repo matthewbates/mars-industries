@@ -10,10 +10,10 @@ export const RelationshipsWrapper = styled.div`
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  max-width: 620px;
+  max-width: 500px;
 
   @media screen and (max-width: 768px) {
-    max-width: 450px;
+    max-width: 420px;
   }
 `;
 

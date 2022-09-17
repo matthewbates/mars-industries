@@ -34,6 +34,7 @@ export const NavbarH2 = styled.h2`
   align-items: center;
   list-style: none;
   text-align: center;
+  font-family: "Cormorant Garamond";
 
   @media screen and (max-width: 768px) {
     display: none;

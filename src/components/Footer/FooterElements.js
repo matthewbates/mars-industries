@@ -34,8 +34,11 @@ export const Column = styled.div`
   flex-direction: column;
   /* align-items: center; */
   margin-left: 60px;
+
   /* THIS WAS ADDED WHILE WORKING ON LAPTOP */
-  margin-top: 3rem;
+  @media screen and (max-width: 768px) {
+    margin-top: 3rem;
+  }
 `;
 
 export const Row = styled.div`
@@ -49,7 +52,7 @@ export const Row = styled.div`
 `;
 
 export const NavLinks = styled(LinkRoute)`
-  font-family: "Poppins";
+  font-family: "Lato";
   color: ${CONSTANTS.colors.softBlack};
   margin-bottom: 20px;
   font-size: 16px;
@@ -63,7 +66,7 @@ export const NavLinks = styled(LinkRoute)`
 `;
 
 export const Contact = styled.a`
-  font-family: "Poppins";
+  font-family: "Lato";
   color: ${CONSTANTS.colors.softBlack};
   margin-bottom: 20px;
   font-size: 16px;

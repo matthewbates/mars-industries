@@ -52,6 +52,7 @@ export const CardWrapper = styled.div`
   p {
     color: ${CONSTANTS.colors.royalBlue};
     font-weight: bold;
+    font-size: 14px;
     font-family: "Poppins";
   }
 `;

@@ -1,9 +1,3 @@
-import {
-  faPhone,
-  faEnvelope,
-  faUser,
-  faWindowClose,
-} from "@fortawesome/free-solid-svg-icons";
 import excavations from "../../assets/images/excavations.svg";
 import framing from "../../assets/images/framing.svg";
 import stairs from "../../assets/images/stairs.svg";
