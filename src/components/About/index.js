@@ -1,11 +1,11 @@
 import React from "react";
-import { AboutContainer, AboutWrapper, AboutH1, AboutP } from "./AboutElements";
+import { AboutContainer, AboutWrapper, AboutH2, AboutP } from "./AboutElements";
 
 export default function About() {
   return (
     <AboutContainer>
       <AboutWrapper>
-        <AboutH1>Providing Over 20 Years of Expertise & Experience</AboutH1>
+        <AboutH2>Providing Over 20 Years of Expertise & Experience</AboutH2>
         <AboutP>
           Joel & Co. Construction is a premier general contracting company
           located in Los Angeles, California serving the San Fernando Valley as

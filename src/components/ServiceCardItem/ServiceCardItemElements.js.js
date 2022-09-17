@@ -7,11 +7,12 @@ export const ServiceCardItemContainer = styled.div`
   max-width: 720px;
   justify-content: center;
   align-items: center;
+  margin-top: 4rem;
   margin-left: auto;
   margin-right: auto;
 
   @media screen and (max-width: 768px) {
-    /* margin: 3rem; */
-    /* padding: 40px; */
+    /* margin: 3rem;
+    padding: 40px; */
   }
 `;

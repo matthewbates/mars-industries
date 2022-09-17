@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {
   Nav,
   NavbarContainer,
+  NavbarH2,
   NavMenu,
   NavItem,
   NavLinks,
@@ -19,6 +20,7 @@ export default function Navbar({}) {
   return (
     <Nav>
       <NavbarContainer>
+        <NavbarH2>MARS Industries</NavbarH2>
         <NavMenu>
           <NavItem>
             <NavLinks to="/">Home</NavLinks>

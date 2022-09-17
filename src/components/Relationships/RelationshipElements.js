@@ -8,14 +8,12 @@ export const RelationshipsContainer = styled.div`
 export const RelationshipsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 520px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 620px;
 
   @media screen and (max-width: 768px) {
-    max-width: 620px;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    max-width: 450px;
   }
 `;
 
@@ -29,11 +27,14 @@ export const RelationshipsH2 = styled.h2`
 `;
 
 export const RelationshipsP = styled.p`
-  text-align: left;
+  line-height: 1.6rem;
+  margin-bottom: 3rem;
+  text-align: justify;
   columns: 1;
   font-size: 16px;
   font-family: "Lato";
   justify-content: center;
+  margin-top: 1rem;
 
   @media screen and (max-width: 768px) {
     display: flex;

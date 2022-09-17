@@ -5,7 +5,7 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 100px;
   background: ${CONSTANTS.colors.eggshellWhite};
   z-index: 999;
 
@@ -20,7 +20,6 @@ export const SocialsWrapper = styled.div`
   margin-left: 20px;
 
   @media screen and (max-width: 768px) {
-    margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -62,7 +61,7 @@ export const HeaderLi = styled.li`
 
 export const HeaderA = styled.a`
   font-family: "Poppins";
-  color: grey;
+  color: ${CONSTANTS.colors.lightGrey};
   font-size: 16px;
   flex-direction: column;
   text-decoration: none;
@@ -74,6 +73,6 @@ export const HeaderA = styled.a`
   &:hover {
     text-decoration: underline;
     color: black;
-    transition: 200ms ease-in;
+    /* transition: 200ms ease-in; */
   }
 `;

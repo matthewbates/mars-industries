@@ -11,6 +11,7 @@ const CONSTANTS = {
     royalBlue: "#21409A",
     eggshellWhite: "#F0F0F0",
     batman: "linear-gradient(to bottom right, #333333, #121212);",
+    lightGrey: "#BBBBBB",
   },
 };
 

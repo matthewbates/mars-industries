@@ -17,7 +17,6 @@ export const WhoWeAreWrapper = styled.div`
   line-height: 1.5rem;
   font-weight: bold;
   transform: translate(-50%, -50%);
-  max-width: 1120px;
 
   @media screen and (max-width: 768px) {
     font-size: 14px;
@@ -33,15 +32,11 @@ export const WhoWeAreImg = styled.img`
 `;
 
 export const WhoWeAreP = styled.p`
-  columns: 2;
   line-height: 1.4rem;
   margin-top: 2rem;
-  /* margin-bottom: 3rem; */
-  text-align: justify;
-  columns: 1;
+  /* text-align: justify; */
   font-size: 16px;
   font-family: "Lato";
-  justify-content: center;
 
   @media screen and (max-width: 768px) {
     display: flex;

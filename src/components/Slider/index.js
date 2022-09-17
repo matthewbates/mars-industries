@@ -1,24 +1,39 @@
-import React from "react";
-import AwesomeSlider from "react-awesome-slider";
-import "react-awesome-slider/dist/styles.css";
-import { SliderContainer } from "./SliderElements";
-import { sliderData } from "./data";
+import React, { useState, useEffect } from "react";
+import Arrows from "../Arrows";
+import Dots from "../Dots";
+import SliderContent from "../SliderContent";
+import sliderImage from "../sliderImage";
+import "../slider.css";
+
+const slideLength = sliderImage.length - 1;
 
 export default function Slider() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex(activeIndex === slideLength ? 0 : activeIndex + 1);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [activeIndex]);
+
+  const prevSlide = () => {
+    setActiveIndex(activeIndex < 1 ? slideLength : activeIndex - 1);
+  };
+
+  const nextSlide = () => {
+    setActiveIndex(activeIndex === slideLength ? 0 : activeIndex + 1);
+  };
+
   return (
-    <SliderContainer>
-      <AwesomeSlider
-        style={{ height: "40vh", position: "relative" }}
-        startup={true}
-        bullets={false}
-        mobileTouch={true}
-      >
-        {sliderData.map((item, index) => (
-          <div key={index}>
-            <img style={item.styles} src={item.img} />
-          </div>
-        ))}
-      </AwesomeSlider>
-    </SliderContainer>
+    <div className="slider-container">
+      <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
+      <Arrows prevSlide={prevSlide} nextSlide={nextSlide} />
+      <Dots
+        activeIndex={activeIndex}
+        sliderImage={sliderImage}
+        onClick={(activeIndex) => setActiveIndex(activeIndex)}
+      />
+    </div>
   );
 }

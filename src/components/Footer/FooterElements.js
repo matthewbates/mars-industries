@@ -5,6 +5,7 @@ import { Link as LinkRoute } from "react-router-dom";
 export const Box = styled.div`
   padding: 20px;
   background: ${CONSTANTS.colors.offWhite};
+  border-top: 1px solid black;
 
   @media (max-width: 768px) {
     /* padding: 30px 40px; */
@@ -14,7 +15,6 @@ export const Box = styled.div`
   h1 {
     font-family: "Lato";
     color: ${CONSTANTS.colors.softBlack};
-    /* this was added to justify content center for contact route */
     position: relative;
     text-align: center;
     justify-content: center;
@@ -23,7 +23,8 @@ export const Box = styled.div`
 
 export const Container = styled.div`
   /* this was added for laptop size */
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
 `;
@@ -33,6 +34,8 @@ export const Column = styled.div`
   flex-direction: column;
   /* align-items: center; */
   margin-left: 60px;
+  /* THIS WAS ADDED WHILE WORKING ON LAPTOP */
+  margin-top: 3rem;
 `;
 
 export const Row = styled.div`
@@ -54,7 +57,7 @@ export const NavLinks = styled(LinkRoute)`
   /* line-height: 35px; */
 
   &:hover {
-    /* color: ${CONSTANTS.colors.safetyGreen}; */
+    text-decoration: underline;
     transition: 200ms ease-in;
   }
 `;
@@ -68,7 +71,7 @@ export const Contact = styled.a`
   line-height: 35px;
 
   &:hover {
-    /* color: ${CONSTANTS.colors.safetyGreen}; */
+    text-decoration: underline;
     transition: 200ms ease-in;
   }
 `;

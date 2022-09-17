@@ -5,7 +5,7 @@ import { Link as LinkRoute } from "react-router-dom";
 export const Nav = styled.nav`
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 1.5rem;
   background: ${CONSTANTS.colors.eggshellWhite};
@@ -19,7 +19,8 @@ export const Nav = styled.nav`
 `;
 
 export const NavbarContainer = styled.div`
-  justify-content: center;
+  /* this was added when I added the <h2> element */
+  justify-content: space-between;
   display: flex;
   height: 80px;
   z-index: 1;
@@ -28,11 +29,23 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `;
 
+export const NavbarH2 = styled.h2`
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
 export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
   text-align: center;
+  font-size: 18px;
 
   @media screen and (max-width: 768px) {
     display: none;

@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { ServiceCardContainer, CardWrapper } from "./ServiceCardElements";
 
@@ -18,7 +17,6 @@ export default function ServicesCard({
             src={image}
             alt={alt}
           />
-          {/* <FontAwesomeIcon icon={icon} /> */}
           <p>{title}</p>
         </span>
         <div className="overlay" style={style}>
