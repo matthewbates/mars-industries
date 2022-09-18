@@ -17,12 +17,12 @@ export const AboutWrapper = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    max-width: 420px;
+    max-width: 320px;
   }
 `;
 
 export const AboutH2 = styled.h2`
-  margin-top: 3rem;
+  margin-top: 4rem;
   line-height: 3rem;
   font-weight: 400;
   font-size: 40px;

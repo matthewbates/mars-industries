@@ -7,13 +7,14 @@ export const DropdownContainer = styled.div`
   position: fixed;
   z-index: 999;
   width: 100%;
-  height: 35%;
-  background: black;
+  height: 40%;
+  background: ${CONSTANTS.colors.dropdown};
   display: grid;
   align-items: center;
   top: 0;
   transition: 0.5s ease-out;
-  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+  /*  was 100% : 0 */
+  opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
 
@@ -26,13 +27,14 @@ export const DropdownMenu = styled.div`
 `;
 
 export const NavLinks = styled(Link)`
-  letter-spacing: 5px;
+  font-size: 16px;
+  letter-spacing: 4px;
   font-family: "Lato";
   text-decoration: none;
-  color: white;
+  color: ${CONSTANTS.colors.lightGrey};
 
   &:hover {
-    color: ${CONSTANTS.colors.safetyGreen};
+    color: ${CONSTANTS.colors.eggshellWhite};
     transition: 200ms ease-in;
   }
 `;

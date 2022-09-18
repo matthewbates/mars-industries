@@ -35,15 +35,12 @@ export const HeaderLogo = styled.img`
   justify-content: center;
   align-items: center;
   text-align: center;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
 `;
 
 export const HeaderTitle = styled.h1``;
 
 export const HeaderContact = styled.div`
+  display: flex;
   margin-right: 20px;
   gap: 1.5rem;
 `;
@@ -62,12 +59,12 @@ export const HeaderLi = styled.li`
 export const HeaderA = styled.a`
   font-family: "Poppins";
   color: ${CONSTANTS.colors.lightGrey};
-  font-size: 16px;
+  font-size: 14px;
   flex-direction: column;
   text-decoration: none;
 
   @media screen and (max-width: 768px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   &:hover {

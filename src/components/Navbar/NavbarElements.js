@@ -20,7 +20,8 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
   /* this was added when I added the <h2> element */
-  justify-content: space-between;
+  /* this was previously space-between */
+  justify-content: right;
   display: flex;
   height: 80px;
   z-index: 1;
@@ -38,6 +39,7 @@ export const NavbarH2 = styled.h2`
 
   @media screen and (max-width: 768px) {
     display: none;
+    font-size: 36px;
   }
 `;
 
@@ -46,7 +48,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
 
   @media screen and (max-width: 768px) {
     display: none;

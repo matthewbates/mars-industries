@@ -28,6 +28,7 @@ export const TextInput = styled.input`
   font-size: 14px;
   background-color: transparent;
   resize: none;
+  border: 1px solid ${CONSTANTS.colors.lightGrey};
 
   @media screen and (max-width: 768px) {
     width: 80%;
@@ -44,6 +45,7 @@ export const EmailInput = styled.input`
   font-size: 14px;
   background-color: transparent;
   resize: none;
+  border: 1px solid ${CONSTANTS.colors.lightGrey};
 
   @media screen and (max-width: 768px) {
     width: 80%;
@@ -60,6 +62,7 @@ export const TextArea = styled.textarea`
   font-size: 14px;
   background-color: transparent;
   resize: none;
+  border: 1px solid ${CONSTANTS.colors.lightGrey};
 
   @media screen and (max-width: 768px) {
     width: 80%;
@@ -74,6 +77,8 @@ export const FormLabel = styled.label`
 `;
 
 export const FormButton = styled.button`
+  border: 1px solid ${CONSTANTS.colors.lightGrey};
+  background-color: transparent;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -86,6 +91,10 @@ export const FormButton = styled.button`
   letter-spacing: 5px;
   transition: transform 0.25s;
   border: none;
+
+  @media screen and (max-width: 768px) {
+    width: 80%;
+  }
 
   &:hover {
     box-shadow: none;

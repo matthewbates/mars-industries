@@ -20,13 +20,16 @@ export default function Navbar({}) {
   return (
     <Nav>
       <NavbarContainer>
-        <NavbarH2>MARS Industries</NavbarH2>
+        {/* <NavbarH2>MARS Industries</NavbarH2> */}
         <NavMenu>
           <NavItem>
             <NavLinks to="/">Home</NavLinks>
           </NavItem>
           <NavItem>
             <NavLinks to="/services">Services</NavLinks>
+          </NavItem>
+          <NavItem>
+            <NavLinks to="/gallery">Gallery</NavLinks>
           </NavItem>
           <NavItem>
             <NavLinks to="/contact">Contact</NavLinks>

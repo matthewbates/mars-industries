@@ -16,6 +16,7 @@ export default function Dropdown({ isOpen, toggleDropdown }) {
       <DropdownMenu>
         <NavLinks to="/">Home</NavLinks>
         <NavLinks to="/services">Services</NavLinks>
+        <NavLinks to="/gallery">Gallery</NavLinks>
         <NavLinks to="/contact">Contact</NavLinks>
       </DropdownMenu>
     </DropdownContainer>

@@ -16,6 +16,11 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
   &:nth-child(1) {
     color: ${CONSTANTS.colors.softBlack};
+
+    &:hover {
+      transition: 200ms ease-in;
+      color: ${CONSTANTS.colors.facebookBlue};
+    }
   }
 
   &:nth-child(2) {

@@ -1,41 +1,26 @@
-// import styled from "styled-components";
+import styled from "styled-components";
 
-// export const SliderContentContainer = styled.section`
-//   .slides {
-//     height: var(--heights);
-//     width: var(--widths);
-//     position: relative;
-//   }
+export const SliderContentContainer = styled.div`
+  height: auto;
+  max-width: 50%;
+  position: relative;
 
-//   .active {
-//     display: inline-block;
-//   }
+  .active {
+    display: inline-block;
+  }
 
-//   .inactive {
-//     display: none;
-//   }
+  .inactive {
+    display: none;
+  }
 
-//   .slide-image {
-//     width: 100%;
-//     height: 100%;
-//     position: absolute;
-//     object-fit: cover;
-//   }
+  /* @media screen and (max-width: 768px) {
+    height: 40vh;
+  } */
+`;
 
-//   .slide-title,
-//   .slide-text {
-//     width: 100%;
-//     height: 100%;
-//     color: black;
-//     font-size: 50px;
-//     position: absolute;
-//     text-align: center;
-//     top: 40%;
-//     z-index: 10;
-//   }
-
-//   .slide-text {
-//     top: 65%;
-//     font-size: 2rem;
-//   }
-// `;
+export const SliderContentImg = styled.img`
+  width: 100vw;
+  max-height: auto;
+  height: 100%;
+  object-fit: cover;
+`;

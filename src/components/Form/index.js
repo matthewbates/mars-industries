@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import emailjs from "emailjs-com";
 import swal from "sweetalert2";
 import {
@@ -17,6 +17,10 @@ const TEMPLATE_ID = "";
 const USER_ID = "";
 
 export default function ContactForm() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
   const handleOnSubmit = (e) => {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(

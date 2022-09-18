@@ -6,7 +6,7 @@ export default function Burger({ isOpen, toggleDropdown }) {
     <BurgerContainer
       isOpen={isOpen}
       onClick={toggleDropdown}
-      style={{ position: "absolute", top: "1.4rem", right: "15px" }}
+      style={{ position: "absolute", top: "1.6rem", right: "30px" }}
     >
       <div />
       <div />

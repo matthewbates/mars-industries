@@ -28,7 +28,7 @@ export default function HeaderInfo() {
               icon={item.icon}
               style={{
                 color: `${CONSTANTS.colors.lightGrey}`,
-                fontSize: "12px",
+                fontSize: "10px",
               }}
             />
             <HeaderA href={item.href}> {item.contact}</HeaderA>

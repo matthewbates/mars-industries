@@ -19,15 +19,16 @@ export const ContactDiv = styled.div`
 
 export const ImgH2 = styled.h2`
   text-align: center;
+  align-items: center;
   font-family: "Lato";
   color: white;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
 
   @media screen and (max-width: 768px) {
-    font-size: 16px;
+    font-size: 18px;
   }
 `;
 
@@ -35,7 +36,7 @@ export const ContactH2 = styled.h2`
   margin-top: 5rem;
   text-align: center;
   justify-content: center;
-  font-family: "Open Sans";
+  font-family: "Cormorant Garamond";
   font-weight: bold;
   font-size: 36px;
 `;

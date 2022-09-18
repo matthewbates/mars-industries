@@ -13,37 +13,3 @@ export const footerInfoData = [
     icon: faEnvelope,
   },
 ];
-
-export const socialIcons = [
-  {
-    icon: FaFacebook,
-    url: "https://www.facebook.com",
-    target: "_blank",
-    rel: "noopener noreferrer",
-    ariaLabel: "Facebook",
-  },
-  {
-    icon: FaInstagram,
-    url: "https://www.instagram.com",
-    target: "_blank",
-    rel: "noopener noreferrer",
-    ariaLabel: "Instagram",
-  },
-];
-
-export const mediaIcons = { FaFacebook, FaInstagram };
-
-export const information = [
-  {
-    url: "https://www.facebook.com",
-    target: "_blank",
-    rel: "noopener noreferrer",
-    ariaLabel: "Facebook",
-  },
-  {
-    url: "https://www.instagram.com",
-    target: "_blank",
-    rel: "noopener noreferrer",
-    ariaLabel: "Instagram",
-  },
-];
