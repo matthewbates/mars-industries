@@ -6,7 +6,7 @@ export const ImgGalleryUl = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 
   &::after {
     content: "";
@@ -15,6 +15,7 @@ export const ImgGalleryUl = styled.ul`
 `;
 
 export const ImgGalleryLi = styled.li`
+  list-style: none;
   flex-basis: 350px;
   position: relative;
   cursor: pointer;
@@ -24,6 +25,7 @@ export const ImgGalleryImg = styled.img`
   object-fit: cover;
   width: 100%;
   height: 100%;
+  justify-content: center;
   vertical-align: middle;
   border-radius: 5px;
 `;
