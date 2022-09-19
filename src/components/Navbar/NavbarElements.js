@@ -61,6 +61,7 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(LinkRoute)`
   font-family: "Lato";
+  text-transform: uppercase;
   color: black;
   display: flex;
   align-items: center;
@@ -71,7 +72,6 @@ export const NavLinks = styled(LinkRoute)`
 
   &:hover {
     color: grey;
-    transition: 200ms ease-in;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid grey;
   }
 `;

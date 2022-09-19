@@ -12,7 +12,7 @@ import {
   ContactSpan,
   CopyrightText,
 } from "./FooterElements";
-import { footerInfoData } from "./data";
+import { infoData } from "../infoData";
 import Socials from "../Socials";
 
 export default function Footer() {
@@ -30,7 +30,7 @@ export default function Footer() {
           </Column>
           <Column>
             <Heading>Contact</Heading>
-            {footerInfoData.map((item, index) => (
+            {infoData.map((item, index) => (
               <ContactSpan key={index}>
                 <FontAwesomeIcon
                   icon={item.icon}

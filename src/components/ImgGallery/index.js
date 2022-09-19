@@ -1,35 +1,31 @@
 import React from "react";
 import {
   ImgGalleryContainer,
+  ImgGalleryWrapper,
   ImgGalleryUl,
   ImgGalleryLi,
   ImgGalleryImg,
   ImgGalleryOverlay,
   ImgGallerySpan,
+  ImgGalleryBtn,
 } from "./ImgGalleryElements";
-import { imageGallery, slides } from "./data";
+import { imageGallery } from "./data";
 
 export default function ImageGallery() {
   return (
     <ImgGalleryContainer>
-      <ul
-        style={{
-          listStyle: "none ",
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          gap: "15px",
-        }}
-      >
+      <ImgGalleryWrapper>
         {imageGallery.map((item, index) => (
           <ImgGalleryLi key={index}>
             <ImgGalleryImg src={item.img} alt={item.alt} />
-            <ImgGalleryOverlay>
-              <ImgGallerySpan>{item.title}</ImgGallerySpan>
+            <ImgGalleryOverlay className="overlay">
+              <ImgGallerySpan>
+                <button>&#x2b;</button>
+              </ImgGallerySpan>
             </ImgGalleryOverlay>
           </ImgGalleryLi>
         ))}
-      </ul>
+      </ImgGalleryWrapper>
     </ImgGalleryContainer>
   );
 }

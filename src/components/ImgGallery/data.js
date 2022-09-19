@@ -10,11 +10,12 @@ import img9 from "../../assets/jobs/carousel_3.jpg";
 import img10 from "../../assets/jobs/carousel_1.jpg";
 import img11 from "../../assets/jobs/carousel_2.jpg";
 import img12 from "../../assets/jobs/carousel_3.jpg";
+import plus from "../../assets/plus.png";
 
 export const imageGallery = [
   {
     img: img1,
-    title: "Image 1",
+    title: plus,
     alt: "image",
   },
   {

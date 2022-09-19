@@ -8,6 +8,7 @@ import {
 } from "./ContactElements";
 import Header from "../../components/Header";
 import Navbar from "../../components/Navbar";
+import ContactHeader from "../../components/ContactHeader";
 import Form from "../../components/Form";
 import Footer from "../../components/Footer";
 
@@ -19,6 +20,7 @@ export default function Contact() {
         <Navbar />
         <ImgWrapper>
           <ContactDiv />
+          <ContactHeader />
           <ImgH2>
             Make your next project a success with expertise that partners with
             you every step of the process. Fill out the form below and we will

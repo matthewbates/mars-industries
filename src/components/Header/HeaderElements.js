@@ -70,6 +70,5 @@ export const HeaderA = styled.a`
   &:hover {
     text-decoration: underline;
     color: black;
-    /* transition: 200ms ease-in; */
   }
 `;

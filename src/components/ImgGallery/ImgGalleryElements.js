@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const ImgGalleryContainer = styled.div``;
 
-export const ImgGalleryUl = styled.ul`
+export const ImgGalleryWrapper = styled.div`
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -14,18 +16,34 @@ export const ImgGalleryUl = styled.ul`
   }
 `;
 
+export const ImgGalleryUl = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+
+  &::after {
+    content: "";
+    flex-basis: 350px;
+  }
+`;
+
 export const ImgGalleryLi = styled.li`
-  list-style: none;
   flex-basis: 350px;
+  width: 350px;
+  list-style: none;
   position: relative;
   cursor: pointer;
+
+  &:hover .overlay {
+    transform: scale(1);
+  }
 `;
 
 export const ImgGalleryImg = styled.img`
   object-fit: cover;
   width: 100%;
   height: 100%;
-  justify-content: center;
   vertical-align: middle;
   border-radius: 5px;
 `;
@@ -44,10 +62,20 @@ export const ImgGalleryOverlay = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &:hover {
-    transform: scale(1);
-  }
 `;
 
 export const ImgGallerySpan = styled.span``;
+
+export const ImgGalleryBtn = styled.button`
+  --b: 4px;
+  width: 40px;
+  aspect-ratio: 1;
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #000 90deg,
+      #fff 0
+    )
+    calc(100% + var(--b) / 2) calc(100% + var(--b) / 2) / calc(50% + var(--b))
+    calc(50% + var(--b));
+  display: inline-block;
+`;
