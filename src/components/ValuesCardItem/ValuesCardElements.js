@@ -8,4 +8,5 @@ export const ValuesCardItemContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 20px;
+  margin-bottom: 4rem;
 `;

@@ -19,12 +19,12 @@ export default function Services() {
       <Header />
       <Navbar />
       <Info {...servicesObjOne} />
-      <ServicesH1>Core Services</ServicesH1>
+      <ServicesH1>Primary Services</ServicesH1>
       <ServicesH3>
         Offering all construction services, from conception to completion!
       </ServicesH3>
-      <ServiceCardItem />
-      <ValuesH1>MARS Construction Values</ValuesH1>
+      <ServiceCardItem style={{ background: "black" }} />
+      <ValuesH1>Our Values</ValuesH1>
       <ValuesCardItem />
       <Info {...servicesObjTwo} />
       <Footer />

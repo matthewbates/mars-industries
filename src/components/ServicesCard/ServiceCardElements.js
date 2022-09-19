@@ -8,7 +8,6 @@ export const ServiceCardContainer = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 768px;
-  margin: 0 auto;
   cursor: pointer;
 `;
 
@@ -23,12 +22,12 @@ export const CardWrapper = styled.div`
   align-items: center;
   padding: 30px 6px;
   width: 160px;
-  height: 150px;
+  height: 204px;
   margin: 0 10px 20px;
 
   &:hover .overlay {
     height: 100%;
-    transition: 200ms ease-in;
+    transition: all 0.3s ease-out;
   }
 
   .overlay {
@@ -37,7 +36,7 @@ export const CardWrapper = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    background: ${CONSTANTS.colors.royalBlue};
+    background: ${CONSTANTS.colors.facebookBlue};
     overflow: hidden;
     width: 100%;
     height: 0%;
@@ -47,12 +46,13 @@ export const CardWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 14px;
   }
 
   p {
     color: ${CONSTANTS.colors.royalBlue};
     font-weight: bold;
     font-size: 14px;
-    font-family: "Poppins";
+    font-family: "Lato";
   }
 `;

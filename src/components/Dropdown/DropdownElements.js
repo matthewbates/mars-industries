@@ -1,29 +1,49 @@
 import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 import { Link } from "react-router-dom";
-import { FaTimesCircle } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 
 export const DropdownContainer = styled.div`
   position: fixed;
   z-index: 999;
-  width: 100%;
-  height: 30%;
+  width: 65%;
+  height: 100%;
   background: ${CONSTANTS.colors.dropdown};
-  display: grid;
-  align-items: center;
+  /* display: grid;
+  align-items: center; */
   top: 0;
-  left: 0;
-  transition: 0.5s ease-out;
+  /* left: 0; */
+  right: 0;
+  transition: 0.3s ease-out;
   opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
-  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  /* top: ${({ isOpen }) => (isOpen ? "0" : "-100%")}; */
+  right: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
 
-export const DropdownMenu = styled.div`
-  display: grid;
-  justify-content: center;
-  text-align: center;
-  gap: 1rem;
-  align-items: center;
+// export const DropdownMenu = styled.div`
+//   display: grid;
+//   justify-content: center;
+//   text-align: center;
+//   gap: 1.5rem;
+//   align-items: center;
+// `;
+
+export const DropdownMenuUl = styled.ul`
+  display: block;
+  position: relative;
+  padding: 0.9em 40px;
+  margin: 0;
+  margin-block-start: 2.5em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 25px;
+`;
+
+export const DropdownMenuLi = styled.li`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 14px;
 `;
 
 export const NavLinks = styled(Link)`
@@ -35,17 +55,23 @@ export const NavLinks = styled(Link)`
 
   &:hover {
     color: ${CONSTANTS.colors.eggshellWhite};
-    transition: 200ms ease-in;
   }
 `;
 
 export const Icon = styled.div`
   position: absolute;
-  top: 1rem;
-  right: 1.3rem;
+  top: 1.5rem;
+  left: 1.3rem;
 `;
 
-export const CloseIcon = styled(FaTimesCircle)`
-  color: #fff;
+export const CloseIcon = styled(FaTimes)`
+  color: ${CONSTANTS.colors.lightGrey};
   cursor: pointer;
+`;
+
+export const DropdownSocialsWrapper = styled.div`
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
 `;

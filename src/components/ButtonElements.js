@@ -2,7 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../utils/constants";
 
 export const Button = styled.button`
-  border-radius: 4px;
+  border-radius: 6px;
   background: ${({ primary }) =>
     primary ? `${CONSTANTS.colors.limeGreen}` : "#010606"};
   white-space: nowrap;
@@ -15,11 +15,12 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
+  margin-top: 1rem;
+  font-family: "Lato";
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${({ primary }) =>
-      primary ? `${CONSTANTS.colors.safetyGreen}` : "black"};
-    color: ${{}};
+    filter: brightness(80%);
+    color: ${({ primary }) => (primary ? "#fff" : "black")};
   }
 `;

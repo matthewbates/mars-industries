@@ -27,4 +27,10 @@ export const values = [
     values:
       "Building strong relationships with our clients is incredibly important, working with them to help achieve their end goals.",
   },
+  {
+    img: img2,
+    title: "Military discounts",
+    values:
+      "We are proud to provide discounts for military, veterans, and first responders by serving those who served us.",
+  },
 ];

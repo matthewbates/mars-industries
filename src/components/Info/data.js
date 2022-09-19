@@ -5,7 +5,8 @@ import one from "../../assets/jobs/carousel_1.jpg";
 export const servicesObjOne = {
   id: 1,
   top: false,
-  topLine: "Speed to market services to optimize your projects",
+  topLine:
+    "20+ years of experience. Unforseen probems deal with on a regular basis.",
   description:
     "Fully customized, turnkey, program management and contruction at scale.",
   imgStart: false,

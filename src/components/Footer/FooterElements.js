@@ -4,7 +4,7 @@ import { Link as LinkRoute } from "react-router-dom";
 
 export const Box = styled.div`
   padding: 20px;
-  background: ${CONSTANTS.colors.offWhite};
+  background: ${CONSTANTS.colors.eggshellWhite};
   border-top: 1px solid ${CONSTANTS.colors.lightGrey};
 
   @media (max-width: 768px) {
@@ -33,7 +33,7 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  margin-left: 60px;
+  margin-left: 50px;
 
   /* THIS WAS ADDED WHILE WORKING ON LAPTOP */
   @media screen and (max-width: 768px) {

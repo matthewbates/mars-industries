@@ -10,17 +10,19 @@ export const ImgWrapper = styled.div`
   position: relative;
 `;
 
-export const ContactDiv = styled.div`
-  background: ${CONSTANTS.colors.royalBlue};
+export const ContactDiv = styled.img`
+  /* background: ${CONSTANTS.colors.royalBlue}; */
   height: 30vh;
   width: 100%;
   position: relative;
+  object-fit: cover;
+  filter: brightness(40%);
 `;
 
-export const ImgH2 = styled.h2`
-  text-align: center;
+export const ContactH2 = styled.h2`
+  text-align: justify;
   align-items: center;
-  font-family: "Lato";
+  font-family: "Cormorant Garamond";
   color: white;
   top: 50%;
   left: 50%;
@@ -28,15 +30,15 @@ export const ImgH2 = styled.h2`
   position: absolute;
 
   @media screen and (max-width: 768px) {
-    font-size: 18px;
+    font-size: 22px;
   }
 `;
 
-export const ContactH2 = styled.h2`
+export const ContactH1 = styled.h1`
   margin-top: 5rem;
   text-align: center;
   justify-content: center;
-  font-family: "Cormorant Garamond";
+  font-family: "Lato";
   font-weight: bold;
-  font-size: 36px;
+  font-size: 38px;
 `;

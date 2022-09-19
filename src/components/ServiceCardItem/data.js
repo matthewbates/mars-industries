@@ -7,7 +7,7 @@ import logistics from "../../assets/images/logistics.svg";
 export const services = [
   {
     title: "Excavations/Dirt Work",
-    description: "Safety-focused, commercial & residential construction",
+    description: "Safety-focused, commercial, and residential construction",
     img: excavations,
     alt: "excavations",
     style: {
@@ -17,7 +17,7 @@ export const services = [
   },
   {
     title: "Concrete",
-    description: "Driveways, walkways, basements, & concrete repair",
+    description: "Driveways, walkways, basements, and concrete repair",
     img: logistics,
     style: {
       fontFamily: "Poppins",
@@ -27,7 +27,7 @@ export const services = [
   {
     title: "Framing",
     description:
-      "New construction framing - walls, floors, roofs, doors, windows - for both large & small projects",
+      "Walls, floors, roofs, doors, & windows for both large & small projects",
     img: framing,
     alt: "framing",
     style: {
@@ -37,7 +37,7 @@ export const services = [
   },
   {
     title: "Finish Carpentry",
-    description: "Specializing in custom woodwork & renovations",
+    description: "Custom woodwork and renovations",
     img: excavations,
     style: {
       fontFamily: "Poppins",
@@ -46,7 +46,7 @@ export const services = [
   },
   {
     title: "Custom Stairs, Circular, & Hand Rails",
-    description: "Designed & custom-made to your specifications",
+    description: "Designed and custom-made to your specifications",
     img: stairs,
     alt: "stairs",
     style: {
@@ -57,7 +57,7 @@ export const services = [
   {
     title: "Spas, Pools, & Water Features",
     description:
-      "Pools & outdoor living spaces, creating the outdoor ambiance you crave",
+      "Pools & outdoor living spaces - create the outdoor ambiance you crave",
     img: pool,
     alt: "pool",
     style: {

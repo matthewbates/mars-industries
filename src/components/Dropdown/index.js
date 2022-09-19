@@ -1,10 +1,13 @@
 import React from "react";
+import Socials from "../Socials";
 import {
   DropdownContainer,
-  DropdownMenu,
+  DropdownMenuUl,
+  DropdownMenuLi,
   Icon,
   CloseIcon,
   NavLinks,
+  DropdownSocialsWrapper
 } from "./DropdownElements";
 
 export default function Dropdown({ isOpen, toggleDropdown }) {
@@ -13,12 +16,17 @@ export default function Dropdown({ isOpen, toggleDropdown }) {
       <Icon>
         <CloseIcon />
       </Icon>
-      <DropdownMenu>
-        <NavLinks to="/">Home</NavLinks>
-        <NavLinks to="/services">Services</NavLinks>
-        <NavLinks to="/gallery">Gallery</NavLinks>
-        <NavLinks to="/contact">Contact</NavLinks>
-      </DropdownMenu>
+      <DropdownMenuUl>
+        <DropdownMenuLi style={{ borderBotom: "1px solid white" }}>
+          <NavLinks to="/">Home</NavLinks>
+          <NavLinks to="/services">Services</NavLinks>
+          <NavLinks to="/gallery">Gallery</NavLinks>
+          <NavLinks to="/contact">Contact</NavLinks>
+        </DropdownMenuLi>
+      </DropdownMenuUl>
+      <DropdownSocialsWrapper>
+        <Socials />
+      </DropdownSocialsWrapper>
     </DropdownContainer>
   );
 }

@@ -2,13 +2,13 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const PartnerContainer = styled.div`
-  background: ${({ top }) => (top ? "#3B5998" : "#3B5998")};
+  background: ${({ top }) =>
+    top ? "#3B5998" : `${CONSTANTS.colors.royalBlue}`};
 `;
 
 export const PartnerWrapper = styled.div`
   display: grid;
   z-index: 1;
-  /* below was 460px before alteration */
   height: 500px;
   max-width: 1100px;
   margin-left: auto;
@@ -62,8 +62,8 @@ export const PartnerTopLine = styled.p`
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  margin-bottom: 16px;
   text-align: center;
+  margin-top: 20%;
 
   @media screen and (max-width: 768px) {
     margin-top: 4rem;
@@ -103,6 +103,6 @@ export const PartnerImg = styled.img`
   object-fit: contain;
 
   @media screen and (max-width: 768px) {
-    width: 80%;
+    width: 60%;
   }
 `;
