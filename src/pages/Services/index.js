@@ -5,13 +5,13 @@ import {
   ServicesH3,
   ValuesH1,
 } from "./ServiceElements";
+import { servicesObjOne, servicesObjTwo } from "../../components/Info/data";
 import Header from "../../components/Header";
 import Navbar from "../../components/Navbar";
+import Info from "../../components/Info";
 import ServiceCardItem from "../../components/ServiceCardItem";
 import ValuesCardItem from "../../components/ValuesCardItem";
 import Footer from "../../components/Footer";
-import Info from "../../components/Info";
-import { servicesObjOne, servicesObjTwo } from "../../components/Info/data";
 
 export default function Services() {
   useEffect(() => {
@@ -27,7 +27,7 @@ export default function Services() {
       <ServicesH3>
         Offering all construction services, from conception to completion!
       </ServicesH3>
-      <ServiceCardItem style={{ background: "black" }} />
+      <ServiceCardItem />
       <ValuesH1>Our Values</ValuesH1>
       <ValuesCardItem />
       <Info {...servicesObjTwo} />

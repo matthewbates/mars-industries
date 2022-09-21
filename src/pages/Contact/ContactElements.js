@@ -30,7 +30,7 @@ export const ContactH2 = styled.h2`
   position: absolute;
 
   @media screen and (max-width: 768px) {
-    font-size: 22px;
+    font-size: 18px;
   }
 `;
 

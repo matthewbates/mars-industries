@@ -1,5 +1,4 @@
-import React from "react";
-import logo from "../../assets/mi_placeholder.png";
+import React, { useEffect } from "react";
 import {
   HeaderContainer,
   HeaderContact,
@@ -11,17 +10,27 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Socials from "../Socials";
 import CONSTANTS from "../../utils/constants";
 import { infoData } from "../infoData";
+import gsap from "gsap";
 
 export default function HeaderInfo() {
+  useEffect(() => {
+    gsap.from(".contact", {
+      x: 100,
+      delay: 0.5,
+      opacity: 0,
+      duration: 2,
+      // stagger: 0.35,
+    });
+  }, []);
+
   return (
     <HeaderContainer>
       <SocialsWrapper>
         <Socials />
       </SocialsWrapper>
-      {/* <HeaderLogo src={logo} alt="icon" /> */}
       <HeaderContact>
         {infoData.map((item, index) => (
-          <HeaderLi key={index}>
+          <HeaderLi key={index} className="contact">
             <FontAwesomeIcon
               icon={item.icon}
               style={{

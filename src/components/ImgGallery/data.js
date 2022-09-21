@@ -6,12 +6,10 @@ import image5 from "../../assets/gallery/img5.jpg";
 import image6 from "../../assets/gallery/img6.jpg";
 import image7 from "../../assets/gallery/img7.jpg";
 import image8 from "../../assets/gallery/img8.jpg";
-import plus from "../../assets/plus.png";
 
 export const imageGallery = [
   {
     img: image1,
-    title: plus,
     alt: "image",
   },
   {
