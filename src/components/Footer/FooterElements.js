@@ -5,7 +5,7 @@ import { Link as LinkRoute } from "react-router-dom";
 export const Box = styled.div`
   padding: 20px;
   background: ${CONSTANTS.colors.eggshellWhite};
-  border-top: 1px solid ${CONSTANTS.colors.lightGrey};
+  border-top: 0.5px solid ${CONSTANTS.colors.lightGrey};
 
   @media (max-width: 768px) {
     /* padding: 30px 40px; */

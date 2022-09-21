@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   ServicesContainer,
   ServicesH1,
@@ -14,6 +14,10 @@ import Info from "../../components/Info";
 import { servicesObjOne, servicesObjTwo } from "../../components/Info/data";
 
 export default function Services() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <ServicesContainer>
       <Header />

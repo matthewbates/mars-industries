@@ -19,8 +19,17 @@ export const SliderContentContainer = styled.div`
 `;
 
 export const SliderContentImg = styled.img`
+  visibility: visible;
+  background: rgb(224, 224, 224);
+  padding: 0px;
+  margin: 0px auto;
+  height: 432px;
+  display: block;
   width: 100vw;
-  max-height: auto;
-  height: 100%;
+  overflow: visible;
   object-fit: cover;
+
+  /* max-height: auto; */
+  /* height: 100%; */
+  /* object-fit: contain; */
 `;

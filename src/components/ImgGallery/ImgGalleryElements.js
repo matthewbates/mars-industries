@@ -1,40 +1,37 @@
 import styled from "styled-components";
 
-export const ImgGalleryContainer = styled.div``;
-
-export const ImgGalleryWrapper = styled.div`
+export const ImgGalleryContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 15px; */
 
   &::after {
     content: "";
-    flex-basis: 350px;
-  }
-`;
-
-export const ImgGalleryUl = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-
-  &::after {
-    content: "";
-    flex-basis: 350px;
+    flex-grow: 999;
+    /* flex-basis: 350px; */
   }
 `;
 
 export const ImgGalleryLi = styled.li`
-  flex-basis: 350px;
+  height: 300px;
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+  flex-grow: 1;
+  flex: 1 1 auto;
+
+  /* flex-basis: 350px;
   width: 350px;
   list-style: none;
   position: relative;
   cursor: pointer;
-
+*/
   &:hover .overlay {
     transform: scale(1);
   }
@@ -42,10 +39,17 @@ export const ImgGalleryLi = styled.li`
 
 export const ImgGalleryImg = styled.img`
   object-fit: cover;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
   width: 100%;
   height: 100%;
   vertical-align: middle;
   border-radius: 5px;
+  /* object-fit: cover;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border-radius: 5px; */
 `;
 
 export const ImgGalleryOverlay = styled.div`
@@ -64,10 +68,8 @@ export const ImgGalleryOverlay = styled.div`
   justify-content: center;
 `;
 
-export const ImgGallerySpan = styled.span``;
-
 export const ImgGalleryBtn = styled.button`
-  --b: 4px;
+  /* --b: 4px;
   width: 40px;
   aspect-ratio: 1;
   background: conic-gradient(
@@ -77,5 +79,7 @@ export const ImgGalleryBtn = styled.button`
     )
     calc(100% + var(--b) / 2) calc(100% + var(--b) / 2) / calc(50% + var(--b))
     calc(50% + var(--b));
-  display: inline-block;
+  display: inline-block; */
 `;
+
+export const ImgGallerySpan = styled.span``;

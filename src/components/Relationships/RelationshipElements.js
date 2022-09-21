@@ -10,15 +10,15 @@ export const RelationshipsWrapper = styled.div`
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  max-width: 500px;
+  max-width: 600px;
 
   @media screen and (max-width: 768px) {
-    max-width: 420px;
+    max-width: 320px;
   }
 `;
 
 export const RelationshipsH2 = styled.h2`
-  margin-top: 4rem;
+  margin-top: 2rem;
   align-items: center;
   line-height: 2.5rem;
   justify-content: center;
@@ -34,7 +34,7 @@ export const RelationshipsP = styled.p`
   font-size: 16px;
   font-family: "Lato";
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
 
   @media screen and (max-width: 768px) {
     display: flex;

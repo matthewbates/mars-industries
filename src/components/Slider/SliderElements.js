@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
-// export const NewSliderContainer = styled.div`
-//   height: 40vh;
-//   position: relative;
-//   margin: auto;
-//   overflow: hidden;
-// `;
+export const SliderContainer = styled.div`
+  height: auto;
+  max-height: 40vh;
+  max-width: 100%;
+  position: relative;
+  margin: 2rem;
+  overflow: hidden;
+`;

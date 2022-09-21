@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { SliderContainer } from "./SliderElements";
 import Arrows from "../Arrows";
 import Dots from "../Dots";
 import SliderContent from "../SliderContent";
@@ -13,7 +14,7 @@ export default function Slider() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex(activeIndex === slideLength ? 0 : activeIndex + 1);
-    }, 7500);
+    }, 5500);
     return () => clearInterval(interval);
   }, [activeIndex]);
 
@@ -26,7 +27,7 @@ export default function Slider() {
   };
 
   return (
-    <div className="slider-container">
+    <SliderContainer>
       <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
       <Arrows prevSlide={prevSlide} nextSlide={nextSlide} />
       <Dots
@@ -34,6 +35,6 @@ export default function Slider() {
         sliderImage={sliderImage}
         onClick={(activeIndex) => setActiveIndex(activeIndex)}
       />
-    </div>
+    </SliderContainer>
   );
 }

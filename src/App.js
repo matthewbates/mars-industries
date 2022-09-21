@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { AppContainer } from "./AppElements";
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Dropdown from "./components/Dropdown";
+import Sidebar from "./components/Sidebar";
 import Loader from "./components/Loader";
-import { SettingsInputComponentOutlined } from "@mui/icons-material";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -15,18 +15,18 @@ export default function App() {
     return () => clearTimeout(timer);
   });
   return (
-    <div>
+    <AppContainer>
       {/* {isLoading ? (
         <Loader />
       ) : ( */}
       <>
         <Header />
         <Navbar />
-        <Dropdown />
+        <Sidebar />
         <Home />
         <Footer />
       </>
       {/* )} */}
-    </div>
+    </AppContainer>
   );
 }

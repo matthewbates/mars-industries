@@ -1,29 +1,35 @@
 import styled from "styled-components";
+import CONSTANTS from "../../utils/constants";
 
-export const ArrowsContainer = styled.div`
-  .prev,
-  .next {
-    cursor: pointer;
-    z-index: 100;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 1rem;
-    margin-top: -3rem;
-    font-size: 40px;
-    font-weight: bold;
-    border-radius: 0px 5px 5px 0px;
+export const ArrowsContainer = styled.div``;
+
+export const ArrowsPrev = styled.span`
+  color: ${CONSTANTS.colors.offWhite};
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 1rem;
+  margin-top: -3rem;
+  font-size: 30px;
+  font-weight: bold;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.2);
   }
+`;
 
-  .prev:hover,
-  .next:hover {
-    color: white;
-    background: rgba(0, 0, 0, 1.6);
-    transition: all 0.5s ease-in;
-  }
+export const ArrowsNext = styled.span`
+  color: ${CONSTANTS.colors.offWhite};
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 1rem;
+  margin-top: -3rem;
+  font-size: 30px;
+  font-weight: bold;
+  right: 0;
 
-  .next {
-    right: 0;
-    border-radius: 5px 0px 0px 5px;
+  &:hover {
+    background: rgba(0, 0, 0, 0.1);
   }
 `;

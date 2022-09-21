@@ -2,7 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const ServicesContainer = styled.div`
-  background: ${CONSTANTS.colors.eggshellWhite};
+  background: ${CONSTANTS.colors.offWhite};
 `;
 
 export const ServicesH1 = styled.h1`

@@ -1,6 +1,5 @@
 import React from "react";
 import CONSTANTS from "../../utils/constants";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   Box,
   Container,
@@ -14,6 +13,7 @@ import {
 } from "./FooterElements";
 import { infoData } from "../infoData";
 import Socials from "../Socials";
+import Copyright from "../Copyright";
 
 export default function Footer() {
   return (
@@ -32,10 +32,6 @@ export default function Footer() {
             <Heading>Contact</Heading>
             {infoData.map((item, index) => (
               <ContactSpan key={index}>
-                <FontAwesomeIcon
-                  icon={item.icon}
-                  style={{ color: `${CONSTANTS.colors.softBlack}` }}
-                />
                 <Contact href={item.href}> {item.contact}</Contact>
               </ContactSpan>
             ))}
@@ -46,10 +42,7 @@ export default function Footer() {
           </Column>
         </Row>
       </Container>
-      <CopyrightText>
-        Copyright © {new Date().getFullYear()} MARS Industries. All rights
-        reserved.
-      </CopyrightText>
+      <Copyright />
     </Box>
   );
 }

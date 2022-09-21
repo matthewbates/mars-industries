@@ -2,25 +2,25 @@ import React, { useState } from "react";
 import {
   Nav,
   NavbarContainer,
-  NavbarH2,
   NavMenu,
   NavItem,
   NavLinks,
 } from "./NavbarElements";
 import Burger from "../Burger";
-import Dropdown from "../Dropdown";
+import Sidebar from "../Sidebar";
+import Logo from "../Logo";
 
 export default function Navbar({}) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = () => {
+  const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
 
   return (
     <Nav>
       <NavbarContainer>
-        {/* <NavbarH2>MARS Industries</NavbarH2> */}
+        <Logo />
         <NavMenu>
           <NavItem>
             <NavLinks to="/">Home</NavLinks>
@@ -35,8 +35,8 @@ export default function Navbar({}) {
             <NavLinks to="/contact">Contact</NavLinks>
           </NavItem>
         </NavMenu>
-        <Burger isOpen={isOpen} toggleDropdown={toggleDropdown} />
-        <Dropdown isOpen={isOpen} toggleDropdown={toggleDropdown} />
+        <Burger isOpen={isOpen} toggleSidebar={toggleSidebar} />
+        <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
       </NavbarContainer>
     </Nav>
   );

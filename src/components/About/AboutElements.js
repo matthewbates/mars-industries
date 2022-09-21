@@ -12,7 +12,7 @@ export const AboutWrapper = styled.div`
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  max-width: 500px;
+  max-width: 600px;
   align-items: center;
   justify-content: center;
 
@@ -40,7 +40,7 @@ export const AboutP = styled.p`
   font-size: 16px;
   font-family: "Lato";
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
 
   @media screen and (max-width: 768px) {
     display: flex;

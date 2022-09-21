@@ -15,4 +15,8 @@ export const SocialIcons = styled.div`
 
 export const SocialIconLink = styled.a`
   color: ${CONSTANTS.colors.lightGrey};
+
+  &:hover {
+    color: black;
+  }
 `;

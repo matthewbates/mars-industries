@@ -15,4 +15,16 @@ export const slides = [
     img: slide3,
     alt: "image",
   },
+  {
+    img: slide1,
+    alt: "image",
+  },
+  {
+    img: slide2,
+    alt: "image",
+  },
+  {
+    img: slide3,
+    alt: "image",
+  },
 ];

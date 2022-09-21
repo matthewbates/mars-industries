@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   Column1,
   Column2,
@@ -15,7 +15,6 @@ import {
 } from "./InfoElements";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../ButtonElements";
-import { BoyRounded } from "@mui/icons-material";
 
 export default function Info({
   id,
@@ -25,7 +24,6 @@ export default function Info({
   lightText,
   buttonLabel,
   img,
-  heading,
   alt,
   primary,
   displayButton,

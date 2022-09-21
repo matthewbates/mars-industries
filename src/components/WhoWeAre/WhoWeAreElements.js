@@ -26,20 +26,24 @@ export const WhoWeAreWrapper = styled.div`
 
 export const WhoWeAreImg = styled.img`
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   object-fit: cover;
   filter: brightness(20%);
 `;
 
 export const WhoWeAreP = styled.p`
+
+  max-width: 420px;
   line-height: 1.4rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   /* text-align: justify; */
-  font-size: 16px;
+  /* font-size: 16px; */
   font-family: "Lato";
 
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
+    max-width: 520px;
+    font-size: 14px;
     display: flex;
     flex-direction: row;
-  }
+  } */
 `;

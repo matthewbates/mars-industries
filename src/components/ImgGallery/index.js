@@ -1,8 +1,6 @@
 import React from "react";
 import {
   ImgGalleryContainer,
-  ImgGalleryWrapper,
-  ImgGalleryUl,
   ImgGalleryLi,
   ImgGalleryImg,
   ImgGalleryOverlay,
@@ -14,18 +12,14 @@ import { imageGallery } from "./data";
 export default function ImageGallery() {
   return (
     <ImgGalleryContainer>
-      <ImgGalleryWrapper>
-        {imageGallery.map((item, index) => (
-          <ImgGalleryLi key={index}>
-            <ImgGalleryImg src={item.img} alt={item.alt} />
-            <ImgGalleryOverlay className="overlay">
-              <ImgGallerySpan>
-                <button>&#x2b;</button>
-              </ImgGallerySpan>
-            </ImgGalleryOverlay>
-          </ImgGalleryLi>
-        ))}
-      </ImgGalleryWrapper>
+      {imageGallery.map((item, index) => (
+        <ImgGalleryLi key={index}>
+          <ImgGalleryImg src={item.img} alt={item.alt} />
+          <ImgGalleryOverlay className="overlay">
+            <ImgGallerySpan></ImgGallerySpan>
+          </ImgGalleryOverlay>
+        </ImgGalleryLi>
+      ))}
     </ImgGalleryContainer>
   );
 }
