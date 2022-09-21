@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { AppContainer } from "./AppElements";
+import React, { useState } from "react";
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -8,25 +7,17 @@ import Sidebar from "./components/Sidebar";
 import Loader from "./components/Loader";
 
 export default function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [selected, setSelected] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 3000);
-    return () => clearTimeout(timer);
-  });
+
+  
   return (
-    <AppContainer>
-      {/* {isLoading ? (
-        <Loader />
-      ) : ( */}
-      <>
-        <Header />
-        <Navbar />
-        <Sidebar />
-        <Home />
-        <Footer />
-      </>
-      {/* )} */}
-    </AppContainer>
+    <div>
+      <Header />
+      <Navbar />
+      <Sidebar />
+      <Home />
+      <Footer />
+    </div>
   );
 }

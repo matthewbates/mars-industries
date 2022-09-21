@@ -5,7 +5,6 @@ import {
   ImgGalleryImg,
   ImgGalleryOverlay,
   ImgGallerySpan,
-  ImgGalleryBtn,
 } from "./ImgGalleryElements";
 import { imageGallery } from "./data";
 

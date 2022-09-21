@@ -3,7 +3,7 @@ import {
   SliderContentContainer,
   SliderContentImg,
 } from "./SliderContentElements";
-import { slides } from "./data";
+import slides from "../sliderImage"
 
 export default function SliderContent({ activeIndex }) {
   return (
@@ -13,7 +13,7 @@ export default function SliderContent({ activeIndex }) {
           key={index}
           className={index === activeIndex ? "slides active" : "inactive"}
         >
-          <SliderContentImg src={item.img} />
+          <SliderContentImg src={item.urls} />
         </SliderContentContainer>
       ))}
     </section>
