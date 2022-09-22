@@ -10,7 +10,9 @@ export const RelationshipsWrapper = styled.div`
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  max-width: 600px;
+  max-width: 560px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
   @media screen and (max-width: 768px) {
     max-width: 320px;
@@ -19,19 +21,21 @@ export const RelationshipsWrapper = styled.div`
 
 export const RelationshipsH2 = styled.h2`
   margin-top: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  font-size: 40px;
   align-items: center;
-  line-height: 2.5rem;
   justify-content: center;
   text-align: center;
-  font-family: "Lato";
+  font-family: "Cormorant Garamond";
 `;
 
 export const RelationshipsP = styled.p`
   line-height: 1.6rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-align: justify;
   columns: 1;
-  font-size: 16px;
+  /* font-size: 18px; */
   font-family: "Lato";
   justify-content: center;
   margin-top: 2rem;

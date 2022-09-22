@@ -13,20 +13,21 @@ import { infoData } from "../infoData";
 import gsap from "gsap";
 
 export default function HeaderInfo() {
+  
   useEffect(() => {
     gsap.from(".contact", {
       x: 100,
-      delay: 0.5,
+      delay: 1,
       opacity: 0,
-      duration: 2,
-      // stagger: 0.35,
+      duration: 1.5,
+      stagger: 0.3,
     });
   }, []);
 
   return (
     <HeaderContainer>
       <SocialsWrapper>
-        <Socials />
+        <Socials className="socials-icon"/>
       </SocialsWrapper>
       <HeaderContact>
         {infoData.map((item, index) => (
@@ -35,7 +36,7 @@ export default function HeaderInfo() {
               icon={item.icon}
               style={{
                 color: `${CONSTANTS.colors.lightGrey}`,
-                fontSize: "10px",
+                fontSize: "12px",
               }}
             />
             <HeaderA href={item.href}> {item.contact}</HeaderA>

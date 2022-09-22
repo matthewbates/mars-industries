@@ -12,7 +12,7 @@ export const AboutWrapper = styled.div`
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  max-width: 600px;
+  max-width: 560px;
   align-items: center;
   justify-content: center;
 

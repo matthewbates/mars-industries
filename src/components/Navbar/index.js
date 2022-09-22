@@ -17,10 +17,11 @@ export default function Navbar({}) {
 
   useEffect(() => {
     gsap.from(".nav-links", {
-      x: -100,
+      x: -150,
       delay: 1.5,
       opacity: 0,
-      duration: 2,
+      duration: 1.2,
+      stagger: 0.3,
     });
   }, []);
 
@@ -31,7 +32,7 @@ export default function Navbar({}) {
   return (
     <Nav>
       <NavbarContainer>
-        <Logo />
+        {/* <Logo /> */}
         <NavMenu>
           {navLinks.map((item, index) => (
             <NavItem key={index}>

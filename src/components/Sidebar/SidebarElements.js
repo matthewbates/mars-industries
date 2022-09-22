@@ -6,7 +6,7 @@ import { FaTimes } from "react-icons/fa";
 export const SidebarContainer = styled.div`
   position: fixed;
   z-index: 999;
-  width: 65%;
+  width: 50%;
   height: 100%;
   background: ${CONSTANTS.colors.dropdown};
   /* display: grid;
@@ -14,7 +14,7 @@ export const SidebarContainer = styled.div`
   top: 0;
   /* left: 0; */
   right: 0;
-  transition: 0.3s ease-out;
+  transition: 0.4s ease-out;
   opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
   /* top: ${({ isOpen }) => (isOpen ? "0" : "-100%")}; */
   right: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
@@ -47,7 +47,7 @@ export const SidebarMenuLi = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   font-family: "Lato";
   text-decoration: none;
   color: ${CONSTANTS.colors.lightGrey};

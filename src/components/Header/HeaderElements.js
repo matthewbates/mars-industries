@@ -59,7 +59,7 @@ export const HeaderLi = styled.li`
 export const HeaderA = styled.a`
   font-family: "Poppins";
   color: ${CONSTANTS.colors.lightGrey};
-  font-size: 14px;
+  font-size: 12px;
   flex-direction: column;
   text-decoration: none;
 
@@ -69,6 +69,6 @@ export const HeaderA = styled.a`
 
   &:hover {
     text-decoration: underline;
-    color: black;
+    color: ${CONSTANTS.colors.softBlack};
   }
 `;

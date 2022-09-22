@@ -5,10 +5,9 @@ export const SocialIcons = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-decoration: none;
   list-style: none;
-  transition: 0.2s ease-in-out;
   text-decoration: none;
   cursor: pointer;
 `;
@@ -17,6 +16,7 @@ export const SocialIconLink = styled.a`
   color: ${CONSTANTS.colors.lightGrey};
 
   &:hover {
-    color: black;
+    color: ${CONSTANTS.colors.softBlack};
+    transition: 200ms ease-in;
   }
 `;

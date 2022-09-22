@@ -35,7 +35,6 @@ export const Column = styled.div`
   /* align-items: center; */
   margin-left: 50px;
 
-  /* THIS WAS ADDED WHILE WORKING ON LAPTOP */
   @media screen and (max-width: 768px) {
     margin-top: 3rem;
   }

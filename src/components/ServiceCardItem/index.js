@@ -1,21 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ServicesCard from "../ServicesCard";
 import { ServiceCardItemContainer } from "./ServiceCardItemElements.js";
 import { services } from "./data";
-import gsap from "gsap";
 
 export default function ServiceCardItem() {
-  useEffect(() => {
-    gsap.from(".service-card", {
-      x: 100,
-      delay: 0.5,
-      opacity: 0,
-      duration: 2,
-      ease: "back",
-      stagger: 0.35,
-    });
-  }, []);
-
   return (
     <ServiceCardItemContainer>
       {services.map((item, index) => (

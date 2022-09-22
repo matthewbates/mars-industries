@@ -56,14 +56,13 @@ export const PartnerTextWrapper = styled.div`
 
 export const PartnerTopLine = styled.p`
   font-family: "Lato";
-  color: ${({ lightText }) =>
-    lightText ? `${CONSTANTS.colors.limeGreen}` : "blue"};
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   text-align: center;
   margin-top: 20%;
+  color: ${CONSTANTS.colors.offWhite};
 
   @media screen and (max-width: 768px) {
     margin-top: 4rem;
@@ -75,7 +74,6 @@ export const PartnerHeading = styled.h3`
   margin-bottom: 24px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "blue" : "#010606")};
 `;
 
 export const PartnerSubtitle = styled.p`
@@ -83,7 +81,6 @@ export const PartnerSubtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
 
 export const PartnerBtnWrap = styled.div`

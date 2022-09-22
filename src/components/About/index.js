@@ -1,4 +1,5 @@
 import React from "react";
+
 import { AboutContainer, AboutWrapper, AboutH2, AboutP } from "./AboutElements";
 
 export default function About() {

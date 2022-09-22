@@ -2,7 +2,6 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const ContactContainer = styled.div`
-  /* alter this for smaller viewports */
   height: 80vh;
 `;
 
@@ -11,7 +10,6 @@ export const ImgWrapper = styled.div`
 `;
 
 export const ContactDiv = styled.img`
-  /* background: ${CONSTANTS.colors.royalBlue}; */
   height: 30vh;
   width: 100%;
   position: relative;

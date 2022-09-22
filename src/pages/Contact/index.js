@@ -26,7 +26,7 @@ export default function Contact() {
             reach out as soon as possible.
           </ContactH2>
         </ImgWrapper>
-        <ContactH1>Get In Touch</ContactH1>
+        <ContactH1>Tell Us About Your Project</ContactH1>
         <Form />
         <Footer />
       </ContactContainer>
