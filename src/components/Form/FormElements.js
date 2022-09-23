@@ -19,13 +19,14 @@ export const Form = styled.form`
 `;
 
 export const TextInput = styled.input`
+  font-family: "Cormorant Garamond";
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
   padding: 15px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
   background-color: transparent;
   resize: none;
   border: 1px solid ${CONSTANTS.colors.lightGrey};
@@ -36,13 +37,14 @@ export const TextInput = styled.input`
 `;
 
 export const EmailInput = styled.input`
+  font-family: "Cormorant Garamond";
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
   padding: 15px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
   background-color: transparent;
   resize: none;
   border: 1px solid ${CONSTANTS.colors.lightGrey};
@@ -53,13 +55,15 @@ export const EmailInput = styled.input`
 `;
 
 export const TextArea = styled.textarea`
+  font-weight: bold;
+  font-family: "Cormorant Garamond";
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
   padding: 15px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
   background-color: transparent;
   resize: none;
   border: 1px solid ${CONSTANTS.colors.lightGrey};

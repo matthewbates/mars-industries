@@ -56,11 +56,10 @@ export const NavLinks = styled(LinkRoute)`
   margin-bottom: 20px;
   font-size: 16px;
   text-decoration: none;
-  /* line-height: 35px; */
+  position: relative;
 
   &:hover {
     text-decoration: underline;
-    transition: 200ms ease-in;
   }
 `;
 
@@ -74,7 +73,6 @@ export const Contact = styled.a`
 
   &:hover {
     text-decoration: underline;
-    transition: 200ms ease-in;
   }
 `;
 

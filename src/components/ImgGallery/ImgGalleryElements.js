@@ -73,12 +73,12 @@ export const ImgLinkH3 = styled.h3`
 
 export const ImgLinkWrapper = styled.span`
   font-family: "Lato";
-  font-size: 24px;
+  font-size: 18px;
   justify-content: center;
   text-align: center;
   align-items: center;
 
   &:hover {
-    text-decoration: none;
+    text-decoration: underline;
   }
 `;

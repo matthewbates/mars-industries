@@ -17,7 +17,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const SocialsWrapper = styled.div`
-  margin-left: 20px;
+  margin-left: 4rem;
 
   @media screen and (max-width: 768px) {
     margin-left: auto;
@@ -43,7 +43,7 @@ export const HeaderContact = styled.div`
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  margin-right: 20px;
+  margin-right: 4rem;
 
   @media screen and (max-width: 768px) {
     margin-right: 0px;
@@ -64,7 +64,7 @@ export const HeaderLi = styled.li`
 export const HeaderA = styled.a`
   font-family: "Poppins";
   color: ${CONSTANTS.colors.lightGrey};
-  font-size: 12px;
+  font-size: 14px;
   flex-direction: column;
   text-decoration: none;
 

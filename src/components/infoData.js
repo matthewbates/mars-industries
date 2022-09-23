@@ -10,7 +10,7 @@ export const infoData = [
   {
     title: "Email",
     href: "mailto:marsindustriesco@yahoo.com",
-    contact: "MarsIndustriesCO@yahoo.com",
+    contact: "marsindustriesco@yahoo.com",
     icon: faEnvelope,
   },
 ];

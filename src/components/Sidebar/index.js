@@ -17,6 +17,7 @@ export default function Dropdown({ isOpen, toggleSidebar }) {
       <SidebarMenuUl>
         <SidebarMenuLi>
           <NavLinks to="/">Home</NavLinks>
+          <NavLinks to="/company">Company</NavLinks>
           <NavLinks to="/services">Services</NavLinks>
           <NavLinks to="/gallery">Gallery</NavLinks>
           <NavLinks to="/contact">Contact</NavLinks>

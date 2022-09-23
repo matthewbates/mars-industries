@@ -33,7 +33,7 @@ export const ArrowsNext = styled.span`
 
   &:hover {
     border-radius: 4px;
-    transition: 200ms ease-in;
+    transition: 200ms ease-in-out;
     background: rgba(0, 0, 0, 0.2);
   }
 `;
