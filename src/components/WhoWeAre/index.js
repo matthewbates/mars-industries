@@ -14,15 +14,7 @@ export default function WhoWeAre() {
     <WhoWeAreContainer>
       <WhoWeAreImg src={background} />
       <WhoWeAreWrapper>
-        <h1
-          style={{
-            textAlign: "center",
-            fontSize: "36px",
-            fontFamily: "Cormorant Garamond",
-          }}
-        >
-          Who We Are
-        </h1>
+        <WhoWeAreH1>Who We Are</WhoWeAreH1>
         <WhoWeAreP>
           With over 50 years of combined experience, Joel & Co. Construction has
           steadily grown from a modest home remodeling contractor into a

@@ -60,15 +60,28 @@ export const NavLinks = styled(LinkRoute)`
   font-family: "Lato";
   text-transform: uppercase;
   color: black;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
   padding: 0 1.5rem;
   height: 100%;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
 
-  &:hover {
-    color: grey;
-    border-bottom: 3px solid grey;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
   }
 `;

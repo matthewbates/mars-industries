@@ -72,7 +72,7 @@ export const TextArea = styled.textarea`
 export const FormLabel = styled.label`
   display: flex;
   line-height: 2rem;
-  font-family: "Open Sans";
+  font-family: "Lato";
 `;
 
 export const FormButton = styled.button`
@@ -81,7 +81,7 @@ export const FormButton = styled.button`
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 45%;
+  width: 25%;
   cursor: pointer;
   text-transform: uppercase;
   padding: 15px;
@@ -91,9 +91,14 @@ export const FormButton = styled.button`
   transition: transform 0.25s;
   margin-top: 1rem;
 
+  @media screen and (max-width: 768px) {
+    width: 50%;
+  }
+
   &:hover {
     box-shadow: none;
     background: ${CONSTANTS.colors.royalBlue};
     color: ${CONSTANTS.colors.eggshellWhite};
+    transition: 200ms ease-in;
   }
 `;

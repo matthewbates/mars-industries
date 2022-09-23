@@ -9,7 +9,7 @@ export const ImgWrapper = styled.div`
   position: relative;
 `;
 
-export const ContactDiv = styled.img`
+export const ContactImg = styled.img`
   height: 30vh;
   width: 100%;
   position: relative;
@@ -28,7 +28,7 @@ export const ContactH2 = styled.h2`
   position: absolute;
 
   @media screen and (max-width: 768px) {
-    font-size: 18px;
+    font-size: 20px;
   }
 `;
 

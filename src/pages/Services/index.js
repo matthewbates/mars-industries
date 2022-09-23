@@ -25,7 +25,7 @@ export default function Services() {
       <Info {...servicesObjOne} />
       <ServicesH1>Primary Services</ServicesH1>
       <ServicesH3>
-        Offering all construction services, from conception to completion!
+        Offering all construction services, from conception to completion.
       </ServicesH3>
       <ServiceCardItem />
       <ValuesH1>Our Values</ValuesH1>

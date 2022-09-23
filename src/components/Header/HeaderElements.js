@@ -41,8 +41,13 @@ export const HeaderTitle = styled.h1``;
 
 export const HeaderContact = styled.div`
   display: flex;
-  margin-right: 20px;
+  justify-content: center;
   gap: 1.5rem;
+  margin-right: 20px;
+
+  @media screen and (max-width: 768px) {
+    margin-right: 0px;
+  }
 `;
 
 export const HeaderLi = styled.li`

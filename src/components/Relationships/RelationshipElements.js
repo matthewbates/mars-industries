@@ -11,8 +11,8 @@ export const RelationshipsWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   max-width: 560px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 
   @media screen and (max-width: 768px) {
     max-width: 320px;
@@ -20,8 +20,6 @@ export const RelationshipsWrapper = styled.div`
 `;
 
 export const RelationshipsH2 = styled.h2`
-  margin-top: 2rem;
-  line-height: 3rem;
   font-weight: 400;
   font-size: 40px;
   align-items: center;

@@ -14,6 +14,8 @@ export const ArrowsPrev = styled.span`
   font-weight: bold;
 
   &:hover {
+    border-radius: 4px;
+    transition: 200ms ease-in;
     background: rgba(0, 0, 0, 0.2);
   }
 `;
@@ -30,6 +32,8 @@ export const ArrowsNext = styled.span`
   right: 0;
 
   &:hover {
-    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    transition: 200ms ease-in;
+    background: rgba(0, 0, 0, 0.2);
   }
 `;

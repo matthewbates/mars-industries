@@ -11,30 +11,31 @@ export const WhoWeAreContainer = styled.div`
 
 export const WhoWeAreWrapper = styled.div`
   position: absolute;
-  /* max-width: 560px; */
   top: 50%;
   left: 50%;
-  text-align: justify;
-  line-height: 1.5rem;
-  font-weight: bold;
   transform: translate(-50%, -50%);
+  text-align: justify;
+  max-width: 420px;
 
   @media screen and (max-width: 768px) {
-    font-size: 12px;
-    line-height: 1.2rem;
-    max-width: 320px;
+    width: 80%;
   }
 `;
 
 export const WhoWeAreImg = styled.img`
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   object-fit: cover;
   filter: brightness(20%);
 `;
 
+export const WhoWeAreH1 = styled.h1`
+  text-align: center;
+  font-family: "Cormorant Garamond";
+`;
+
 export const WhoWeAreP = styled.p`
-  line-height: 1.2rem;
+  line-height: 1.4rem;
   margin-bottom: 2rem;
   text-align: justify;
   columns: 1;
@@ -42,9 +43,4 @@ export const WhoWeAreP = styled.p`
   font-family: "Lato";
   justify-content: center;
   margin-top: 2rem;
-
-  @media screen and (max-width: 768px) {
-    display: flex;
-    flex-direction: row;
-  }
 `;

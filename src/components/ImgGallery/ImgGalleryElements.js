@@ -23,6 +23,7 @@ export const ImgGalleryLi = styled.li`
   list-style: none;
   flex-grow: 1;
   flex: 1 1 auto;
+  overflow: hidden;
 
   &:hover .overlay {
     transform: scale(1);
@@ -54,4 +55,30 @@ export const ImgGalleryOverlay = styled.div`
   justify-content: center;
 `;
 
-export const ImgGallerySpan = styled.span``;
+export const ImgGallerySpan = styled.span`
+  font-family: "Lato";
+  font-size: 24px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+export const ImgLinkH3 = styled.h3`
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10%;
+`;
+
+export const ImgLinkWrapper = styled.span`
+  font-family: "Lato";
+  font-size: 24px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  &:hover {
+    text-decoration: none;
+  }
+`;

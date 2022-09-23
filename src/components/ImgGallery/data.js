@@ -11,40 +11,48 @@ export const imageGallery = [
   {
     img: image1,
     alt: "image",
+    link: "/test_route"
   },
   {
     img: image2,
     title: "Image 2",
     alt: "image",
+    link: "/test_route"
   },
   {
     img: image3,
     title: "Image 3",
     alt: "image",
+    link: "/test_route"
   },
   {
     img: image4,
     title: "Image 4",
     alt: "image",
+    link: "/test_route"
   },
   {
     img: image5,
     title: "Image 5",
     alt: "image",
+    link: "/test_route"
   },
   {
     img: image6,
     title: "Image 6",
     alt: "image",
+    link: "/test_route"
   },
   {
     img: image7,
     title: "Image 7",
     alt: "image",
+    link: "/test_route"
   },
   {
     img: image8,
     title: "Image 8",
     alt: "image",
+    link: "/test_route"
   },
 ];
