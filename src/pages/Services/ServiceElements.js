@@ -6,7 +6,7 @@ export const ServicesContainer = styled.div`
 `;
 
 export const ServicesH1 = styled.h1`
-  margin-top: 2rem;
+  margin-top: 4rem;
   text-align: center;
   font-family: "Lato";
 `;
@@ -14,8 +14,8 @@ export const ServicesH1 = styled.h1`
 export const ServicesH3 = styled.h3`
   margin-top: 1rem;
   text-align: center;
-  font-family: "Poppins";
-  color: ${CONSTANTS.colors.facebookBlue};
+  font-family: "Lato";
+  /* color: ${CONSTANTS.colors.softBlack}; */
 `;
 
 export const ValuesH1 = styled.h1`

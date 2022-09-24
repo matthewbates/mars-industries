@@ -5,6 +5,12 @@ export const SliderContentContainer = styled.div`
   max-width: 50%;
   position: relative;
 
+  .slides {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+  }
+
   .active {
     display: inline-block;
   }

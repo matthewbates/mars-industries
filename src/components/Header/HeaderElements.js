@@ -17,7 +17,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const SocialsWrapper = styled.div`
-  margin-left: 4rem;
+  margin-left: 3rem;
 
   @media screen and (max-width: 768px) {
     margin-left: auto;
@@ -43,7 +43,7 @@ export const HeaderContact = styled.div`
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  margin-right: 4rem;
+  margin-right: 3rem;
 
   @media screen and (max-width: 768px) {
     margin-right: 0px;

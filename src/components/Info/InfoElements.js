@@ -3,7 +3,7 @@ import CONSTANTS from "../../utils/constants";
 
 export const PartnerContainer = styled.div`
   background: ${({ top }) =>
-    top ? "#3B5998" : `${CONSTANTS.colors.royalBlue}`};
+    top ? "#3B5998" : `${CONSTANTS.colors.batman}`};
 `;
 
 export const PartnerWrapper = styled.div`
@@ -89,7 +89,7 @@ export const PartnerBtnWrap = styled.div`
 `;
 
 export const PartnerImgWrap = styled.div`
-  max-width: 555px;
+  max-width: 755px;
   height: 100%;
 `;
 

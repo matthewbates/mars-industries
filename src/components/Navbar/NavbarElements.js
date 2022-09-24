@@ -45,7 +45,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
 
   @media screen and (max-width: 768px) {
     display: none;

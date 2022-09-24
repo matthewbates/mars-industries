@@ -18,7 +18,7 @@ import Copyright from "../Copyright";
 export default function Footer() {
   return (
     <Box>
-      <h1>MARS Industries</h1>
+      <h1>Mars Industries</h1>
       <Container>
         <Row>
           <Column>

@@ -8,14 +8,13 @@ export default function About() {
       <AboutWrapper>
         <AboutH2>Providing Over 20 Years of Expertise & Experience</AboutH2>
         <AboutP>
-          Joel & Co. Construction is a premier general contracting company
-          located in Los Angeles, California serving the San Fernando Valley as
-          well as the greater Los Angeles region. Specializing in new
-          construction, custom home building, residential renovations, and
-          commercial construction, Joel & Co. always strives toward sustainable,
-          eco-friendly construction, and best practices. The company thrives on
-          making the difficult, delightful and is particularly passionate about
-          kitchen and bathroom remodeling and room additions.
+          Mars Construction is a premier, general contracting company based out
+          of Colorado Springs, Colorado serving the communities along the front
+          range of the Rocky Mountains. Specializing anywhere between
+          excavations and dirt work to framing, custom stairwells, and water
+          features, Mars Construction is obsessed with the logistics that go
+          into making sure your project goes above and beyond expectations. We
+          constantly strive to make the difficult, delightful.
         </AboutP>
         <AboutP>
           Joel & Co. takes pride in quality craftsmanship, attention to detail,

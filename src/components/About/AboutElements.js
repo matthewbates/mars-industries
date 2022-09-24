@@ -34,7 +34,7 @@ export const AboutH2 = styled.h2`
 
 export const AboutP = styled.p`
   line-height: 1.6rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-align: justify;
   columns: 1;
   font-size: 16px;
