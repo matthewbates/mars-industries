@@ -98,7 +98,7 @@ export const PartnerImg = styled.img`
   object-fit: contain;
 
   @media screen and (max-width: 768px) {
-    max-width: 80vw;
+    max-width: 60vw;
     align-items: center;
     justify-content: center;
   }

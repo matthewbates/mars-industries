@@ -4,6 +4,29 @@ import CONSTANTS from "../../utils/constants";
 export const AboutContainer = styled.div`
   height: 100%;
   background: ${CONSTANTS.colors.offWhite};
+  .listItem {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 40px 0px 40px;
+    justify-content: center;
+    /* Pre-animation */
+    opacity: 0;
+    transform: scale(85%);
+    transition: 1s;
+    @media (max-width: 900px) {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+    }
+  }
+  .animate {
+    opacity: 1;
+    transition: 1s;
+    transform: scale(100%);
+  }
 `;
 
 export const AboutWrapper = styled.div`
@@ -17,7 +40,7 @@ export const AboutWrapper = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    max-width: 320px;
+    max-width: 360px;
   }
 `;
 
