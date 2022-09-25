@@ -53,7 +53,7 @@ export const NavLinks = styled(Link)`
   color: ${CONSTANTS.colors.lightGrey};
 
   &:hover {
-    color: ${CONSTANTS.colors.eggshellWhite};
+    color: #fff;
   }
 `;
 

@@ -12,9 +12,9 @@ import {
 } from "./FormElements";
 
 // set up an email.js account contact for Nick
-const SERVICE_ID = "";
-const TEMPLATE_ID = "";
-const USER_ID = "";
+const SERVICE_ID = "service_7j2rpfd";
+const TEMPLATE_ID = "template_bl3e1rq";
+const USER_ID = "pxTQ3Ga0lBOJ4vGzM";
 
 export default function ContactForm() {
   useEffect(() => {
@@ -25,7 +25,6 @@ export default function ContactForm() {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
       (r) => {
-        console.log(r.text);
         swal.fire(
           "Message Sent",
           "Nick will respond to your inquiry shortly!",

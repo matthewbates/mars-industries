@@ -10,7 +10,7 @@ export default function Relationships() {
   return (
     <RelationshipsContainer>
       <RelationshipsWrapper>
-        <RelationshipsH2>Building Better Relationships</RelationshipsH2>
+        <RelationshipsH2>Building Lasting Relationships</RelationshipsH2>
         <RelationshipsP>
           Joel & Co. Construction prides itself on being a different kind of
           company. The strong commitment to quality construction that the

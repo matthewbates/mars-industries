@@ -17,6 +17,18 @@ export const ContactImg = styled.img`
   filter: brightness(40%);
 `;
 
+export const ContactH3 = styled.h3`
+  margin-top: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Lato";
+  font-weight: 300;
+  text-transform: uppercase;
+`;
+
 export const ContactH2 = styled.h2`
   text-align: justify;
   align-items: center;
@@ -32,8 +44,22 @@ export const ContactH2 = styled.h2`
   }
 `;
 
+export const ContactH5 = styled.h5`
+  display: flex;
+  /* margin-top: 2rem; */
+  line-height: 3rem;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Lato";
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+`;
+
 export const ContactH1 = styled.h1`
-  margin-top: 5rem;
+  margin-top: 2rem;
   text-align: center;
   justify-content: center;
   font-family: "Lato";

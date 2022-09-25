@@ -36,6 +36,14 @@ export default function Info({
 
   return (
     <>
+      {/* <Container>
+        <ImgWrapper>
+          <Img src={img} alt={img} />
+        </ImgWrapper>
+        <TextWrapper>
+          <h1>This is some test text</h1>
+        </TextWrapper>
+      </Container> */}
       <PartnerContainer top={top} id={id}>
         <PartnerWrapper>
           <PartnerRow imgStart={imgStart}>

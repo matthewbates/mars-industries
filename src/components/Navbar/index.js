@@ -17,7 +17,7 @@ export default function Navbar({}) {
 
   useEffect(() => {
     gsap.from(".nav-links", {
-      x: -150,
+      x: -180,
       delay: 1.5,
       opacity: 0,
       duration: 1.2,

@@ -5,7 +5,6 @@ import image1 from "../../assets/gallery/img1.jpg";
 
 export const servicesObjOne = {
   id: 1,
-  top: false,
   topLine:
     "20+ years of experience. Unforseen probems deal with on a regular basis.",
   description:
@@ -21,14 +20,13 @@ export const servicesObjOne = {
 
 export const servicesObjTwo = {
   id: 2,
-  top: false,
   topLine: "Parter with MARS Industries for your next project",
   heading: "THis is the heading for servicesObjTwo",
   description:
     "Fully customized, turnkey, program management and construction at scale.",
   buttonLabel: "Contact us",
   imgStart: true,
-  img: excavations,
+  img: image1,
   //   img: require("../../assets/images/excavations.svg"),
   alt: "image",
   dark: true,

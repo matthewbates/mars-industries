@@ -5,13 +5,19 @@ export const ServicesContainer = styled.div`
   background: ${CONSTANTS.colors.offWhite};
 `;
 
-export const ServicesH1 = styled.h1`
-  margin-top: 4rem;
+export const ServicesH3 = styled.h3`
+  margin-top: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-family: "Lato";
+  font-weight: 300;
+  text-transform: uppercase;
 `;
 
-export const ServicesH3 = styled.h3`
+export const ServicesSubText = styled.h3`
   margin-top: 1rem;
   text-align: center;
   font-family: "Lato";

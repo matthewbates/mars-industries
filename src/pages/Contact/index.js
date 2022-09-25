@@ -3,6 +3,8 @@ import {
   ContactContainer,
   ImgWrapper,
   ContactImg,
+  ContactH5,
+  ContactH3,
   ContactH2,
   ContactH1,
 } from "./ContactElements";
@@ -26,6 +28,7 @@ export default function Contact() {
             reach out as soon as possible.
           </ContactH2>
         </ImgWrapper>
+        <ContactH3>Contact</ContactH3>
         <ContactH1>Tell Us About Your Project</ContactH1>
         <Form />
         <Footer />

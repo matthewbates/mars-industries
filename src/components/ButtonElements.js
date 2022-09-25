@@ -21,6 +21,7 @@ export const Button = styled.button`
   &:hover {
     transition: all 0.2s ease-in-out;
     filter: brightness(80%);
-    color: ${({ primary }) => (primary ? "#fff" : "black")};
+    color: ${({ primary }) =>
+      primary ? `${CONSTANTS.colors.eggshellWhite}` : "black"};
   }
 `;

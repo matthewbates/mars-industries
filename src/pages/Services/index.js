@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import {
   ServicesContainer,
-  ServicesH1,
   ServicesH3,
+  ServicesSubText,
   ValuesH1,
 } from "./ServiceElements";
 import { servicesObjOne, servicesObjTwo } from "../../components/Info/data";
@@ -22,11 +22,11 @@ export default function Services() {
     <ServicesContainer>
       <Header />
       <Navbar />
-      <Info {...servicesObjOne} />
-      <ServicesH1>Primary Services</ServicesH1>
-      <ServicesH3>
+      {/* <Info {...servicesObjOne} /> */}
+      <ServicesH3>Services</ServicesH3>
+      <ServicesSubText>
         Offering all construction services, from conception to completion.
-      </ServicesH3>
+      </ServicesSubText>
       <ServiceCardItem />
       <ValuesH1>Our Values</ValuesH1>
       <ValuesCardItem />
