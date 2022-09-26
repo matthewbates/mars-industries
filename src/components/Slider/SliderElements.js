@@ -5,6 +5,11 @@ export const SliderContainer = styled.div`
   max-height: 50vh;
   max-width: 100%;
   position: relative;
-  margin: 1rem;
+  margin: 1.5rem;
   overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+    max-height: 30vh;
+  }
 `;

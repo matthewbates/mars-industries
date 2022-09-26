@@ -4,29 +4,6 @@ import CONSTANTS from "../../utils/constants";
 export const AboutContainer = styled.div`
   height: 100%;
   background: ${CONSTANTS.colors.offWhite};
-  .listItem {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin: 40px 0px 40px;
-    justify-content: center;
-    /* Pre-animation */
-    opacity: 0;
-    transform: scale(85%);
-    transition: 1s;
-    @media (max-width: 900px) {
-      flex-direction: column;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: left;
-    }
-  }
-  .animate {
-    opacity: 1;
-    transition: 1s;
-    transform: scale(100%);
-  }
 `;
 
 export const AboutWrapper = styled.div`
@@ -38,14 +15,15 @@ export const AboutWrapper = styled.div`
   max-width: 560px;
   align-items: center;
   justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 
   @media screen and (max-width: 768px) {
-    max-width: 360px;
+    max-width: 320px;
   }
 `;
 
 export const AboutH2 = styled.h2`
-  margin-top: 4rem;
   line-height: 3rem;
   font-weight: 400;
   font-size: 40px;

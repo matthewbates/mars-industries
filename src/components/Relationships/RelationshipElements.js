@@ -15,7 +15,7 @@ export const RelationshipsWrapper = styled.div`
   margin-bottom: 4rem;
 
   @media screen and (max-width: 768px) {
-    max-width: 360px;
+    max-width: 320px;
   }
 `;
 

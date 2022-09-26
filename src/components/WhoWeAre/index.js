@@ -1,5 +1,4 @@
 import React from "react";
-import {useInView} from "react-intersection-observer";
 import background from "../../assets/jobs/carousel_1.jpg";
 import {
   WhoWeAreContainer,
@@ -8,17 +7,14 @@ import {
   WhoWeAreH1,
   WhoWeAreP,
 } from "./WhoWeAreElements";
+import ScrollEffect from "../ScrollEffect";
 
-// this component rests on the home page beneath the About Component
 export default function WhoWeAre() {
-  
-const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
-  
   return (
     <WhoWeAreContainer>
       <WhoWeAreImg src={background} />
       <WhoWeAreWrapper>
-        <div ref={ref} className={inView ? "listItem animate" : "listItem"}>
+        <ScrollEffect>
           <WhoWeAreH1>Who We Are</WhoWeAreH1>
           <WhoWeAreP>
             With over 50 years of combined experience, Joel & Co. Construction
@@ -36,7 +32,7 @@ const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
             with a collaborative mindset and a common goal: to deliver a
             successful and beautiful project.
           </WhoWeAreP>
-        </div>
+        </ScrollEffect>
       </WhoWeAreWrapper>
     </WhoWeAreContainer>
   );

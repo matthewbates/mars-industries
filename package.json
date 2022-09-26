@@ -16,6 +16,7 @@
     "@testing-library/user-event": "^13.5.0",
     "emailjs-com": "^3.2.0",
     "font-awesome": "^4.7.0",
+    "framer-motion": "^7.4.0",
     "gsap": "^3.11.1",
     "react": "^18.2.0",
     "react-animation-on-scroll": "^5.1.0",

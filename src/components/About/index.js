@@ -1,14 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { AboutContainer, AboutWrapper, AboutH2, AboutP } from "./AboutElements";
+import ScrollEffect from "../ScrollEffect";
+
+// const variant = {
+//   visible: {
+//     opacity: 1,
+//     scale: 1,
+//     transition: { duration: 1 },
+//   },
+//   hidden: { opacity: 0, scale: 0 },
+// };
 
 export default function About() {
-  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
+  // const control = useAnimation();
+  // const [ref, inView] = useInView();
+
+  // useEffect(() => {
+  //   if (inView) {
+  //     control.start("visible");
+  //   } else {
+  //     control.start("hidden");
+  //   }
+  // }, [control, inView]);
 
   return (
-    <AboutContainer>
-      <AboutWrapper>
-        <div ref={ref} className={inView ? "listItem animate" : "listItem"}>
+    // <motion.div ref={ref} variants={variant} initial="hidden" animate={control}>
+    <ScrollEffect>
+      <AboutContainer>
+        <AboutWrapper>
           <AboutH2>Providing Over 20 Years of Experience & Expertise</AboutH2>
           <AboutP>
             Mars Construction is a premier, general contracting company based
@@ -27,8 +48,9 @@ export default function About() {
             end product is about manifesting the vision of the client. We look
             forward to making your ideas come to life.
           </AboutP>
-        </div>
-      </AboutWrapper>
-    </AboutContainer>
+        </AboutWrapper>
+      </AboutContainer>
+    </ScrollEffect>
+    // </motion.div>
   );
 }
