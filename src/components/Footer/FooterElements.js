@@ -22,7 +22,6 @@ export const Box = styled.div`
 `;
 
 export const Container = styled.div`
-  /* this was added for laptop size */
   margin-top: 2rem;
   margin-bottom: 2rem;
   display: flex;
@@ -32,7 +31,6 @@ export const Container = styled.div`
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   margin-left: 50px;
 
   @media screen and (max-width: 768px) {

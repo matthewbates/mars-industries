@@ -1,17 +1,17 @@
 import React from "react";
 import {
-  Column1,
-  Column2,
-  PartnerBtnWrap,
-  PartnerContainer,
-  PartnerHeading,
-  PartnerRow,
-  PartnerSubtitle,
-  PartnerTextWrapper,
-  PartnerTopLine,
-  PartnerWrapper,
-  PartnerImgWrap,
-  PartnerImg,
+  InfoContainer,
+  InfoWrapper,
+  InfoRow,
+  InfoColumn1,
+  InfoColumn2,
+  InfoTextWrapper,
+  InfoTopLine,
+  InfoHeading,
+  InfoSubtitle,
+  InfoBtnWrap,
+  InfoImgWrap,
+  InfoImg,
 } from "./InfoElements";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../ButtonElements";
@@ -36,37 +36,29 @@ export default function Info({
 
   return (
     <>
-      {/* <Container>
-        <ImgWrapper>
-          <Img src={img} alt={img} />
-        </ImgWrapper>
-        <TextWrapper>
-          <h1>This is some test text</h1>
-        </TextWrapper>
-      </Container> */}
-      <PartnerContainer top={top} id={id}>
-        <PartnerWrapper>
-          <PartnerRow imgStart={imgStart}>
-            <Column1>
-              <PartnerTextWrapper>
-                <PartnerTopLine lightText={lightText}>{topLine}</PartnerTopLine>
-                <PartnerBtnWrap>
+      <InfoContainer top={top} id={id}>
+        <InfoWrapper>
+          <InfoRow imgStart={imgStart}>
+            <InfoColumn1>
+              <InfoTextWrapper>
+                <InfoTopLine lightText={lightText}>{topLine}</InfoTopLine>
+                <InfoBtnWrap>
                   {displayButton && (
                     <Button onClick={routeChange} primary={primary ? 1 : 0}>
                       {buttonLabel}
                     </Button>
                   )}
-                </PartnerBtnWrap>
-              </PartnerTextWrapper>
-            </Column1>
-            <Column2>
-              <PartnerImgWrap>
-                <PartnerImg src={img} alt={alt} />
-              </PartnerImgWrap>
-            </Column2>
-          </PartnerRow>
-        </PartnerWrapper>
-      </PartnerContainer>
+                </InfoBtnWrap>
+              </InfoTextWrapper>
+            </InfoColumn1>
+            <InfoColumn2>
+              <InfoImgWrap>
+                <InfoImg src={img} alt={alt} />
+              </InfoImgWrap>
+            </InfoColumn2>
+          </InfoRow>
+        </InfoWrapper>
+      </InfoContainer>
     </>
   );
 }

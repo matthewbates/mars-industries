@@ -20,32 +20,18 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
   justify-content: space-between;
   display: flex;
-  height: 80px;
   z-index: 1;
-  width: 100%;
+  /* width: 100%; */
   padding: 0 24px;
 `;
 
-export const NavbarH2 = styled.h2`
-  display: flex;
-  align-items: center;
-  list-style: none;
-  text-align: center;
-  font-family: "Cormorant Garamond";
-
-  @media screen and (max-width: 768px) {
-    display: none;
-    font-size: 36px;
-  }
-`;
-
 export const NavMenu = styled.ul`
-  /* margin-right: 2rem; */
+  margin-right: 2rem;
   display: flex;
   align-items: center;
   list-style: none;
   text-align: center;
-  font-size: 14px;
+  font-size: 15px;
 
   @media screen and (max-width: 768px) {
     display: none;

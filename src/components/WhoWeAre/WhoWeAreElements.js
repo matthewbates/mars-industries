@@ -24,7 +24,7 @@ export const WhoWeAreWrapper = styled.div`
 
 export const WhoWeAreImg = styled.img`
   width: 100%;
-  height: 70vh;
+  height: 77vh;
   object-fit: cover;
   filter: brightness(20%);
 
@@ -40,7 +40,6 @@ export const WhoWeAreH1 = styled.h1`
 
 export const WhoWeAreP = styled.p`
   line-height: 1.6rem;
-  /* margin-bottom: 4rem; */
   text-align: justify;
   columns: 1;
   font-size: 16px;

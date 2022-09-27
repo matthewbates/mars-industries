@@ -7,7 +7,7 @@ export const ValuesCardWrapper = styled.div`
   grid-template-rows: 250px 180px 40px;
   grid-template-areas: "image" "text" "stats";
   border-radius: 20px;
-  background: ${CONSTANTS.colors.royalBlue};
+  background: ${CONSTANTS.colors.facebookBlue};
   box-shadow: 6px 6px 10px #00000010;
 
   &::after {

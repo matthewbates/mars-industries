@@ -1,28 +1,28 @@
 import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
+import image1 from "../../assets/gallery/img1.jpg";
 
-export const PartnerContainer = styled.div`
-  /* background: ${CONSTANTS.colors.eggshellWhite}; */
+export const InfoContainer = styled.div`
+  background: image(image1);
 `;
 
-export const PartnerWrapper = styled.div`
+export const InfoWrapper = styled.div`
+  margin-top: 150px;
   display: grid;
   z-index: 1;
   height: 400px;
-  max-width: 1100px;
   padding: 0 24px;
-  justify-content: center;
-  /* border: 2px solid ${CONSTANTS.colors.softBlack}; */
 
   @media screen and (max-width: 768px) {
     height: 580px;
   }
 `;
 
-export const PartnerRow = styled.div`
+export const InfoRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
+  text-align: center;
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `"col2 col1"` : `"col1 col2"`};
 
@@ -34,24 +34,24 @@ export const PartnerRow = styled.div`
   }
 `;
 
-export const Column1 = styled.div`
+export const InfoColumn1 = styled.div`
   padding: 0 10px;
   grid-area: col1;
 `;
 
-export const Column2 = styled.div`
-  margin-bottom: 15px;
+export const InfoColumn2 = styled.div`
+  /* margin-bottom: 15px; */
   padding: 0 15px;
   grid-area: col2;
+  justify-content: center;
 `;
 
-export const PartnerTextWrapper = styled.div`
-  max-width: 540px;
+export const InfoTextWrapper = styled.div`
   padding-top: 0;
   padding-bottom: 60px;
 `;
 
-export const PartnerTopLine = styled.p`
+export const InfoTopLine = styled.p`
   font-family: "Lato";
   font-size: 26px;
   font-weight: 300;
@@ -66,40 +66,39 @@ export const PartnerTopLine = styled.p`
   }
 `;
 
-export const PartnerHeading = styled.h3`
+export const InfoHeading = styled.h3`
   text-align: center;
   margin-bottom: 24px;
   line-height: 1.1;
   font-weight: 600;
 `;
 
-export const PartnerSubtitle = styled.p`
+export const InfoSubtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
 `;
 
-export const PartnerBtnWrap = styled.div`
+export const InfoBtnWrap = styled.div`
   display: flex;
   justify-content: center;
 `;
 
-export const PartnerImgWrap = styled.div`
-  width: 50vw;
-  max-width: auto;
+export const InfoImgWrap = styled.div`
   height: 100%;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 4rem;
+  }
 `;
 
-export const PartnerImg = styled.img`
+export const InfoImg = styled.img`
+  width: 100vw;
   max-width: 100%;
-  align-items: center;
-  justify-content: center;
   object-fit: contain;
 
   @media screen and (max-width: 768px) {
-    max-width: 60vw;
-    align-items: center;
-    justify-content: center;
+    max-width: 80vw;
   }
 `;

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { GalleryH3 } from "./GalleryElements";
 import Header from "../../components/Header";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
@@ -13,6 +14,7 @@ export default function Gallery() {
     <>
       <Header />
       <Navbar />
+      <GalleryH3>Gallery</GalleryH3>
       <ImgGallery />
       <Footer />
     </>

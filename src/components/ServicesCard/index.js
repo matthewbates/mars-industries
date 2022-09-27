@@ -13,11 +13,11 @@ export default function ServicesCard({
       <CardWrapper>
         <span>
           <img
-            style={{ width: "80px", height: "80px" }}
+            style={{ width: "85px", height: "85px" }}
             src={image}
             alt={alt}
           />
-          <p>{title}</p>
+          <h4 style={{ fontFamily: "Poppins" }}>{title}</h4>
         </span>
         <div className="overlay" style={style}>
           {description}

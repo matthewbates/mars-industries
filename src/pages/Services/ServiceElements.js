@@ -18,10 +18,10 @@ export const ServicesH3 = styled.h3`
 `;
 
 export const ServicesSubText = styled.h3`
-  margin-top: 1rem;
   text-align: center;
-  font-family: "Lato";
-  /* color: ${CONSTANTS.colors.softBlack}; */
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: "Poppins";
 `;
 
 export const ValuesH1 = styled.h1`
