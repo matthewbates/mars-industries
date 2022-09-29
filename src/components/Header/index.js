@@ -13,21 +13,20 @@ import { infoData } from "../infoData";
 import gsap from "gsap";
 
 export default function HeaderInfo() {
-  
-  useEffect(() => {
-    gsap.from(".contact", {
-      x: 100,
-      delay: 1,
-      opacity: 0,
-      duration: 1.5,
-      stagger: 0.3,
-    });
-  }, []);
+  // useEffect(() => {
+  //   gsap.from(".contact", {
+  //     x: 100,
+  //     delay: 1,
+  //     opacity: 0,
+  //     duration: 1.5,
+  //     stagger: 0.3,
+  //   });
+  // }, []);
 
   return (
     <HeaderContainer>
       <SocialsWrapper>
-        <Socials className="socials-icon"/>
+        <Socials />
       </SocialsWrapper>
       <HeaderContact>
         {infoData.map((item, index) => (

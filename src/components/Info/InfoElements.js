@@ -7,10 +7,11 @@ export const InfoContainer = styled.div`
 `;
 
 export const InfoWrapper = styled.div`
-  margin-top: 150px;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
   display: grid;
   z-index: 1;
-  height: 400px;
+  height: 100%;
   padding: 0 24px;
 
   @media screen and (max-width: 768px) {
@@ -94,11 +95,11 @@ export const InfoImgWrap = styled.div`
 `;
 
 export const InfoImg = styled.img`
-  width: 100vw;
-  max-width: 100%;
+  /* width: 80vw; */
+  max-width: 80%;
   object-fit: contain;
 
   @media screen and (max-width: 768px) {
-    max-width: 80vw;
+    max-width: 70%;
   }
 `;

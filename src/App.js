@@ -7,10 +7,6 @@ import Sidebar from "./components/Sidebar";
 import Loader from "./components/Loader";
 
 export default function App() {
-  const [selected, setSelected] = useState(false);
-
-
-  
   return (
     <div>
       <Header />

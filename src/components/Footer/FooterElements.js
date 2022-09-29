@@ -13,7 +13,7 @@ export const Box = styled.div`
   }
 
   h1 {
-    font-family: "Lato";
+    font-family: "Poppins";
     color: ${CONSTANTS.colors.softBlack};
     position: relative;
     text-align: center;
@@ -22,8 +22,8 @@ export const Box = styled.div`
 `;
 
 export const Container = styled.div`
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
 `;
@@ -34,6 +34,7 @@ export const Column = styled.div`
   margin-left: 50px;
 
   @media screen and (max-width: 768px) {
+    margin-left: 30px;
     margin-top: 3rem;
   }
 `;
@@ -49,9 +50,9 @@ export const Row = styled.div`
 `;
 
 export const NavLinks = styled(LinkRoute)`
-  font-family: "Lato";
+  font-family: "Poppins";
   color: ${CONSTANTS.colors.softBlack};
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   font-size: 16px;
   text-decoration: none;
   position: relative;
@@ -62,24 +63,22 @@ export const NavLinks = styled(LinkRoute)`
 `;
 
 export const Contact = styled.a`
-  font-family: "Lato";
+  font-family: "Poppins";
   color: ${CONSTANTS.colors.softBlack};
   margin-bottom: 20px;
   font-size: 16px;
   text-decoration: none;
-  line-height: 35px;
+  line-height: 30px;
 
   &:hover {
     text-decoration: underline;
   }
 `;
 
-export const ContactSpan = styled.span`
-  /* margin-top: 10px; */
-`;
+export const ContactSpan = styled.span``;
 
 export const Heading = styled.p`
-  font-family: "Lato";
+  font-family: "Poppins";
   font-size: 24px;
   color: ${CONSTANTS.colors.softBlack};
   margin-bottom: 40px;

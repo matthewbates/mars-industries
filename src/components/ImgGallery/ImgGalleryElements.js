@@ -43,11 +43,12 @@ export const ImgGalleryOverlay = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(57, 57, 57, 0.8);
+  background: black;
+  opacity: 0.85;
   top: 0;
   left: 0;
   transform: scale(0);
-  transition: all 0.2s 0.1s ease-in-out;
+  transition: 0.3s ease-in;
   color: #fff;
   border-radius: 5px;
   display: flex;
@@ -64,21 +65,6 @@ export const ImgGallerySpan = styled.span`
   }
 `;
 
-export const ImgLinkH3 = styled.h3`
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 10%;
-`;
-
-export const ImgLinkWrapper = styled.span`
+export const ImgLinkText = styled.h3`
   font-family: "Lato";
-  font-size: 18px;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-
-  &:hover {
-    text-decoration: underline;
-  }
 `;
