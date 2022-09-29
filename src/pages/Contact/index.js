@@ -3,10 +3,9 @@ import {
   ContactContainer,
   ImgWrapper,
   ContactImg,
-  ContactH5,
   ContactH3,
   ContactH2,
-  ContactH1,
+  ContactSubtitle,
 } from "./ContactElements";
 import Header from "../../components/Header";
 import Navbar from "../../components/Navbar";
@@ -29,7 +28,7 @@ export default function Contact() {
           </ContactH2>
         </ImgWrapper>
         <ContactH3>Contact</ContactH3>
-        <ContactH1>Tell Us About Your Project</ContactH1>
+        <ContactSubtitle>Tell Us About Your Project</ContactSubtitle>
         <Form />
         <Footer />
       </ContactContainer>

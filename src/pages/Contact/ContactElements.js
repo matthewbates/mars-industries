@@ -20,7 +20,6 @@ export const ContactImg = styled.img`
 export const ContactH3 = styled.h3`
   margin-top: 2rem;
   line-height: 3rem;
-  font-weight: 400;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -58,11 +57,10 @@ export const ContactH5 = styled.h5`
   letter-spacing: 1.5px;
 `;
 
-export const ContactH1 = styled.h1`
+export const ContactSubtitle = styled.h2`
   margin-top: 2rem;
   text-align: center;
   justify-content: center;
-  font-family: "Lato";
-  font-weight: bold;
-  font-size: 38px;
+  font-family: "Poppins";
+  font-weight: 500;
 `;
