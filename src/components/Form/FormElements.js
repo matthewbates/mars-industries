@@ -6,6 +6,7 @@ export const FormContainer = styled.div`
 `;
 
 export const Form = styled.form`
+  gap: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,18 +19,30 @@ export const Form = styled.form`
   }
 `;
 
+export const FormFullName = styled.div`
+  display: flex;
+  width: 60%;
+  gap: 0.5rem;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+`;
+
 export const TextInput = styled.input`
-  font-family: "Cormorant Garamond";
+  font-family: "Poppins";
   display: flex;
   justify-content: center;
+  color: ${CONSTANTS.colors.softBlack};
   align-items: center;
-  width: 50%;
+  width: 60%;
   padding: 15px;
   margin-bottom: 10px;
   font-size: 16px;
-  background-color: transparent;
+  background: transparent;
   resize: none;
   border: 1px solid ${CONSTANTS.colors.lightGrey};
+  border-radius: 6px;
 
   @media screen and (max-width: 768px) {
     width: 90%;
@@ -37,17 +50,19 @@ export const TextInput = styled.input`
 `;
 
 export const EmailInput = styled.input`
-  font-family: "Cormorant Garamond";
+  font-family: "Poppins";
   display: flex;
   justify-content: center;
+  color: ${CONSTANTS.colors.softBlack};
   align-items: center;
-  width: 50%;
+  width: 60%;
   padding: 15px;
   margin-bottom: 10px;
   font-size: 16px;
-  background-color: transparent;
+  background: transparent;
   resize: none;
   border: 1px solid ${CONSTANTS.colors.lightGrey};
+  border-radius: 6px;
 
   @media screen and (max-width: 768px) {
     width: 90%;
@@ -56,17 +71,19 @@ export const EmailInput = styled.input`
 
 export const TextArea = styled.textarea`
   font-weight: bold;
-  font-family: "Cormorant Garamond";
+  font-family: "Poppins";
   display: flex;
   justify-content: center;
+  color: ${CONSTANTS.colors.softBlack};
   align-items: center;
-  width: 50%;
+  width: 60%;
   padding: 15px;
   margin-bottom: 10px;
   font-size: 16px;
-  background-color: transparent;
+  background: transparent;
   resize: none;
   border: 1px solid ${CONSTANTS.colors.lightGrey};
+  border-radius: 6px;
 
   @media screen and (max-width: 768px) {
     width: 90%;
@@ -81,7 +98,7 @@ export const FormLabel = styled.label`
 
 export const FormButton = styled.button`
   border: 1px solid ${CONSTANTS.colors.lightGrey};
-  background-color: transparent;
+  background: transparent;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -96,7 +113,7 @@ export const FormButton = styled.button`
   margin-top: 1rem;
 
   @media screen and (max-width: 768px) {
-    width: 50%;
+    width: 40%;
   }
 
   &:hover {

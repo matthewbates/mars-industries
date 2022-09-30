@@ -44,7 +44,7 @@ export const ImgGalleryOverlay = styled.div`
   width: 100%;
   height: 100%;
   background: black;
-  opacity: 0.85;
+  opacity: 0.9;
   top: 0;
   left: 0;
   transform: scale(0);

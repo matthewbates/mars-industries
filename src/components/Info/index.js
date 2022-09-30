@@ -13,7 +13,7 @@ import {
   InfoImgWrap,
   InfoImg,
 } from "./InfoElements";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { Button } from "../ButtonElements";
 
 export default function Info({
@@ -28,11 +28,11 @@ export default function Info({
   primary,
   displayButton,
 }) {
-  let navigate = useNavigate();
-  const routeChange = () => {
-    let path = `/contact`;
-    navigate(path);
-  };
+  // let navigate = useNavigate();
+  // const routeChange = () => {
+  //   let path = `/contact`;
+  //   navigate(path);
+  // };
 
   return (
     <>
@@ -42,13 +42,13 @@ export default function Info({
             <InfoColumn1>
               <InfoTextWrapper>
                 <InfoTopLine lightText={lightText}>{topLine}</InfoTopLine>
-                <InfoBtnWrap>
+                {/* <InfoBtnWrap>
                   {displayButton && (
                     <Button onClick={routeChange} primary={primary ? 1 : 0}>
                       {buttonLabel}
                     </Button>
                   )}
-                </InfoBtnWrap>
+                </InfoBtnWrap> */}
               </InfoTextWrapper>
             </InfoColumn1>
             <InfoColumn2>

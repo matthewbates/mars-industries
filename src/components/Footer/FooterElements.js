@@ -32,10 +32,10 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 50px;
+  margin-top: 3rem;
 
   @media screen and (max-width: 768px) {
     margin-left: 30px;
-    margin-top: 3rem;
   }
 `;
 
@@ -50,39 +50,39 @@ export const Row = styled.div`
 `;
 
 export const NavLinks = styled(LinkRoute)`
-  font-family: "Poppins";
+  font-family: "Lato";
+  font-weight: 300;
   color: ${CONSTANTS.colors.softBlack};
   margin-bottom: 12px;
-  font-size: 16px;
   text-decoration: none;
   position: relative;
+  text-transform: uppercase;
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: 1px solid underline;
   }
 `;
 
 export const Contact = styled.a`
-  font-family: "Poppins";
+  font-family: "Lato";
   color: ${CONSTANTS.colors.softBlack};
   margin-bottom: 20px;
-  font-size: 16px;
   text-decoration: none;
   line-height: 30px;
+  font-weight: 300;
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: 1px solid underline;
   }
 `;
 
 export const ContactSpan = styled.span``;
 
-export const Heading = styled.p`
-  font-family: "Poppins";
-  font-size: 24px;
-  color: ${CONSTANTS.colors.softBlack};
+export const Heading = styled.h3`
   margin-bottom: 40px;
+  font-family: "Poppins";
   font-weight: bold;
+  text-transform: uppercase;
 `;
 
 export const CopyrightText = styled.p`

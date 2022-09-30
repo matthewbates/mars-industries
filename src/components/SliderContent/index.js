@@ -3,7 +3,7 @@ import {
   SliderContentContainer,
   SliderContentImg,
 } from "./SliderContentElements";
-import slides from "../sliderImage"
+import slides from "../sliderImage";
 
 export default function SliderContent({ activeIndex }) {
   return (

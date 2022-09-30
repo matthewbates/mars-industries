@@ -1,5 +1,4 @@
 import React from "react";
-import CONSTANTS from "../../utils/constants";
 import {
   Box,
   Container,
@@ -9,7 +8,6 @@ import {
   NavLinks,
   Contact,
   ContactSpan,
-  CopyrightText,
 } from "./FooterElements";
 import { infoData } from "../infoData";
 import Socials from "../Socials";
@@ -30,7 +28,7 @@ export default function Footer() {
             <NavLinks to="/contact">Contact</NavLinks>
           </Column>
           <Column>
-            <Heading>Contact</Heading>
+            <Heading>Let's Chat</Heading>
             {infoData.map((item, index) => (
               <ContactSpan key={index}>
                 <Contact href={item.href}> {item.contact}</Contact>
@@ -39,7 +37,7 @@ export default function Footer() {
           </Column>
           <Column>
             <Heading>Social Media</Heading>
-            <Socials style={{ color: "white" }} />
+            <Socials />
           </Column>
         </Row>
       </Container>

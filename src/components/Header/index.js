@@ -12,7 +12,7 @@ import CONSTANTS from "../../utils/constants";
 import { infoData } from "../infoData";
 import gsap from "gsap";
 
-export default function HeaderInfo() {
+export default function HeaderInfo({ headerOrFooter }) {
   // useEffect(() => {
   //   gsap.from(".contact", {
   //     x: 100,
@@ -25,7 +25,7 @@ export default function HeaderInfo() {
 
   return (
     <HeaderContainer>
-      <SocialsWrapper>
+      <SocialsWrapper headerOrFooter={false}>
         <Socials />
       </SocialsWrapper>
       <HeaderContact>

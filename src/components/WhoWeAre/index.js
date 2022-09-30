@@ -15,9 +15,7 @@ export default function WhoWeAre() {
     <WhoWeAreContainer>
       <WhoWeAreImg src={background} />
       <WhoWeAreWrapper>
-        <ScrollEffect>
-          <WhoWeAreH1>Who We Are</WhoWeAreH1>
-        </ScrollEffect>
+        <WhoWeAreH1>Who We Are</WhoWeAreH1>
         <ScrollEffect>
           <WhoWeAreP>{whoWeAreData[0].text}</WhoWeAreP>
         </ScrollEffect>

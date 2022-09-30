@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { LoaderContainer } from "./LoaderElements";
 import gsap from "gsap";
-import ClipLoader from "react-spinners/ClipLoader";
-
-const override = {
-  display: "block",
-  margin: "0 auto",
-  borderColor: "red",
-};
+import DotLoader from "react-spinners/ClipLoader";
 
 export default function Loader() {
   let [loading, setLoading] = useState(true);
@@ -33,12 +27,7 @@ export default function Loader() {
   // }, []);
   return (
     <div className="ui active dimmer">
-      <ClipLoader
-        color={color}
-        loading={loading}
-        cssOverride={override}
-        size={150}
-      />
+      <DotLoader loading={loading} />
     </div>
 
     // <LoaderContainer>

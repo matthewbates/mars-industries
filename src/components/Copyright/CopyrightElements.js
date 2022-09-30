@@ -6,4 +6,5 @@ export const CopyrightText = styled.p`
   color: ${CONSTANTS.colors.softBlack};
   text-align: center;
   font-family: "Lato";
+  bottom: 0;
 `;

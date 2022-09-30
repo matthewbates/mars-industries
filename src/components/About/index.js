@@ -7,9 +7,7 @@ export default function About() {
   return (
     <AboutContainer>
       <AboutWrapper>
-        <ScrollEffect>
-          <AboutH2>Providing Over 20 Years of Experience & Expertise</AboutH2>
-        </ScrollEffect>
+        <AboutH2>Providing Over 20 Years of Experience & Expertise</AboutH2>
         <ScrollEffect>
           <AboutP>{aboutData[0].text}</AboutP>
         </ScrollEffect>
