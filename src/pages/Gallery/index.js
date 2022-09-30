@@ -12,11 +12,11 @@ export default function Gallery() {
 
   return (
     <>
-      <Header />
-      <Navbar />
+      {/* <Header />
+      <Navbar /> */}
       <GalleryH3>Gallery</GalleryH3>
       <ImgGallery />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

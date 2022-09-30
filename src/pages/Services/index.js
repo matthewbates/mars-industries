@@ -20,8 +20,8 @@ export default function Services() {
 
   return (
     <ServicesContainer>
-      <Header />
-      <Navbar />
+      {/* <Header />
+      <Navbar /> */}
       <ServicesH3>Services</ServicesH3>
       <ServicesSubText>
         Offering all construction services, from conception to completion.
@@ -30,7 +30,7 @@ export default function Services() {
       <ValuesH1>Our Values</ValuesH1>
       <ValuesCardItem />
       <Info {...servicesObjTwo} />
-      <Footer />
+      {/* <Footer /> */}
     </ServicesContainer>
   );
 }

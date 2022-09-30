@@ -8,11 +8,11 @@ import { CompanyH3 } from "./companyElements";
 export default function Company() {
   return (
     <>
-      <Header />
-      <Navbar />
+      {/* <Header />
+      <Navbar /> */}
       <CompanyH3>Company</CompanyH3>
       <Philosophy />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

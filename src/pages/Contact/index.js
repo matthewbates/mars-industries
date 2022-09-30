@@ -17,8 +17,8 @@ export default function Contact() {
   return (
     <>
       <ContactContainer>
-        <Header />
-        <Navbar />
+        {/* <Header />
+        <Navbar /> */}
         <ContactH3>Contact</ContactH3>
         <ImgWrapper>
           <ContactImg src={image} alt="" />
@@ -30,7 +30,7 @@ export default function Contact() {
         </ImgWrapper>
         <ContactSubtitle>Tell Us About Your Project</ContactSubtitle>
         <Form />
-        <Footer />
+        {/* <Footer /> */}
       </ContactContainer>
     </>
   );

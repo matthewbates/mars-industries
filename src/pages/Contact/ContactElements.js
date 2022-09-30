@@ -2,7 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const ContactContainer = styled.div`
-  height: 80vh;
+  height: 100%;
 `;
 
 export const ImgWrapper = styled.div`

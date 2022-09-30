@@ -10,13 +10,14 @@ import Contact from "./pages/Contact";
 const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
-  <Router>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/company" element={<Company />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/gallery" element={<Gallery />} />
-      <Route path="contact" element={<Contact />} />
-    </Routes>
-  </Router>
+  <App />
+  // <Router>
+  //   <Routes>
+  //     <Route path="/" element={<App />} />
+  //     <Route path="/company" element={<Company />} />
+  //     <Route path="/services" element={<Services />} />
+  //     <Route path="/gallery" element={<Gallery />} />
+  //     <Route path="contact" element={<Contact />} />
+  //   </Routes>
+  // </Router>
 );
