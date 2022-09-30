@@ -8,6 +8,7 @@ export const HeaderContainer = styled.div`
   height: 100px;
   background: ${CONSTANTS.colors.eggshellWhite};
   z-index: 999;
+  border-bottom: 0.5px solid ${CONSTANTS.colors.lightGrey};
 
   @media screen and (max-width: 768px) {
     justify-content: center;

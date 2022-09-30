@@ -1,6 +1,3 @@
-import framing from "../../assets/images/framing.svg";
-import excavations from "../../assets/images/excavations.svg";
-import one from "../../assets/jobs/carousel_1.jpg";
 import image1 from "../../assets/gallery/img1.jpg";
 
 export const servicesObjOne = {

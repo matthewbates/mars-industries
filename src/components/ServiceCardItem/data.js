@@ -1,8 +1,10 @@
-import excavations from "../../assets/images/excavations.svg";
-import framing from "../../assets/images/framing.svg";
-import stairs from "../../assets/images/stairs.svg";
-import pool from "../../assets/images/pool.svg";
-import logistics from "../../assets/images/logistics.svg";
+import excavations from "../../assets/images/excavations.png";
+import framing from "../../assets/images/framing.jpeg";
+import waterFeatures from "../../assets/images/waterFeatures.png";
+import logistics from "../../assets/images/logistics.png";
+import concrete from "../../assets/images/concrete.png";
+import carpentry from "../../assets/images/carpentry.png";
+import stairs from "../../assets/images/stairs.jpeg";
 
 export const services = [
   {
@@ -18,7 +20,7 @@ export const services = [
   {
     title: "Concrete",
     description: "Driveways, walkways, basements, and concrete repair",
-    img: logistics,
+    img: concrete,
     style: {
       fontFamily: "Poppins",
       fontWeight: "bold",
@@ -38,7 +40,7 @@ export const services = [
   {
     title: "Finish Carpentry",
     description: "Custom woodwork and renovations",
-    img: excavations,
+    img: carpentry,
     style: {
       fontFamily: "Poppins",
       fontWeight: "bold",
@@ -58,7 +60,7 @@ export const services = [
     title: "Spas, Pools, & Water Features",
     description:
       "Pools & outdoor living spaces - create the outdoor ambiance you crave",
-    img: pool,
+    img: waterFeatures,
     alt: "pool",
     style: {
       fontFamily: "Poppins",
