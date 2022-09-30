@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { AboutContainer, AboutWrapper, AboutH2, AboutP } from "./AboutElements";
 import ScrollEffect from "../ScrollEffect";
 import { aboutData } from "./data";

@@ -6,12 +6,9 @@ import {
   RelationshipsP,
 } from "./RelationshipElements";
 import ScrollEffect from "../ScrollEffect";
-import { useInView } from "react-intersection-observer";
 import { relationshipData } from "./data";
 
 export default function Relationships() {
-  const { ref, inView } = useInView({ threshold: 0.4, triggerOnce: true });
-
   return (
     <RelationshipsContainer>
       <RelationshipsWrapper>

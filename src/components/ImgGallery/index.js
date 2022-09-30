@@ -1,17 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   ImgGalleryContainer,
   ImgGalleryLi,
-  ImgGalleryImg,
   ImgGalleryOverlay,
   ImgLinkText,
 } from "./ImgGalleryElements";
 import { imageGallery } from "./data";
-import Loader from "../Loader";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function ImageGallery() {
-  const [isLoading, setIsLoading] = useState(true);
   return (
     <>
       <ImgGalleryContainer>

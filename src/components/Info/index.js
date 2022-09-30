@@ -7,8 +7,6 @@ import {
   InfoColumn2,
   InfoTextWrapper,
   InfoTopLine,
-  InfoHeading,
-  InfoSubtitle,
   InfoBtnWrap,
   InfoImgWrap,
   InfoImg,

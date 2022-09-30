@@ -13,7 +13,6 @@ export const PhilosophyWrapper = styled.div`
   margin-right: auto;
   align-items: center;
   justify-content: center;
-  margin-bottom: 4rem;
 `;
 
 export const PhilosophyImg = styled.img`
@@ -51,8 +50,8 @@ export const PhilosophyP = styled.p`
   columns: 1;
   font-family: "Lato";
   justify-content: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   max-width: 550px;
 
   @media screen and (max-width: 768px) {

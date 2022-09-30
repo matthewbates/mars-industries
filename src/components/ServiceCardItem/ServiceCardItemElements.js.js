@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import CONSTANTS from "../../utils/constants";
 
 export const ServiceCardItemContainer = styled.div`
   display: flex;

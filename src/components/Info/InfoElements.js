@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import CONSTANTS from "../../utils/constants";
-import image1 from "../../assets/gallery/img1.jpg";
 
 export const InfoContainer = styled.div``;
 

@@ -5,7 +5,7 @@ import {
   ServicesSubText,
   ValuesH1,
 } from "./ServiceElements";
-import { servicesObjOne, servicesObjTwo } from "../../components/Info/data";
+import { servicesObjTwo } from "../../components/Info/data";
 import Header from "../../components/Header";
 import Navbar from "../../components/Navbar";
 import Info from "../../components/Info";
@@ -22,7 +22,6 @@ export default function Services() {
     <ServicesContainer>
       <Header />
       <Navbar />
-      {/* <Info {...servicesObjOne} /> */}
       <ServicesH3>Services</ServicesH3>
       <ServicesSubText>
         Offering all construction services, from conception to completion.

@@ -8,11 +8,10 @@ import {
 } from "./NavbarElements";
 import Burger from "../Burger";
 import Sidebar from "../Sidebar";
-import Logo from "../Logo";
 import gsap from "gsap";
 import { navLinks } from "./data";
 
-export default function Navbar({}) {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
