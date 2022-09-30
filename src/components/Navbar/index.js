@@ -8,21 +8,22 @@ import {
 } from "./NavbarElements";
 import Burger from "../Burger";
 import Sidebar from "../Sidebar";
+import Logo from "../Logo";
 import gsap from "gsap";
 import { navLinks } from "./data";
 
-export default function Navbar() {
+export default function Navbar({}) {
   const [isOpen, setIsOpen] = useState(false);
 
-  // useEffect(() => {
-  //   gsap.from(".nav-links", {
-  //     x: -180,
-  //     delay: 1.5,
-  //     opacity: 0,
-  //     duration: 1.2,
-  //     stagger: 0.3,
-  //   });
-  // }, []);
+  useEffect(() => {
+    gsap.from(".nav-links", {
+      x: -180,
+      delay: 0.5,
+      opacity: 0,
+      duration: 1.2,
+      stagger: 0.3,
+    });
+  }, []);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
@@ -31,10 +32,13 @@ export default function Navbar() {
   return (
     <Nav>
       <NavbarContainer>
+        {/* <Logo /> */}
         <NavMenu>
           {navLinks.map((item, index) => (
             <NavItem key={index}>
-              <NavLinks to={item.to}>{item.title}</NavLinks>
+              <NavLinks className="nav-links" to={item.to}>
+                {item.title}
+              </NavLinks>
             </NavItem>
           ))}
         </NavMenu>

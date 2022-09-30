@@ -17,7 +17,7 @@ export const PhilosophyWrapper = styled.div`
 `;
 
 export const PhilosophyImg = styled.img`
-  height: 30vh;
+  height: 40vh;
   width: 100%;
   position: relative;
   object-fit: cover;
