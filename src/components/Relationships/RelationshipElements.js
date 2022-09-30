@@ -33,7 +33,6 @@ export const RelationshipsP = styled.p`
   margin-bottom: 2rem;
   text-align: justify;
   columns: 1;
-  /* font-size: 18px; */
   font-family: "Lato";
   justify-content: center;
   margin-top: 2rem;

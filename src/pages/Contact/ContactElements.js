@@ -18,7 +18,7 @@ export const ContactImg = styled.img`
 `;
 
 export const ContactH3 = styled.h3`
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   line-height: 3rem;
   align-items: center;
   justify-content: center;

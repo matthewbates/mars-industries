@@ -2,20 +2,18 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 import image1 from "../../assets/gallery/img1.jpg";
 
-export const InfoContainer = styled.div`
-  background: image(image1);
-`;
+export const InfoContainer = styled.div``;
 
 export const InfoWrapper = styled.div`
   margin-top: 3rem;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
   display: grid;
   z-index: 1;
   height: 100%;
   padding: 0 24px;
 
   @media screen and (max-width: 768px) {
-    height: 580px;
+    /* height: 580px; */
   }
 `;
 
@@ -63,7 +61,7 @@ export const InfoTopLine = styled.p`
   color: black;
 
   @media screen and (max-width: 768px) {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 `;
 
@@ -96,10 +94,10 @@ export const InfoImgWrap = styled.div`
 
 export const InfoImg = styled.img`
   /* width: 80vw; */
-  max-width: 80%;
+  max-width: 70%;
   object-fit: contain;
 
   @media screen and (max-width: 768px) {
-    max-width: 70%;
+    max-width: 65%;
   }
 `;

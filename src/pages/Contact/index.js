@@ -19,6 +19,7 @@ export default function Contact() {
       <ContactContainer>
         <Header />
         <Navbar />
+        <ContactH3>Contact</ContactH3>
         <ImgWrapper>
           <ContactImg src={image} alt="" />
           <ContactH2>
@@ -27,7 +28,6 @@ export default function Contact() {
             reach out as soon as possible.
           </ContactH2>
         </ImgWrapper>
-        <ContactH3>Contact</ContactH3>
         <ContactSubtitle>Tell Us About Your Project</ContactSubtitle>
         <Form />
         <Footer />

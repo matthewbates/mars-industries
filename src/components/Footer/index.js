@@ -36,7 +36,7 @@ export default function Footer() {
             ))}
           </Column>
           <Column>
-            <Heading>Social Media</Heading>
+            <Heading>Connect With Us</Heading>
             <Socials />
           </Column>
         </Row>

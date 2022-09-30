@@ -5,6 +5,6 @@ export const aboutData = [
   },
   {
     id: 2,
-    text: "We takes pride in attention to detail and quality craftsmanship. One major difference that sets us apart from our compeition is the drive to provide open and honest communication with each and every client. While each project varies in relation to a clients needs, we aim to make it understood that the end product is about manifesting the vision of the client.",
+    text: "We takes pride in attention to detail and quality craftsmanship. One major difference that sets us apart from our competition is the drive to provide open and honest communication with each and every client. While each project varies in relation to a clients needs, we aim to make it understood that the end product is about manifesting the vision of the client.",
   },
 ];

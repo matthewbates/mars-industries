@@ -24,7 +24,7 @@ export const WhoWeAreWrapper = styled.div`
 
 export const WhoWeAreImg = styled.img`
   width: 100%;
-  height: 77vh;
+  height: 70vh;
   object-fit: cover;
   filter: brightness(20%);
 

@@ -32,7 +32,7 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 50px;
-  margin-top: 3rem;
+  margin-top: 1rem;
 
   @media screen and (max-width: 768px) {
     margin-left: 30px;

@@ -8,7 +8,6 @@ export const AboutContainer = styled.div`
 
 export const AboutWrapper = styled.div`
   display: flex;
-  margin-left: 4rem;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
@@ -35,13 +34,13 @@ export const AboutH2 = styled.h2`
 
 export const AboutP = styled.p`
   line-height: 1.6rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   text-align: justify;
   columns: 1;
   font-size: 16px;
   font-family: "Lato";
   justify-content: center;
-  margin-top: 2rem;
 
   @media screen and (max-width: 768px) {
     display: flex;

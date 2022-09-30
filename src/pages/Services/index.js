@@ -30,7 +30,7 @@ export default function Services() {
       <ServiceCardItem />
       <ValuesH1>Our Values</ValuesH1>
       <ValuesCardItem />
-      {/* <Info {...servicesObjTwo} /> */}
+      <Info {...servicesObjTwo} />
       <Footer />
     </ServicesContainer>
   );

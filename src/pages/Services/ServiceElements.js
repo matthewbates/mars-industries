@@ -6,7 +6,7 @@ export const ServicesContainer = styled.div`
 `;
 
 export const ServicesH3 = styled.h3`
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   line-height: 3rem;
   align-items: center;
   justify-content: center;
@@ -18,6 +18,7 @@ export const ServicesH3 = styled.h3`
 
 export const ServicesSubText = styled.h3`
   text-align: center;
+  margin-top: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
   font-family: "Poppins";

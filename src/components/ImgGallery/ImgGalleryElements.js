@@ -4,7 +4,6 @@ export const ImgGalleryContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;

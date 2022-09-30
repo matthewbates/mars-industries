@@ -21,7 +21,7 @@ export const Form = styled.form`
 
 export const FormFullName = styled.div`
   display: flex;
-  width: 60%;
+  width: 50%;
   gap: 0.5rem;
 
   @media screen and (max-width: 768px) {
@@ -35,7 +35,7 @@ export const TextInput = styled.input`
   justify-content: center;
   color: ${CONSTANTS.colors.softBlack};
   align-items: center;
-  width: 60%;
+  width: 50%;
   padding: 15px;
   margin-bottom: 10px;
   font-size: 16px;
@@ -55,7 +55,7 @@ export const EmailInput = styled.input`
   justify-content: center;
   color: ${CONSTANTS.colors.softBlack};
   align-items: center;
-  width: 60%;
+  width: 50%;
   padding: 15px;
   margin-bottom: 10px;
   font-size: 16px;
@@ -76,7 +76,7 @@ export const TextArea = styled.textarea`
   justify-content: center;
   color: ${CONSTANTS.colors.softBlack};
   align-items: center;
-  width: 60%;
+  width: 50%;
   padding: 15px;
   margin-bottom: 10px;
   font-size: 16px;
@@ -102,7 +102,7 @@ export const FormButton = styled.button`
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 25%;
+  width: 20%;
   cursor: pointer;
   text-transform: uppercase;
   padding: 15px;
