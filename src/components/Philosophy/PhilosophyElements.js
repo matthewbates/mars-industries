@@ -33,7 +33,7 @@ export const PhilosophyIntro = styled.h3`
   margin-bottom: 4rem;
 
   @media screen and (max-width: 768px) {
-    max-width: 420px;
+    max-width: 320px;
   }
 `;
 
