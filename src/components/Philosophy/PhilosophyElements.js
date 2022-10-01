@@ -9,10 +9,10 @@ export const PhilosophyContainer = styled.div`
 export const PhilosophyWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 `;
 
 export const PhilosophyImg = styled.img`
@@ -49,8 +49,7 @@ export const PhilosophyP = styled.p`
   text-align: justify;
   columns: 1;
   font-family: "Lato";
-  justify-content: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
   max-width: 550px;
 
