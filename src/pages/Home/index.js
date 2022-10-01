@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 import About from "../../components/About";
 import WhoWeAre from "../../components/WhoWeAre";
 import Relationships from "../../components/Relationships";

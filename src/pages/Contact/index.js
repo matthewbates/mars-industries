@@ -7,18 +7,13 @@ import {
   ContactH2,
   ContactSubtitle,
 } from "./ContactElements";
-import Header from "../../components/Header";
-import Navbar from "../../components/Navbar";
 import Form from "../../components/Form";
-import Footer from "../../components/Footer";
 import image from "../../assets/gallery/img6.jpg";
 
 export default function Contact() {
   return (
     <>
       <ContactContainer>
-        {/* <Header />
-        <Navbar /> */}
         <ContactH3>Contact</ContactH3>
         <ImgWrapper>
           <ContactImg src={image} alt="" />
@@ -30,7 +25,6 @@ export default function Contact() {
         </ImgWrapper>
         <ContactSubtitle>Tell Us About Your Project</ContactSubtitle>
         <Form />
-        {/* <Footer /> */}
       </ContactContainer>
     </>
   );
