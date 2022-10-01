@@ -47,7 +47,7 @@ export const NavLinks = styled(LinkRoute)`
   font-family: "Lato";
   text-transform: uppercase;
   color: black;
-  padding: 0 1rem;
+  padding: 0 0.8rem;
   height: 100%;
   display: flex;
   align-items: center;
