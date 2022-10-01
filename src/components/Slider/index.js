@@ -4,7 +4,6 @@ import Arrows from "../Arrows";
 import Dots from "../Dots";
 import SliderContent from "../SliderContent";
 import sliderImage from "../sliderImage";
-import "../slider.css";
 
 const slideLength = sliderImage.length - 1;
 

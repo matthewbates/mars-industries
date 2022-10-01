@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  SliderContentSection,
   SliderContentContainer,
   SliderContentImg,
 } from "./SliderContentElements";
@@ -7,7 +8,7 @@ import slides from "../sliderImage";
 
 export default function SliderContent({ activeIndex }) {
   return (
-    <section>
+    <SliderContentSection>
       {slides.map((item, index) => (
         <SliderContentContainer
           key={index}
@@ -16,6 +17,6 @@ export default function SliderContent({ activeIndex }) {
           <SliderContentImg src={item.urls} />
         </SliderContentContainer>
       ))}
-    </section>
+    </SliderContentSection>
   );
 }

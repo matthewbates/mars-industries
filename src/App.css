@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    background-color: #F7F7F7;
+    --heights: 50vh;
+    --widths: 100%:
+}

@@ -10,6 +10,7 @@ import Company from "./pages/Company";
 import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import "./App.css";
 
 export default function App() {
   return (

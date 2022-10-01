@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+export const SliderContentSection = styled.section`
+  .active {
+    display: inline-block;
+  }
+
+  .inactive {
+    display: none;
+  }
+`;
+
 export const SliderContentContainer = styled.div`
   height: auto;
   max-width: 50%;
@@ -30,4 +40,27 @@ export const SliderContentImg = styled.img`
   width: 100vw;
   overflow: visible;
   object-fit: cover;
+`;
+
+export const SliderContentTitle = styled.h3`
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  z-index: 10;
+`;
+
+export const SliderContentText = styled.p`
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  z-index: 10;
+  font-size: 2rem;
 `;
