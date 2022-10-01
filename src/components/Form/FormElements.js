@@ -111,6 +111,7 @@ export const FormButton = styled.button`
   letter-spacing: 5px;
   transition: transform 0.25s;
   margin-top: 1rem;
+  color: ${CONSTANTS.colors.softBlack};
 
   @media screen and (max-width: 768px) {
     width: 40%;

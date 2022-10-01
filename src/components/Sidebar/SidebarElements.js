@@ -55,6 +55,11 @@ export const NavLinks = styled(Link)`
   &:hover {
     color: #fff;
   }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 1rem;
+    font-size: 18px;
+  }
 `;
 
 export const Icon = styled.div`
