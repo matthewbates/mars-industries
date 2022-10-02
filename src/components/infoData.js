@@ -4,7 +4,7 @@ export const infoData = [
   {
     title: "Phone",
     href: "tel:+7193132700",
-    contact: "719 313 2700",
+    contact: "(719) 313-2700)",
     icon: faPhone,
   },
   {

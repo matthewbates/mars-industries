@@ -1,6 +1,6 @@
 export const philosophyIntro = [
   {
-    text: "A project is truly great when it is designed to the specifications of the client, can please the neighbors, but, perhaps more importantly, can create a unique sense of place. We believe we have the responsibility to our clients not only to provide a project of the highest possible quality, but also to provide it in a smooth and professional manner. Your project is our project.",
+    text: "A project is truly great when it is designed to the specifications of the client, can please the neighbors, but, perhaps more importantly, can create a unique sense of place. We believe we have the responsibility to our clients to not only provide a project of the highest possible quality, but also to deliver it in a smooth and professional manner. Your project is our project.",
   },
 ];
 
@@ -8,7 +8,7 @@ export const philosophyData = [
   {
     title: "Integrity & Professionalism",
     paragraph:
-      "Here at Mars we strive to be the absolute best at what we do. Our goal is to construct quality projects functional in both style and class, and to ensure they will not fade over time. Creativity is achieved through a combination of our overall experience, as well as the input obtained through brainstorming sessions with the client.",
+      "Here at Mars we strive to be the absolute best at what we do. Our goal is to construct quality projects, functional in both style and class, and to ensure they will not fade over time. Creativity is achieved through a combination of our overall experience, as well as the input obtained through brainstorming sessions with the client.",
   },
   {
     title: "Quality & Service",
