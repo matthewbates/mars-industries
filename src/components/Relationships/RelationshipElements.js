@@ -36,6 +36,7 @@ export const RelationshipsP = styled.p`
   font-family: "Lato";
   justify-content: center;
   margin-top: 2rem;
+  color: ${CONSTANTS.colors.softBlack};
 
   @media screen and (max-width: 768px) {
     display: flex;

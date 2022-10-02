@@ -6,7 +6,7 @@ export const ValuesCardWrapper = styled.div`
   grid-template-columns: 340px;
   grid-template-rows: 250px 180px 40px;
   grid-template-areas: "image" "text" "stats";
-  border-radius: 20px;
+  border-radius: 14px;
   background: ${CONSTANTS.colors.facebookBlue};
   box-shadow: 6px 6px 10px #00000010;
 
@@ -18,8 +18,8 @@ export const ValuesCardWrapper = styled.div`
 export const ValuesCardImg = styled.div`
   grid-area: image;
   background-image: url(${({ background }) => background});
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
   background-size: cover;
 `;
 

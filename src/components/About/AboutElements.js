@@ -41,6 +41,7 @@ export const AboutP = styled.p`
   font-size: 16px;
   font-family: "Lato";
   justify-content: center;
+  color: ${CONSTANTS.colors.softBlack};
 
   @media screen and (max-width: 768px) {
     display: flex;

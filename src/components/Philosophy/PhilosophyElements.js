@@ -9,10 +9,7 @@ export const PhilosophyContainer = styled.div`
 export const PhilosophyWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  /* margin-left: auto; */
-  /* margin-right: auto; */
   align-items: center;
-  /* justify-content: center; */
 `;
 
 export const PhilosophyImg = styled.img`
@@ -52,8 +49,9 @@ export const PhilosophyP = styled.p`
   margin-top: 2rem;
   margin-bottom: 3rem;
   max-width: 550px;
+  color: ${CONSTANTS.colors.softBlack};
 
   @media screen and (max-width: 768px) {
-    max-width: 320px;
+    max-width: 300px;
   }
 `;

@@ -15,12 +15,12 @@ export const CardWrapper = styled.div`
   position: relative;
   display: flex;
   background: #fff;
-  border-radius: 20px;
+  border-radius: 14px;
   box-shadow: 6px 6px 10px #00000010;
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 30px 6px;
+  padding: 30px 20px;
   width: 160px;
   height: 204px;
   margin: 0 10px 20px;
