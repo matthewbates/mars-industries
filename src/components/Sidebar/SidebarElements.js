@@ -56,7 +56,12 @@ export const NavLinks = styled(Link)`
     color: #fff;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
+    margin-top: 0.5rem;
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
     margin-top: 1rem;
     font-size: 18px;
   }
