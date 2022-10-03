@@ -4,6 +4,7 @@ import CONSTANTS from "../../utils/constants";
 export const PhilosophyContainer = styled.div`
   height: 100%;
   background: ${CONSTANTS.colors.offWhite};
+  /* margin-top: 0.5rem; */
 `;
 
 export const PhilosophyWrapper = styled.div`
@@ -17,6 +18,7 @@ export const PhilosophyImg = styled.img`
   width: 100%;
   position: relative;
   object-fit: cover;
+  margin-top: 0.5rem;
 `;
 
 export const PhilosophyIntro = styled.h3`
@@ -46,7 +48,7 @@ export const PhilosophyP = styled.p`
   text-align: justify;
   columns: 1;
   font-family: "Lato";
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 3rem;
   max-width: 550px;
   color: ${CONSTANTS.colors.softBlack};

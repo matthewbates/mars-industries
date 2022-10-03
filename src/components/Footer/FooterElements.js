@@ -32,7 +32,8 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 50px;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
+  margin-top: 0.5rem;
 
   @media screen and (max-width: 768px) {
     /* margin-left: 30px; */
@@ -58,6 +59,7 @@ export const NavLinks = styled(LinkRoute)`
   text-decoration: none;
   position: relative;
   text-transform: uppercase;
+  font-size: 14px;
 
   &:hover {
     text-decoration: 1px solid underline;
@@ -71,6 +73,7 @@ export const Contact = styled.a`
   text-decoration: none;
   line-height: 30px;
   font-weight: 300;
+  font-size: 14px;
 
   &:hover {
     text-decoration: 1px solid underline;

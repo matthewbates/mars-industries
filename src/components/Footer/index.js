@@ -12,6 +12,8 @@ import {
 import { infoData } from "../infoData";
 import Socials from "../Socials";
 import Copyright from "../Copyright";
+import SiteMap from "../../pages/SiteMap";
+import TermsOfService from "../TermsOfService";
 
 export default function Footer() {
   return (
@@ -20,7 +22,7 @@ export default function Footer() {
       <Container>
         <Row>
           <Column>
-            <Heading>Links</Heading>
+            <Heading style={{ fontSize: "18px" }}>Links</Heading>
             <NavLinks to="/">Home</NavLinks>
             <NavLinks to="/company">Company</NavLinks>
             <NavLinks to="/services">Services</NavLinks>
@@ -28,7 +30,7 @@ export default function Footer() {
             <NavLinks to="/contact">Contact</NavLinks>
           </Column>
           <Column>
-            <Heading>Let's Chat</Heading>
+            <Heading style={{ fontSize: "18px" }}>Let's Chat</Heading>
             {infoData.map((item, index) => (
               <ContactSpan key={index}>
                 <Contact href={item.href}> {item.contact}</Contact>
@@ -36,11 +38,24 @@ export default function Footer() {
             ))}
           </Column>
           <Column>
-            <Heading>Connect With Us</Heading>
+            <Heading style={{ fontSize: "18px" }}>Connect With Us</Heading>
             <Socials />
           </Column>
         </Row>
       </Container>
+      <span
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          gap: "2rem",
+          justifyContent: "center",
+          fontSize: "14px",
+          fontFamily: "Lato",
+        }}
+      >
+        <SiteMap />
+        <TermsOfService />
+      </span>
       <Copyright />
     </Box>
   );

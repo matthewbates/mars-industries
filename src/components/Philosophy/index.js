@@ -18,8 +18,8 @@ export default function Philosophy() {
         <PhilosophyImg src={image1} />
         <PhilosophyIntro>{philosophyIntro[0].text}</PhilosophyIntro>
         {philosophyData.map((item, index) => (
-          <ScrollEffect>
-            <PhilosophyH3 key={index}>{item.title}</PhilosophyH3>
+          <ScrollEffect key={index}>
+            <PhilosophyH3>{item.title}</PhilosophyH3>
             <PhilosophyP>{item.paragraph}</PhilosophyP>
           </ScrollEffect>
         ))}

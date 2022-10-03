@@ -9,4 +9,6 @@ export const ValuesCardItemContainer = styled.div`
   align-items: center;
   padding: 20px;
   margin-bottom: 4rem;
+
+
 `;

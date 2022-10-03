@@ -7,6 +7,7 @@ export const ContactContainer = styled.div`
 
 export const ImgWrapper = styled.div`
   position: relative;
+  margin-top: 0.5rem;
 `;
 
 export const ContactImg = styled.img`

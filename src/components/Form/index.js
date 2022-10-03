@@ -21,6 +21,26 @@ export default function ContactForm() {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
+  const firstNameValidation = () => {
+    let fName = /[a-zA-z]/gi;
+
+    if (fName === "" || fName.length < 0) {
+      alert("Please enter a valid first name.");
+    }
+  };
+
+  const lastNameValidation = () => {
+    let lName = /[a-zA-z]/gi;
+
+    if (lName === "" || lName.length < 0) {
+      alert("Please entera valid last name");
+    }
+  };
+
+  const emailValidation = (e) => {
+    
+  };
+
   const handleOnSubmit = (e) => {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
