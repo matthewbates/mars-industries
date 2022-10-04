@@ -19,7 +19,7 @@ export default function Navbar() {
       x: -180,
       delay: 1.5,
       opacity: 0,
-      duration: 1.2,
+      duration: 0.8,
       stagger: 0.3,
     });
   }, []);
@@ -31,7 +31,6 @@ export default function Navbar() {
   return (
     <Nav>
       <NavbarContainer>
-        {/* <Logo /> */}
         <NavMenu>
           {navLinks.map((item, index) => (
             <NavItem key={index}>

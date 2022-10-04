@@ -55,7 +55,8 @@ export const NavLinks = styled(LinkRoute)`
   font-family: "Lato";
   font-weight: 300;
   color: ${CONSTANTS.colors.softBlack};
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  /* gap: 2rem; */
   text-decoration: none;
   position: relative;
   text-transform: uppercase;
