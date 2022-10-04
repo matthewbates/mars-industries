@@ -43,19 +43,20 @@ export default function Footer() {
           </Column>
         </Row>
       </Container>
-      <span
+      {/* <span
         style={{
           display: "flex",
           flexDirection: "row",
-          gap: "2rem",
+          gap: "1.5rem",
           justifyContent: "center",
           fontSize: "14px",
           fontFamily: "Lato",
+          marginTop: "3rem",
         }}
       >
         <SiteMap />
         <TermsOfService />
-      </span>
+      </span> */}
       <Copyright />
     </Box>
   );

@@ -37,7 +37,7 @@ export const Column = styled.div`
 
   @media screen and (max-width: 768px) {
     /* margin-left: 30px; */
-    margin-left: 50px;
+    margin-left: 30px;
   }
 `;
 

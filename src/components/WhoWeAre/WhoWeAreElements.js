@@ -23,12 +23,12 @@ export const WhoWeAreWrapper = styled.div`
 
 export const WhoWeAreImg = styled.img`
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   object-fit: cover;
   filter: brightness(20%);
 
   @media screen and (max-width: 768px) {
-    height: 100vh;
+    height: 95vh;
   }
 `;
 
