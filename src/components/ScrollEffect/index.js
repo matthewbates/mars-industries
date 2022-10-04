@@ -24,7 +24,7 @@ export default function ScrollEffect({ children }) {
   }, [control, inView]);
 
   return (
-    <motion.div ref={ref} variants={variant} initial="hidden" animate={control}>
+    <motion.div ref={ref} variants={variant} initial="hidden" animate={control} displayOnce={true}>
       {children}
     </motion.div>
   );
