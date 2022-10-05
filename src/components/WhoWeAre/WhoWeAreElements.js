@@ -17,7 +17,7 @@ export const WhoWeAreWrapper = styled.div`
   max-width: 420px;
 
   @media screen and (max-width: 768px) {
-    width: 70%;
+    width: 80%;
   }
 `;
 
@@ -28,7 +28,7 @@ export const WhoWeAreImg = styled.img`
   filter: brightness(20%);
 
   @media screen and (max-width: 768px) {
-    height: 95vh;
+    height: 100vh;
   }
 `;
 
