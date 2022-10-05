@@ -2,13 +2,14 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const ValuesCardItemContainer = styled.div`
-  gap: 2.5rem;
+  gap: 3.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 
   .listItem {
     opacity: 0;
