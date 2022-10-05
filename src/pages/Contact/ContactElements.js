@@ -30,7 +30,7 @@ export const ContactH3 = styled.h3`
 `;
 
 export const ContactH2 = styled.h2`
-  text-align: justify;
+  text-align: center;
   align-items: center;
   font-family: "Cormorant Garamond";
   color: white;
