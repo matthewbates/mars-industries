@@ -6,5 +6,5 @@ import SiteMapLink from "../../components/SiteMapLink";
 import { Link } from "react-router-dom";
 
 export default function SiteMap() {
-  return <div>Site map</div>;
+  return <SiteMapLink />;
 }

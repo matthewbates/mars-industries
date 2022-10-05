@@ -22,11 +22,8 @@ export const Button = styled.button`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    /* filter: brightness(80%); */
-    /* background: ${CONSTANTS.colors.royalBlue}; */
     background: transparent;
     border: 1px solid ${CONSTANTS.colors.lightGrey};
-    color: ${CONSTANTS.colors.softBlack};
-    /* color: ${CONSTANTS.colors.eggshellWhite}; */
+    color: ${CONSTANTS.colors.royalBlue};
   }
 `;

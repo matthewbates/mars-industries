@@ -31,9 +31,9 @@ export const Container = styled.div`
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
-  /* margin-top: 1rem; */
-  margin-top: 0.5rem;
+  margin-left: 80px;
+  /* gap: 10px; */
+  /* margin-bottom: 1rem; */
 
   @media screen and (max-width: 768px) {
     /* margin-left: 30px; */
@@ -84,7 +84,8 @@ export const Contact = styled.a`
 export const ContactSpan = styled.span``;
 
 export const Heading = styled.h3`
-  margin-bottom: 40px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   font-family: "Poppins";
   font-weight: bold;
   text-transform: uppercase;
@@ -94,4 +95,12 @@ export const CopyrightText = styled.p`
   font-size: 14px;
   color: ${CONSTANTS.colors.softBlack};
   text-align: center;
+`;
+
+export const TermsContainer = styled.div`
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
 `;

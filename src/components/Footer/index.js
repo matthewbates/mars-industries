@@ -13,7 +13,7 @@ import { infoData } from "../infoData";
 import Socials from "../Socials";
 import Copyright from "../Copyright";
 import SiteMap from "../../pages/SiteMap";
-import TermsOfService from "../TermsOfService";
+import TermsOfService from "../PrivacyPolicy";
 
 export default function Footer() {
   return (
@@ -22,7 +22,7 @@ export default function Footer() {
       <Container>
         <Row>
           <Column>
-            <Heading style={{ fontSize: "18px" }}>Links</Heading>
+            <Heading style={{ fontSize: "20px" }}>Links</Heading>
             <NavLinks to="/">Home</NavLinks>
             <NavLinks to="/company">Company</NavLinks>
             <NavLinks to="/services">Services</NavLinks>
@@ -30,7 +30,7 @@ export default function Footer() {
             <NavLinks to="/contact">Contact</NavLinks>
           </Column>
           <Column>
-            <Heading style={{ fontSize: "18px" }}>Let's Chat</Heading>
+            <Heading style={{ fontSize: "20px" }}>Let's Chat</Heading>
             {infoData.map((item, index) => (
               <ContactSpan key={index}>
                 <Contact href={item.href}> {item.contact}</Contact>
@@ -38,25 +38,23 @@ export default function Footer() {
             ))}
           </Column>
           <Column>
-            <Heading style={{ fontSize: "18px" }}>Connect With Us</Heading>
+            <Heading style={{ fontSize: "20px" }}>Connect With Us</Heading>
             <Socials />
           </Column>
         </Row>
       </Container>
-      {/* <span
+      <div
         style={{
+          marginTop: "3rem",
           display: "flex",
           flexDirection: "row",
-          gap: "1.5rem",
           justifyContent: "center",
-          fontSize: "14px",
-          fontFamily: "Lato",
-          marginTop: "3rem",
+          gap: ".5rem",
         }}
       >
-        <SiteMap />
+        <SiteMap />·
         <TermsOfService />
-      </span> */}
+      </div>
       <Copyright />
     </Box>
   );

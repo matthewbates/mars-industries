@@ -55,7 +55,6 @@ export const InfoTopLine = styled.p`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 20%;
   color: black;
 
   @media screen and (max-width: 768px) {
@@ -84,18 +83,19 @@ export const InfoBtnWrap = styled.div`
 
 export const InfoImgWrap = styled.div`
   height: 100%;
+  margin-bottom: 3rem;
 
   @media screen and (max-width: 768px) {
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
   }
 `;
 
 export const InfoImg = styled.img`
   /* width: 80vw; */
-  max-width: 70%;
+  max-width: 60%;
   object-fit: contain;
 
   @media screen and (max-width: 768px) {
-    max-width: 65%;
+    max-width: 75%;
   }
 `;
