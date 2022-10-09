@@ -14,6 +14,19 @@ import { navLinks } from "./data";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const onResize = (e) => {
+    if (e.currentTarget.innerWidth > 768) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("resize", onResize);
+    };
+  });
+
   useEffect(() => {
     gsap.from(".nav-links", {
       x: -180,
