@@ -1,15 +1,14 @@
-# MARS Construction Company - In production 👷🏼🛠
+# MARS Construction Company
 
-To-Do's:
-1.) Create social media links
--Facebook
--Instagram
--LinkedIn
+<h1>Welcome to my one of my clients' website - thanks for visiting!</h1>
 
-2.) Incorporate Nick's best photos for landing page carousel
+<h3>I'm constantly adding/updating features to make this as responsive as possible.</h3>
 
-3.) Generate a privacy policy, areas services, & site map for footer
+Tech Stack:
 
-4.) Link Nick's email credentials to emailjs template I created
-
-5.) implement search / filter capability for Gallery component to search via city / project (including type of project)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Green Sock](https://img.shields.io/badge/green%20sock-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
