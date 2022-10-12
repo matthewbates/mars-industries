@@ -7,7 +7,7 @@ import {
   WhoWeAreH1,
   WhoWeAreP,
 } from "./WhoWeAreElements";
-import ScrollEffect from "../ScrollEffect";
+import Section from "../UseInView";
 import { whoWeAreData } from "./data";
 
 export default function WhoWeAre() {
@@ -16,12 +16,12 @@ export default function WhoWeAre() {
       <WhoWeAreImg src={background} />
       <WhoWeAreWrapper>
         <WhoWeAreH1>Who We Are</WhoWeAreH1>
-        <ScrollEffect>
+        <Section>
           <WhoWeAreP>{whoWeAreData[0].text}</WhoWeAreP>
-        </ScrollEffect>
-        <ScrollEffect>
+        </Section>
+        <Section>
           <WhoWeAreP>{whoWeAreData[1].text}</WhoWeAreP>
-        </ScrollEffect>
+        </Section>
       </WhoWeAreWrapper>
     </WhoWeAreContainer>
   );

@@ -1,11 +1,21 @@
-import React from "react";
-import { useInView } from "react-intersection-observer";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
-export default function UseInView({ children }) {
-  const { ref, inView } = useInView({ threshold: 0.4, triggerOnce: true });
+export default function Section({ children }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <div ref={ref} className={inView ? "listItem animate" : "listItem"}>
-      {children}
-    </div>
+    <section ref={ref}>
+      <span
+        style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 1.2s ease-in-out",
+        }}
+      >
+        {children}
+      </span>
+    </section>
   );
 }

@@ -6,7 +6,7 @@ const variant = {
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { duration: 0.6 },
+    transition: { duration: 1 },
   },
   hidden: { opacity: 0, scale: 0 },
 };
@@ -24,7 +24,7 @@ export default function ScrollEffect({ children }) {
   }, [control, inView]);
 
   return (
-    <motion.div ref={ref} variants={variant} initial="hidden" animate={control} displayOnce={true}>
+    <motion.div ref={ref} variants={variant} initial="hidden" animate={control}>
       {children}
     </motion.div>
   );

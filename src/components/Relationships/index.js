@@ -5,7 +5,7 @@ import {
   RelationshipsH2,
   RelationshipsP,
 } from "./RelationshipElements";
-import ScrollEffect from "../ScrollEffect";
+import Section from "../UseInView";
 import { relationshipData } from "./data";
 
 export default function Relationships() {
@@ -13,12 +13,12 @@ export default function Relationships() {
     <RelationshipsContainer>
       <RelationshipsWrapper>
         <RelationshipsH2>Building Lasting Relationships</RelationshipsH2>
-        <ScrollEffect>
+        <Section>
           <RelationshipsP>{relationshipData[0].text}</RelationshipsP>
-        </ScrollEffect>
-        <ScrollEffect>
+        </Section>
+        <Section>
           <RelationshipsP>{relationshipData[1].text}</RelationshipsP>
-        </ScrollEffect>
+        </Section>
       </RelationshipsWrapper>
     </RelationshipsContainer>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import { AboutContainer, AboutWrapper, AboutH2, AboutP } from "./AboutElements";
 import ScrollEffect from "../ScrollEffect";
+import Section from "../UseInView";
 import { aboutData } from "./data";
 
 export default function About() {
@@ -8,12 +9,12 @@ export default function About() {
     <AboutContainer>
       <AboutWrapper>
         <AboutH2>Providing Over 20 Years of Experience & Expertise</AboutH2>
-        <ScrollEffect>
+        <Section>
           <AboutP>{aboutData[0].text}</AboutP>
-        </ScrollEffect>
-        <ScrollEffect>
+        </Section>
+        <Section>
           <AboutP>{aboutData[1].text}</AboutP>
-        </ScrollEffect>
+        </Section>
       </AboutWrapper>
     </AboutContainer>
   );

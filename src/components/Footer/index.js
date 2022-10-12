@@ -14,6 +14,7 @@ import Socials from "../Socials";
 import Copyright from "../Copyright";
 import SiteMap from "../../pages/SiteMap";
 import TermsOfService from "../PrivacyPolicy";
+import Author from "../Author"
 
 export default function Footer() {
   return (
@@ -53,7 +54,8 @@ export default function Footer() {
         }}
       >
         <SiteMap />·
-        <TermsOfService />
+        <TermsOfService />·
+        <Author />
       </div>
       <Copyright />
     </Box>
