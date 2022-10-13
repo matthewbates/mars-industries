@@ -8,7 +8,7 @@ import {
   PhilosophyIntro,
 } from "./PhilosophyElements";
 import { philosophyIntro, philosophyData } from "./data";
-import ScrollEffect from "../ScrollEffect";
+import Section from "../UseInView";
 import image1 from "../../assets/gallery/img3.jpg";
 
 export default function Philosophy() {
@@ -18,10 +18,10 @@ export default function Philosophy() {
         <PhilosophyImg src={image1} />
         <PhilosophyIntro>{philosophyIntro[0].text}</PhilosophyIntro>
         {philosophyData.map((item, index) => (
-          <ScrollEffect key={index}>
+          <Section key={index}>
             <PhilosophyH3>{item.title}</PhilosophyH3>
             <PhilosophyP>{item.paragraph}</PhilosophyP>
-          </ScrollEffect>
+          </Section>
         ))}
       </PhilosophyWrapper>
     </PhilosophyContainer>

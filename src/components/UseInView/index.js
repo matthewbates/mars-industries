@@ -1,21 +1,27 @@
-import { useRef } from "react";
-import { useInView } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
 
 export default function Section({ children }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const [ref, isInView] = useInView({ threshold: 0.4, triggerOnce: true });
+  const control = useAnimation();
+
+  useEffect(() => {
+    isInView ? control.start("visible") : control.start("hidden");
+  });
 
   return (
-    <section ref={ref}>
-      <span
+    <section ref={ref} initial="hidden">
+      <div
         style={{
           transform: isInView ? "none" : "translateX(-200px)",
           opacity: isInView ? 1 : 0,
-          transition: "all 1.2s ease-in-out",
+          transition: "all 0.8s ease-in-out",
+          // transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
       >
         {children}
-      </span>
+      </div>
     </section>
   );
 }

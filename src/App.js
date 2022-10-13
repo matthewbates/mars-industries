@@ -8,7 +8,7 @@ import Company from "./pages/Company";
 import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
-import SiteMap from "./pages/SiteMap";
+import SiteMapRoutes from "./components/SiteMapRoutes";
 import "./App.css";
 
 export default function App() {
@@ -23,7 +23,7 @@ export default function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="/sitemap" element={<SiteMap />} />
+          <Route path="/sitemaproutes" element={<SiteMapRoutes />} />
         </Routes>
         <Footer />
       </Router>
