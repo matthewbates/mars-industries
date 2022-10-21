@@ -27,8 +27,12 @@ export const WhoWeAreImg = styled.img`
   object-fit: cover;
   filter: brightness(20%);
 
-  @media screen and (max-width: 768px) {
-    height: 100vh;
+  @media screen and (max-width: 767px) {
+    height: 70vh;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    height: 75vh;
   }
 `;
 
