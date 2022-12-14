@@ -14,8 +14,10 @@ export const AboutWrapper = styled.div`
   max-width: 560px;
   align-items: center;
   justify-content: center;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  /* margin-top: 4rem;
+  margin-bottom: 4rem; */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   @media screen and (max-width: 768px) {
     max-width: 320px;

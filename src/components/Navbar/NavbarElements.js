@@ -41,6 +41,8 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+  /* added this to center vertically */
+  margin-top: 10px;
 `;
 
 export const NavLinks = styled(LinkRoute)`

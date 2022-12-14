@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   ImgGalleryContainer,
   ImgGalleryLi,
@@ -25,9 +25,9 @@ export default function ImageGallery() {
               }}
               src={item.img}
             />
-            <ImgGalleryOverlay className="overlay">
+            {/* <ImgGalleryOverlay className="overlay">
               <ImgLinkText>View Project</ImgLinkText>
-            </ImgGalleryOverlay>
+            </ImgGalleryOverlay> */}
           </ImgGalleryLi>
         ))}
       </ImgGalleryContainer>

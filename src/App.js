@@ -10,6 +10,7 @@ import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import SiteMapRoutes from "./components/SiteMapRoutes";
 import "./App.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
   return (

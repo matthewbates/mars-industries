@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   Nav,
   NavbarContainer,
@@ -13,12 +13,29 @@ import { navLinks } from "./data";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
 
   const onResize = (e) => {
     if (e.currentTarget.innerWidth > 768) {
       setIsOpen(false);
     }
   };
+
+  const handleOnScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+    setVisible(
+      (prevScrollPos > currentScrollPos &&
+        prevScrollPos - currentScrollPos > 70) ||
+        currentScrollPos < 10
+    );
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleOnScroll);
+    return window.removeEventListener("scroll", handleOnScroll);
+  }, [prevScrollPos, visible, handleOnScroll]);
 
   useEffect(() => {
     window.addEventListener("resize", onResize);

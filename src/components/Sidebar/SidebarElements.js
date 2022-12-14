@@ -20,14 +20,6 @@ export const SidebarContainer = styled.div`
   right: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
 
-// export const DropdownMenu = styled.div`
-//   display: grid;
-//   justify-content: center;
-//   text-align: center;
-//   gap: 1.5rem;
-//   align-items: center;
-// `;
-
 export const SidebarMenuUl = styled.ul`
   display: block;
   position: relative;
