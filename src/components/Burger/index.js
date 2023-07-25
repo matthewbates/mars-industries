@@ -13,8 +13,8 @@ export default function Burger({ isOpen, toggle }) {
     //   <div />
     //   <div />
     // </BurgerContainer>
-    <BurgerContainer isOpen={isOpen}>
+    // <BurgerContainer isOpen={isOpen}>
       <Hamburger toggled={isOpen} toggle={toggle} size={24} />
-    </BurgerContainer>
+    // </BurgerContainer>
   );
 }
