@@ -53,8 +53,8 @@ export default function Footer() {
           gap: ".5rem",
         }}
       >
-        <SiteMap />·
-        <TermsOfService />·
+        {/* <SiteMap />· */}
+        {/* <TermsOfService />· */}
         <Author />
       </div>
       <Copyright />

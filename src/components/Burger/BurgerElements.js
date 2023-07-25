@@ -2,36 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const BurgerContainer = styled.div`
-  display: none;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  z-index: 10;
-  width: 2rem;
-  height: 2rem;
-  /* border: ${({ isOpen }) => (isOpen ? "1px solid black" : null)}; */
-  cursor: pointer;
-
-  @media screen and (max-width: 768px) {
-    display: flex;
-    color: black;
-  }
-
-  div {
-    width: 2rem;
-    height: 3px;
-    background-color: ${CONSTANTS.colors.softBlack};
-    transform-origin: 1px;
-    transition: all 0.4s linear;
-
-    &:nth-child(1) {
-      transform: ${({ isOpen }) => (isOpen ? "rotate(45deg)" : "rotate(0)")};
-    }
-    &:nth-child(2) {
-      opacity: ${({ isOpen }) => (isOpen ? 0 : 1)};
-      transition: ease-in-out 0.1s;
-    }
-    &:nth-child(3) {
-      transform: ${({ isOpen }) => (isOpen ? "rotate(-45deg)" : "rotate(0)")};
-    }
-  }
+  z-index: 995;
+  color: white;
+  color: ${({ isOpen }) => (isOpen ? "white" : "black")};
 `;

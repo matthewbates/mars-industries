@@ -19,6 +19,7 @@ export const HeaderContainer = styled.div`
 
 export const SocialsWrapper = styled.div`
   margin-left: 3rem;
+  transition: 0.3s ease-in-out;
 
   @media screen and (max-width: 768px) {
     margin-left: auto;
@@ -68,13 +69,14 @@ export const HeaderA = styled.a`
   font-size: 14px;
   flex-direction: column;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
 
   @media screen and (max-width: 768px) {
     font-size: 12px;
   }
 
   &:hover {
-    text-decoration: underline;
+    font-weight: bold;
     color: ${CONSTANTS.colors.softBlack};
   }
 `;

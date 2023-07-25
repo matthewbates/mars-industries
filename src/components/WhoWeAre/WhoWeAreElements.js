@@ -1,52 +1,59 @@
 import styled from "styled-components";
 
+import CONSTANTS from "../../utils/constants";
+
+import BACKGROUND from "../../assets/jobs/carousel_1.jpg";
+
 export const WhoWeAreContainer = styled.div`
-  position: relative;
-  text-align: center;
-  justify-content: center;
-  height: 100%;
-  color: white;
-`;
-
-export const WhoWeAreWrapper = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: justify;
-  max-width: 420px;
-
-  @media screen and (max-width: 768px) {
-    width: 80%;
-  }
-`;
-
-export const WhoWeAreImg = styled.img`
   width: 100%;
-  height: 80vh;
-  object-fit: cover;
-  filter: brightness(20%);
-
-  @media screen and (max-width: 767px) {
-    height: 70vh;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    height: 75vh;
-  }
+  height: 100%;
+  position: relative; /* Required for positioning the overlay and content */
 `;
 
-export const WhoWeAreH1 = styled.h1`
-  text-align: center;
+export const BackgroundImage = styled.div`
+  background: url(${BACKGROUND}) no-repeat;
+  background-size: cover; /* To stretch the image to cover the container */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  filter: brightness(50%);
+`;
+
+export const WhoWeAreContent = styled.div`
+  position: relative;
+`;
+
+export const WhoWeAreTitle = styled.h1`
+  display: flex;
+  justify-content: center;
   font-family: "Cormorant Garamond";
+  color: black;
+  margin-top: 1em;
+`;
+
+export const WhoWeAreItems = styled.div`
+  display: flex;
+  margin: auto;
+  z-index: 999;
+  flex-direction: column;
+  font-family: "Lato";
+  gap: 1em;
+  width: 100%;
+  color: ${CONSTANTS.colors.eggshellWhite};
+  transition: 0.3s ease-in-out;
+  padding: 2em;
+
+  @media screen and (min-width: 768px) {
+    max-width: 40%;
+  }
 `;
 
 export const WhoWeAreP = styled.p`
-  line-height: 1.6rem;
   text-align: justify;
-  columns: 1;
-  font-size: 16px;
   font-family: "Lato";
   justify-content: center;
-  margin-top: 2rem;
+  color: black;
 `;

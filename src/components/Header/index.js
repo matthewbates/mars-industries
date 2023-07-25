@@ -41,7 +41,7 @@ export default function HeaderInfo() {
             <HeaderA href={item.href}> {item.contact}</HeaderA>
           </HeaderLi>
         ))}
-      </HeaderContact>
+        </HeaderContact>
     </HeaderContainer>
   );
 }

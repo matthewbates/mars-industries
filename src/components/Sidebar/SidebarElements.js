@@ -5,7 +5,7 @@ import { FaTimes } from "react-icons/fa";
 
 export const SidebarContainer = styled.div`
   position: fixed;
-  z-index: 999;
+  z-index: 994;
   width: 50%;
   height: 100%;
   background: ${CONSTANTS.colors.dropdown};
@@ -57,15 +57,4 @@ export const NavLinks = styled(Link)`
     margin-top: 1rem;
     font-size: 18px;
   }
-`;
-
-export const Icon = styled.div`
-  position: absolute;
-  top: 1.5rem;
-  left: 1.3rem;
-`;
-
-export const CloseIcon = styled(FaTimes)`
-  color: ${CONSTANTS.colors.lightGrey};
-  cursor: pointer;
 `;

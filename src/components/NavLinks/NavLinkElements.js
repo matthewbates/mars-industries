@@ -7,7 +7,6 @@ export const NavLinksContainer = styled.li`
   margin-left: 1rem;
   text-align: center;
   list-style: none;
-  /* cursor: pointer; */
   color: black;
   font-size: 24px;
 

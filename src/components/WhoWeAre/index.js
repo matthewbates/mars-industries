@@ -5,7 +5,10 @@ import {
   WhoWeAreWrapper,
   WhoWeAreImg,
   WhoWeAreH1,
+  WhoWeAreItems,
+  WhoWeAreTitle,
   WhoWeAreP,
+  BackgroundImage,
 } from "./WhoWeAreElements";
 import Section from "../UseInView";
 import { whoWeAreData } from "./data";
@@ -13,7 +16,10 @@ import { whoWeAreData } from "./data";
 export default function WhoWeAre() {
   return (
     <WhoWeAreContainer>
-      <WhoWeAreImg src={background} />
+      <BackgroundImage src={background} />
+      <WhoWeAreItems>
+        <WhoWeAreTitle>Who We Are</WhoWeAreTitle>
+        {/* <WhoWeAreImg src={background} />
       <WhoWeAreWrapper>
         <WhoWeAreH1>Who We Are</WhoWeAreH1>
         <Section>
@@ -22,7 +28,15 @@ export default function WhoWeAre() {
         <Section>
           <WhoWeAreP>{whoWeAreData[1].text}</WhoWeAreP>
         </Section>
-      </WhoWeAreWrapper>
+      </WhoWeAreWrapper> */}
+
+        <Section>
+          <WhoWeAreP>{whoWeAreData[0].text}</WhoWeAreP>
+        </Section>
+        <Section>
+          <WhoWeAreP>{whoWeAreData[1].text}</WhoWeAreP>
+        </Section>
+      </WhoWeAreItems>
     </WhoWeAreContainer>
   );
 }

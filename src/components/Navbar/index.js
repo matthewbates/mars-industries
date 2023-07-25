@@ -5,6 +5,9 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  BurgerWrapper,
+  LinksWrapper,
+  NavLink,
 } from "./NavbarElements";
 import Burger from "../Burger";
 import Sidebar from "../Sidebar";
@@ -59,20 +62,31 @@ export default function Navbar() {
   };
 
   return (
-    <Nav>
-      <NavbarContainer>
-        <NavMenu>
-          {navLinks.map((item, index) => (
-            <NavItem key={index}>
-              <NavLinks className="nav-links" to={item.to}>
-                {item.title}
-              </NavLinks>
-            </NavItem>
-          ))}
-        </NavMenu>
-        <Burger isOpen={isOpen} toggleSidebar={toggleSidebar} />
-        <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
-      </NavbarContainer>
-    </Nav>
+    <NavbarContainer>
+      <BurgerWrapper>
+        <Burger isOpen={isOpen} toggle={toggleSidebar} />
+      </BurgerWrapper>
+      <LinksWrapper>
+        {navLinks.map((link, index) => (
+          <NavLink to={link.to}>{link.title}</NavLink>
+        ))}
+      </LinksWrapper>
+      <Sidebar isOpen={isOpen} toggle={toggleSidebar} />
+    </NavbarContainer>
+    // <Nav>
+    //   <NavbarContainer>
+    //     <NavMenu>
+    //       {navLinks.map((item, index) => (
+    //         <NavItem key={index}>
+    //           <NavLinks className="nav-links" to={item.to}>
+    //             {item.title}
+    //           </NavLinks>
+    //         </NavItem>
+    //       ))}
+    //     </NavMenu>
+    //     <Burger isOpen={isOpen} toggleSidebar={toggleSidebar} />
+    //     <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+    //   </NavbarContainer>
+    // </Nav>
   );
 }

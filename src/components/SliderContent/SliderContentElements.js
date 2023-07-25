@@ -12,7 +12,7 @@ export const SliderContentSection = styled.section`
 
 export const SliderContentContainer = styled.div`
   height: auto;
-  max-width: 50%;
+  width: 100%;
   position: relative;
 
   .slides {
@@ -35,10 +35,10 @@ export const SliderContentImg = styled.img`
   background: rgb(224, 224, 224);
   padding: 0px;
   margin: 0px auto;
-  height: 432px;
+  height: 100%;
+  width: 100%;
+  max-height: 30vh;
   display: block;
-  width: 100vw;
-  overflow: visible;
   object-fit: cover;
 `;
 

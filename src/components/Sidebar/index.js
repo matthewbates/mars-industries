@@ -3,17 +3,12 @@ import {
   SidebarContainer,
   SidebarMenuUl,
   SidebarMenuLi,
-  Icon,
-  CloseIcon,
   NavLinks,
 } from "./SidebarElements";
 
-export default function Dropdown({ isOpen, toggleSidebar }) {
+export default function Dropdown({ isOpen, toggle }) {
   return (
-    <SidebarContainer isOpen={isOpen} onClick={toggleSidebar}>
-      <Icon>
-        <CloseIcon />
-      </Icon>
+    <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <SidebarMenuUl>
         <SidebarMenuLi>
           <NavLinks to="/">Home</NavLinks>
