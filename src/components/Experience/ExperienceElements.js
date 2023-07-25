@@ -21,7 +21,7 @@ export const ExperienceWrapper = styled.div`
 `;
 
 export const ExperienceH2 = styled.h3`
-  margin-top: 2rem;
+  margin-top: 3em;
   line-height: 3rem;
   font-weight: 400;
   align-items: center;

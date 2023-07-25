@@ -26,12 +26,14 @@ export const WhoWeAreContent = styled.div`
   position: relative;
 `;
 
-export const WhoWeAreTitle = styled.h1`
+export const WhoWeAreTitle = styled.div`
   display: flex;
   justify-content: center;
   font-family: "Cormorant Garamond";
   color: black;
   margin-top: 1em;
+  font-size: 2em;
+  font-weight: bold;
 `;
 
 export const WhoWeAreItems = styled.div`
@@ -56,4 +58,5 @@ export const WhoWeAreP = styled.p`
   font-family: "Lato";
   justify-content: center;
   color: black;
+  font-size: 1.2em;
 `;

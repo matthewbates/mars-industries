@@ -11,23 +11,23 @@ export const AboutWrapper = styled.div`
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  max-width: 560px;
+  max-width: 50%;
+  transition: 0.3s ease-in-out;
   align-items: center;
   justify-content: center;
-  /* margin-top: 4rem;
-  margin-bottom: 4rem; */
   padding-top: 2rem;
   padding-bottom: 2rem;
 
   @media screen and (max-width: 768px) {
-    max-width: 320px;
+    max-width: 80%;
   }
 `;
 
-export const AboutH2 = styled.h2`
+export const AboutH2 = styled.div`
   line-height: 3rem;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2em;
+  font-weight: bold;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -40,7 +40,7 @@ export const AboutP = styled.p`
   margin-bottom: 2rem;
   text-align: justify;
   columns: 1;
-  font-size: 16px;
+  font-size: 1.2em;
   font-family: "Lato";
   justify-content: center;
   color: ${CONSTANTS.colors.softBlack};

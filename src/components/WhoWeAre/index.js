@@ -19,17 +19,6 @@ export default function WhoWeAre() {
       <BackgroundImage src={background} />
       <WhoWeAreItems>
         <WhoWeAreTitle>Who We Are</WhoWeAreTitle>
-        {/* <WhoWeAreImg src={background} />
-      <WhoWeAreWrapper>
-        <WhoWeAreH1>Who We Are</WhoWeAreH1>
-        <Section>
-          <WhoWeAreP>{whoWeAreData[0].text}</WhoWeAreP>
-        </Section>
-        <Section>
-          <WhoWeAreP>{whoWeAreData[1].text}</WhoWeAreP>
-        </Section>
-      </WhoWeAreWrapper> */}
-
         <Section>
           <WhoWeAreP>{whoWeAreData[0].text}</WhoWeAreP>
         </Section>
