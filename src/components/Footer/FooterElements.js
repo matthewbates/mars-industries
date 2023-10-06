@@ -13,7 +13,7 @@ export const Box = styled.div`
   }
 
   h1 {
-    font-family: "Poppins";
+    font-family: "Open Sans";
     color: ${CONSTANTS.colors.softBlack};
     position: relative;
     text-align: center;
@@ -52,7 +52,7 @@ export const Row = styled.div`
 `;
 
 export const NavLinks = styled(LinkRoute)`
-  font-family: "Lato";
+  font-family: "Raleway";
   font-weight: 300;
   color: ${CONSTANTS.colors.softBlack};
   margin-bottom: 10px;
@@ -68,7 +68,7 @@ export const NavLinks = styled(LinkRoute)`
 `;
 
 export const Contact = styled.a`
-  font-family: "Lato";
+  font-family: "Raleway";
   color: ${CONSTANTS.colors.softBlack};
   margin-bottom: 20px;
   text-decoration: none;
@@ -86,7 +86,7 @@ export const ContactSpan = styled.span``;
 export const Heading = styled.h3`
   margin-top: 2rem;
   margin-bottom: 1rem;
-  font-family: "Poppins";
+  font-family: "Raleway";
   font-weight: bold;
   text-transform: uppercase;
 `;

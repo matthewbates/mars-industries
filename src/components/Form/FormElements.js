@@ -30,7 +30,7 @@ export const FormFullName = styled.div`
 `;
 
 export const TextInput = styled.input`
-  font-family: "Poppins";
+  font-family: "Raleway";
   display: flex;
   justify-content: center;
   color: ${CONSTANTS.colors.softBlack};
@@ -50,7 +50,7 @@ export const TextInput = styled.input`
 `;
 
 export const EmailInput = styled.input`
-  font-family: "Poppins";
+  font-family: "Raleway";
   display: flex;
   justify-content: center;
   color: ${CONSTANTS.colors.softBlack};
@@ -71,7 +71,7 @@ export const EmailInput = styled.input`
 
 export const TextArea = styled.textarea`
   font-weight: bold;
-  font-family: "Poppins";
+  font-family: "Raleway";
   display: flex;
   justify-content: center;
   color: ${CONSTANTS.colors.softBlack};
@@ -93,7 +93,7 @@ export const TextArea = styled.textarea`
 export const FormLabel = styled.label`
   display: flex;
   line-height: 2rem;
-  font-family: "Lato";
+  font-family: "Raleway";
 `;
 
 export const FormButton = styled.button`

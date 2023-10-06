@@ -1,9 +1,11 @@
 import React from "react";
 import { NavLink } from "./NavLinkElements";
 
-export default function NavLinks({ path, name, children }) {
+import { closeDrawer } from "../../utils/helpers";
+
+export default function NavLinks({ path, name, setIsOpen, children }) {
   return (
-    <NavLink to={path} name={name}>
+    <NavLink onClick={() => closeDrawer(setIsOpen)} to={path} name={name}>
       {children}
     </NavLink>
   );

@@ -15,3 +15,7 @@ export const useClickOutside = (ref, callback) => {
     };
   }, [ref, callback]);
 };
+
+export const closeDrawer = (setIsOpen) => {
+  setIsOpen(false);
+};
