@@ -11,7 +11,8 @@ export const SliderContentSection = styled.section`
 `;
 
 export const SliderContentContainer = styled.div`
-  height: auto;
+  /* height: auto; */
+  height: 30vh;
   width: 100%;
   position: relative;
 

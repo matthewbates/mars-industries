@@ -1,17 +1,10 @@
 import React from "react";
-import { NavLinksContainer, NavLinkScroll } from "./NavLinkElements";
+import { NavLink } from "./NavLinkElements";
 
-export default function NavLinks({ title }) {
+export default function NavLinks({ path, name, children }) {
   return (
-    <NavLinksContainer>
-      <NavLinkScroll
-        to={title}
-        spy={true}
-        offset={0}
-        smooth={true}
-        duration={700}
-      />
-      {title}
-    </NavLinksContainer>
+    <NavLink to={path} name={name}>
+      {children}
+    </NavLink>
   );
 }

@@ -6,9 +6,6 @@ export const SocialIcons = styled.div`
   align-items: center;
   gap: 1rem;
   font-size: 1.6rem;
-  text-decoration: none;
-  list-style: none;
-  text-decoration: none;
   cursor: pointer;
 `;
 

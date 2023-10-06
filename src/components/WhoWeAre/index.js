@@ -1,4 +1,8 @@
-import React from "react";
+import { useEffect } from "react";
+
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
 import background from "../../assets/jobs/carousel_1.jpg";
 import {
   WhoWeAreContainer,
@@ -19,12 +23,12 @@ export default function WhoWeAre() {
       <BackgroundImage src={background} />
       <WhoWeAreItems>
         <WhoWeAreTitle>Who We Are</WhoWeAreTitle>
-        <Section>
+        {/* <Section> */}
           <WhoWeAreP>{whoWeAreData[0].text}</WhoWeAreP>
-        </Section>
-        <Section>
+        {/* </Section> */}
+        {/* <Section> */}
           <WhoWeAreP>{whoWeAreData[1].text}</WhoWeAreP>
-        </Section>
+        {/* </Section> */}
       </WhoWeAreItems>
     </WhoWeAreContainer>
   );

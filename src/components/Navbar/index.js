@@ -1,10 +1,7 @@
 import { useState, useEffect } from "react";
+
 import {
-  Nav,
   NavbarContainer,
-  NavMenu,
-  NavItem,
-  NavLinks,
   BurgerWrapper,
   LinksWrapper,
   NavLink,
@@ -61,6 +58,10 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const closeDrawer = () => {
+    setIsOpen(false);
+  };
+
   return (
     <NavbarContainer>
       <BurgerWrapper>
@@ -68,25 +69,12 @@ export default function Navbar() {
       </BurgerWrapper>
       <LinksWrapper>
         {navLinks.map((link, index) => (
-          <NavLink to={link.to}>{link.title}</NavLink>
+          <NavLink key={index} to={link.to}>
+            {link.title}
+          </NavLink>
         ))}
       </LinksWrapper>
-      <Sidebar isOpen={isOpen} toggle={toggleSidebar} />
+      <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} toggle={toggleSidebar} />
     </NavbarContainer>
-    // <Nav>
-    //   <NavbarContainer>
-    //     <NavMenu>
-    //       {navLinks.map((item, index) => (
-    //         <NavItem key={index}>
-    //           <NavLinks className="nav-links" to={item.to}>
-    //             {item.title}
-    //           </NavLinks>
-    //         </NavItem>
-    //       ))}
-    //     </NavMenu>
-    //     <Burger isOpen={isOpen} toggleSidebar={toggleSidebar} />
-    //     <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
-    //   </NavbarContainer>
-    // </Nav>
   );
 }

@@ -7,6 +7,7 @@ import BACKGROUND from "../../assets/jobs/carousel_1.jpg";
 export const WhoWeAreContainer = styled.div`
   width: 100%;
   height: 100%;
+
   position: relative; /* Required for positioning the overlay and content */
 `;
 
@@ -59,4 +60,5 @@ export const WhoWeAreP = styled.p`
   justify-content: center;
   color: black;
   font-size: 1.2em;
+  line-height: 1.6rem;
 `;

@@ -16,8 +16,8 @@ export default function App() {
   return (
     <div>
       <Router>
-        <Header />
         <Navbar />
+        {/* <Header /> */}
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/company" element={<Company />} />

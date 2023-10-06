@@ -31,7 +31,7 @@ export const AboutH2 = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: "Cormorant Garamond";
+  font-family: "Open Sans";
 `;
 
 export const AboutP = styled.p`
@@ -41,7 +41,7 @@ export const AboutP = styled.p`
   text-align: justify;
   columns: 1;
   font-size: 1.2em;
-  font-family: "Lato";
+  font-family: "Raleway";
   justify-content: center;
   color: ${CONSTANTS.colors.softBlack};
 

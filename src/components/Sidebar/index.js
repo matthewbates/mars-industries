@@ -1,23 +1,33 @@
-import React from "react";
-import {
-  SidebarContainer,
-  SidebarMenuUl,
-  SidebarMenuLi,
-  NavLinks,
-} from "./SidebarElements";
+import { useRef } from "react";
 
-export default function Dropdown({ isOpen, toggle }) {
+import { SidebarContainer, SideMenuItems } from "./SidebarElements";
+
+import NavLinks from "../NavLinks";
+import Socials from "../Socials";
+
+import { links } from "../NavLinks/data";
+import { useClickOutside } from "../../utils/helpers";
+
+export default function Dropdown({ isOpen, setIsOpen, toggle }) {
+  const sidebarRef = useRef(null);
+
+  const closeDrawer = () => {
+    setIsOpen(false);
+  };
+
+  useClickOutside(sidebarRef, () => {
+    closeDrawer(setIsOpen);
+  });
+
   return (
-    <SidebarContainer isOpen={isOpen} onClick={toggle}>
-      <SidebarMenuUl>
-        <SidebarMenuLi>
-          <NavLinks to="/">Home</NavLinks>
-          <NavLinks to="/company">Company</NavLinks>
-          <NavLinks to="/services">Services</NavLinks>
-          <NavLinks to="/gallery">Gallery</NavLinks>
-          <NavLinks to="/contact">Contact</NavLinks>
-        </SidebarMenuLi>
-      </SidebarMenuUl>
+    <SidebarContainer ref={sidebarRef} isOpen={isOpen}>
+      <SideMenuItems>
+        {links.map(({ id, path, name }) => (
+          <NavLinks key={id} path={path}>
+            {name}
+          </NavLinks>
+        ))}
+      </SideMenuItems>
     </SidebarContainer>
   );
 }
