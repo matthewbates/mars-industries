@@ -17,10 +17,6 @@ const TEMPLATE_ID = "template_1rub8eh";
 const USER_ID = "pxTQ3Ga0lBOJ4vGzM";
 
 export default function ContactForm() {
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  }, []);
-
   const handleOnSubmit = (e) => {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
